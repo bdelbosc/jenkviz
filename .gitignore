@@ -1,0 +1,16 @@
+syntax:glob
+
+dist
+build
+doc/*.html
+*.pyc
+*.swp
+.#*
+*~
+.coverage
+jenkviz.egg-info/
+data/
+env/
+doc/build
+*.svg
+*.dot

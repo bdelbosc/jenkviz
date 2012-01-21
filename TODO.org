@@ -1,0 +1,25 @@
+* TODO fix throughput
+  file:///home/ben/dev/tools/jenkviz/nuxeo_common_master_7.svg
+  > 24h sur 14h -> thput = 169%
+
+  list slowest jobs
+  list hosts + charge
+  ?
+
+
+* TODO use sqlite to save build
+  crawl 
+  1. check in cache
+  2. check in db
+  3. fetch
+
+
+  build = Build(...)
+  session.add(build)
+  session.commit()
+  
+
+  from model import session
+  get_build(url):
+      session.query(Build).filter_by(url=url).first()
+     
