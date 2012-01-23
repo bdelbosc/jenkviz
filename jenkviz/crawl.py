@@ -120,7 +120,11 @@ class Crawl(object):
         host = extract_token(body, '<a href="/jenkins/computer/', '"')
         downstream_builds = extract_token(body, 'h2>Downstream Builds</h2', '</ul>')
         trigger = "Unknown"
+        upstream = None
         if 'Started by upstream project' in body:
+            upstream = extract_token(body, 'Started by upstream project', '</span')
+            upstream_urls = re.findall(r'href="([^"]+[0-9]/)"', upstream)
+            upstream = upstream_urls[0]
             trigger = None
         if 'Started by GitHub push' in body:
             try:
@@ -133,7 +137,7 @@ class Crawl(object):
         if downstream_builds:
             downstream_urls = re.findall(r'href="([^"]+[0-9]/)"', downstream_builds)
         build = Build(url, host, name, build_number, start, duration, status, downstream_urls,
-                      self.server_url, trigger)
+                      self.server_url, trigger, upstream)
         return build
 
     def stats(self):

@@ -12,7 +12,11 @@ http://qa.nuxeo.org/jenkins/job/nuxeo-common-master/4/
 * TODO reverse 
   parse reverse
   add link bold 
-* TODO use sqlalchemy
+* DONE use sqlalchemy
+  CLOSED: [2012-01-23 lun. 22:26]
+  :LOGBOOK:
+  - State "DONE"       from "TODO"       [2012-01-23 lun. 22:26]
+  :END:
   setup db connexion from options
   save/load
   stats
@@ -23,6 +27,7 @@ http://qa.nuxeo.org/jenkins/job/nuxeo-common-master/4/
   list slowest jobs
   list hosts + charge
   ?
+* TODO doc cleaning
 * CANCELLED bug on non maven job                                  :CANCELLED:
   CLOSED: [2012-01-23 lun. 17:06]
   :LOGBOOK:
@@ -70,4 +75,3 @@ matrix job
    -> project 
 
    does not show http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-selenium-cap-jboss/72/
-* TODO doc cleaning

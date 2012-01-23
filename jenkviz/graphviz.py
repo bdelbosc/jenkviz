@@ -10,6 +10,7 @@ __copyright__ = "Copyright (C) 2012 Nuxeo SA <http://nuxeo.com>"
 """
 from commands import getstatusoutput
 from datetime import timedelta
+from util import str2id
 
 
 def graphviz(root, svg_file):
@@ -44,8 +45,12 @@ def _graphviz_recurse(parent, out, visited):
         return
     out.write("%s -> {" % parent.getId())
     for build in parent.children:
-        out.write(build.getId() + ";")
+        if build.upstream == parent.url:
+            out.write(build.getId() + ";")
     out.write("}\n")
+    for build in parent.children:
+        if build.upstream != parent.url:
+            out.write('%s -> %s [color=orange]\n' % (parent.getId(), build.getId()))
     for build in parent.children:
         _graphviz_recurse(build, out, visited)
 

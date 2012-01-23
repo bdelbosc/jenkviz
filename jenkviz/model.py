@@ -40,7 +40,10 @@ def close_db(db):
 
 
 def get_build(db, url):
-    return db.query(Build).filter_by(url=url).first()
+    build = db.query(Build).filter_by(url=url).first()
+    if build:
+        build.children = []
+    return build
 
 
 def list_builds(db):
@@ -74,10 +77,10 @@ class Build(Base):
     duration_s = Column(Integer)
     trigger = Column(String(64))
     downstream = Column(String(4096))
-    children = []
+    upstream = Column(String(256))
 
     def __init__(self, url, host, name, build_number, start, duration, status, downstream,
-                 base_url, trigger):
+                 base_url, trigger, upstream):
         self.url = url
         self.host = host
         self.name = name
@@ -93,11 +96,13 @@ class Build(Base):
         self.duration_s = duration_to_second(duration)
         self.stop_t = self.start_t + timedelta(seconds=self.duration_s)
         self.downstream = ','.join(downstream)
+        self.upstream = upstream
 
     def __repr__(self):
-        return 'URL: "%s"\n\tname: %s\n\tbuild #: %s\n\thost: %s\n\tstart: %s\n\tstop: %s\n\tduration: %s\n\tstatus: %s\n\tdownstream build: %d\n' % (
+        return '''URL: "%s"\n\tname: %s\n\tbuild #: %s\n\thost: %s\n\tstart: %s\n\tstop: %s
+\tduration: %s\n\tstatus: %s\n\tdownstream build: %d\n\tupstream: %s\n''' % (
             self.url, self.name, self.build_number, self.host, self.start, self.stop_t, self.duration, self.status,
-            len(self.get_downstream()))
+            len(self.get_downstream()), self.upstream)
 
     def getId(self):
         return str2id("%s %s" % (self.name, self.build_number))
