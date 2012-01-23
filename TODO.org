@@ -1,6 +1,6 @@
 
 short: 3
-jenkviz crawl http://qa.nuxeo.org/jenkins/job/nuxeo-features-master/56/ --from-file=~/tmp/jenkviz
+jenkviz crawl http://qa.nuxeo.org/jenkins/job/nuxeo-features-master/56/ --from-file=/home/ben/tmp/jenkviz
 
 medium: 72
 http://qa.nuxeo.org/jenkins/job/nuxeo-features-master/72/
@@ -9,15 +9,26 @@ long: 782
 http://qa.nuxeo.org/jenkins/job/nuxeo-common-master/4/
 
 
-* TODO fix throughput
+* TODO reverse 
+  parse reverse
+  add link bold 
+* TODO use sqlalchemy
+  setup db connexion from options
+  save/load
+  stats
+* TODO fix bug in throughput
   file:///home/ben/dev/tools/jenkviz/nuxeo_common_master_7.svg
   > 24h sur 14h -> thput = 169%
 
   list slowest jobs
   list hosts + charge
   ?
-
-* TODO bug on non maven job
+* CANCELLED bug on non maven job                                  :CANCELLED:
+  CLOSED: [2012-01-23 lun. 17:06]
+  :LOGBOOK:
+  - State "CANCELLED"  from "TODO"       [2012-01-23 lun. 17:06] \\
+    jenkins bug
+  :END:
   https://issues.jenkins-ci.org/browse/JENKINS-6211
 
   
@@ -59,15 +70,4 @@ matrix job
    -> project 
 
    does not show http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-selenium-cap-jboss/72/
-
-
-
-
-* TODO fix build import
-* TODO impl db
-  save downstream as a string 
-  add a root node id ?
-  -> will not work for sub graph
-  how to make stats from SQL then
-     
-      
+* TODO doc cleaning

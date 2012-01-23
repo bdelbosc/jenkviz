@@ -13,8 +13,11 @@ import re
 from urlparse import urlparse
 from funkload.FunkLoadDocTest import FunkLoadDocTest
 from funkload.utils import extract_token
-from build import Build
+from model import Build
 from util import str2id
+from model import get_build
+from model import save_build
+from model import update_build
 
 
 class Crawl(object):
@@ -41,9 +44,9 @@ class Crawl(object):
         if self.root is None:
             self.root = parent
         print parent
-        if not len(parent.downstream):
+        if not len(parent.get_downstream()):
             return
-        for url in parent.downstream:
+        for url in parent.get_downstream():
             known = False
             if url in self.builds.keys():
                 known = True
@@ -61,10 +64,14 @@ class Crawl(object):
         # 2. fetch from local db
         ret = self.fetch_build_from_db(url)
         # 3. fetch jenkins page
-        if ret is None:
-            ret = self.fetch_build(url)
+        if ret is None or self.options.update:
+            build = self.fetch_build(url)
             # 3.1 persist build
-            self.save_build_to_db(ret)
+            if ret is None:
+                self.save_build_to_db(build)
+            else:
+                self.update_build_to_db(build)
+            ret = build
         # 4. update cache
         self.builds[url] = ret
         return ret
@@ -75,12 +82,13 @@ class Crawl(object):
         return self.fetch_build_from_server(url)
 
     def fetch_build_from_db(self, url):
-        # TODO: impl
-        return None
+        return get_build(self.db, url)
 
     def save_build_to_db(self, build):
-        # TODO: impl
-        pass
+        save_build(self.db, build)
+
+    def update_build_to_db(self, build):
+        update_build(self.db, build)
 
     def fetch_build_from_server(self, url):
         self.fl.get(self.server_url + url, description="Get build page " + url)

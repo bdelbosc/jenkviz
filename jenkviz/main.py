@@ -19,27 +19,19 @@ USAGE = """jenkviz [--version] [--logfile=LOGFILE] [--database=DATABASE] COMMAND
 COMMANDS:
 
   list
-     List the imported benchmark in the database.
-
-  info BID
-     Give more information about the build flow with the bid number (build identifier).
+     List the builds from the local database.
 
   crawl [--reverse| URL
      crawl the jenkins. Output the BID number.
-
-  report BID
-     Generate the report for the imported build
 
 EXAMPLES
 
    jenkviz list
       List of crawled build.
 
-   jenkviz import -m"Run 42" http://jenkins/jenkins/job/foo/34/
-      Import a build #34 of foo, this will output a BID number.
+   jenkviz crawl http://jenkins/jenkins/job/foo/34/
+      Import a build #34 of foo
 .
-   jenkviz report 1 -o foo.svg
-      Build the report of build flow BID 1
 
 """
 
@@ -58,19 +50,15 @@ def main(argv=sys.argv):
                       default=os.path.expanduser(DEFAULT_DB),
                       help="SQLite db path")
     parser.add_option("--from-file", type="string",
-                      help="Use files in the the FROM_FILE directory instead of querying jenkins server.")
+                      help="Use html files in the the FROM_FILE directory instead of querying jenkins server.")
     parser.add_option("--to-file", type="string",
                       help="Save jenkins page into the TO_FILE directory.")
-    parser.add_option("-m", "--comment", type="string",
-                      help="Add a comment")
     parser.add_option("-r", "--reverse", action="store_true",
                       default=True,
                       help="Reverse crawl")
-    parser.add_option("--rmdatabase", action="store_true",
+    parser.add_option("-u", "--update", action="store_true",
                       default=False,
-                      help="Remove existing database")
-    parser.add_option("-o", "--output", type="string",
-                      help="Report file")
+                      help="Always fetch build from server (update local database)")
 
     options, args = parser.parse_args(argv)
     init_logging(options)
