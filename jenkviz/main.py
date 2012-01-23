@@ -1,24 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf_8 -*
-# (C) Copyright 2008-2011 Nuxeo SAS <http://nuxeo.com>
-# Authors: Benoit Delbosc <ben@nuxeo.com>
-#
-# This program is free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License version 2 as
-# published by the Free Software Foundation.
-#
-# This program is distributed in the hope that it will be useful, but
-# WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
-# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
-# 02111-1307, USA.
 """
 Try to do something usefull with a jmeter output.
 """
+__author__ = "Benoit Delbosc"
+__copyright__ = "Copyright (C) 2012 Nuxeo SA <http://nuxeo.com>"
 import os
 import sys
 from optparse import OptionParser, TitledHelpFormatter
@@ -71,6 +57,10 @@ def main(argv=sys.argv):
     parser.add_option("-d", "--database", type="string",
                       default=os.path.expanduser(DEFAULT_DB),
                       help="SQLite db path")
+    parser.add_option("--from-file", type="string",
+                      help="Use files in the the FROM_FILE directory instead of querying jenkins server.")
+    parser.add_option("--to-file", type="string",
+                      help="Save jenkins page into the TO_FILE directory.")
     parser.add_option("-m", "--comment", type="string",
                       help="Add a comment")
     parser.add_option("-r", "--reverse", action="store_true",

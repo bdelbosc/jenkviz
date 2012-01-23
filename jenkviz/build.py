@@ -19,6 +19,7 @@
 from datetime import timedelta
 from util import time_to_datetime
 from util import duration_to_second
+from util import str2id
 
 
 class Build(object):
@@ -41,7 +42,7 @@ class Build(object):
         self.stop_t = self.start_t + timedelta(seconds=self.duration_s)
 
     def getId(self):
-        return "%s_%s" % (self.name.replace('-', '_'), self.build_number)
+        return str2id("%s %s" % (self.name, self.build_number))
 
     def color(self):
         if self.status == 'Success':

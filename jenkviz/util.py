@@ -1,75 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf_8 -*
-# (C) Copyright 2012 Nuxeo SAS <http://nuxeo.com>
-# Authors: Benoit Delbosc <ben@nuxeo.com>
-#
-# This program is free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License version 2 as
-# published by the Free Software Foundation.
-#
-# This program is distributed in the hope that it will be useful, but
-# WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
-# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
-# 02111-1307, USA.
+__author__ = "Benoit Delbosc"
+__copyright__ = "Copyright (C) 2012 Nuxeo SA <http://nuxeo.com>"
+"""
+   jenkviz.util
+   ~~~~~~~~~~~~~~~~
 
+   Misc utils
+"""
 import hashlib
 import re
 import logging
 import pkg_resources
-from commands import getstatusoutput
 from datetime import datetime
-from datetime import timedelta
-
-
-def graphviz_recurse(parent, out, visited):
-    if parent.url in visited:
-        return
-    visited.append(parent.url)
-    out.write('%s [label="%s #%s|%s %s|%s" color=%s URL="%s"]\n' % (
-        parent.getId(), parent.name, parent.build_number, parent.start[13:], parent.host, parent.duration,
-        parent.color(), parent.full_url()))
-
-    if parent.trigger:
-        out.write('%s [color=orange style=filled]\n%s -> %s\n' % (
-                parent.trigger, parent.trigger, parent.getId()))
-    if not parent.children:
-        return
-    out.write("%s -> {" % parent.getId())
-    for build in parent.children:
-        out.write(build.getId() + ";")
-    out.write("}\n")
-    for build in parent.children:
-        graphviz_recurse(build, out, visited)
-
-
-def graphviz(root, fpath):
-    out = open(fpath, "w+")
-    out.write("""digraph g {
-graph [rankdir=LR];
-node [fontsize="16" shape="record"];
-info [label="start: %s|stop: %s|duration: %s|number of builds: %s|throughput: %s%%"];
-""" % (root.extra['start'], root.extra['stop'], timedelta(seconds=root.extra['duration']), root.extra['count'], root.extra['throughput']))
-
-    visited = []
-    graphviz_recurse(root, out, visited)
-    out.write("}\n")
-    out.close()
-    print "Saving " + fpath
-
-
-def makeSvg(dot_file):
-    out_file = dot_file.replace('.dot', '.svg')
-    cmd = "dot -Tsvg %s -o %s" % (dot_file, out_file)
-    ret, output = getstatusoutput(cmd)
-    if ret != 0:
-        raise RuntimeError("Failed to run dot cmd: " + cmd +
-                           "\n" + str(output))
-    print "%s generated." % out_file
 
 
 def get_version():

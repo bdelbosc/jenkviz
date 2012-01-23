@@ -1,19 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf_8 -*
-#
-# This program is free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License version 2 as
-# published by the Free Software Foundation.
-#
-# This program is distributed in the hope that it will be useful, but
-# WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
-# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
-# 02111-1307, USA.
+__author__ = "Benoit Delbosc"
+__copyright__ = "Copyright (C) 2012 Nuxeo SA <http://nuxeo.com>"
 """
    jenkviz.model
    ~~~~~~~~~~~~~~
@@ -22,19 +10,36 @@
 """
 __author__ = "Benoit Delbosc"
 __copyright__ = "Copyright (C) 2012 Nuxeo SA <http://nuxeo.com>"
+from datetime import timedelta
+from pprint import pformat
 from sqlalchemy import Column, String, Integer, DateTime
 from sqlalchemy import create_engine
-from sqlalchemy.schema import Sequence
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-from pprint import pformat
-from datetime import datetime
+from util import time_to_datetime
+from util import duration_to_second
+
 
 DB = '~/jenkviz.db'
 Base = declarative_base()
 engine = create_engine('sqlite:///' + DB)  # , echo=True)
 Session = sessionmaker(engine)
 session = Session()
+
+
+def open_db(options):
+    # TODO: impl
+    return None
+
+
+def close_db(db):
+    # TODO: impl
+    return
+
+
+def list_builds(db):
+    #return db.query(Build).all()
+    return []
 
 
 class Build(Base):
@@ -53,10 +58,7 @@ class Build(Base):
     duration_s = Column(Integer)
     trigger = Column(String(64))
 
-    def __repr__(self):
-        return pformat(self.__dict__)
-
-   def __init__(self, url, host, name, build_number, start, duration, status, downstream,
+    def __init__(self, url, host, name, build_number, start, duration, status, downstream,
                  base_url, trigger):
         self.url = url
         self.host = host
@@ -73,6 +75,9 @@ class Build(Base):
         self.duration_s = duration_to_second(duration)
         self.stop_t = self.start_t + timedelta(seconds=self.duration_s)
 
+    def __repr__(self):
+        return pformat(self.__dict__)
+
     def getId(self):
         return "%s_%s" % (self.name.replace('-', '_'), self.build_number)
 
@@ -87,6 +92,3 @@ class Build(Base):
 
     def full_url(self):
         return self.base_url + self.url
-
-def all_builds():
-    return session.query(Build).all()

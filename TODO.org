@@ -1,3 +1,14 @@
+
+short: 3
+jenkviz crawl http://qa.nuxeo.org/jenkins/job/nuxeo-features-master/56/ --from-file=~/tmp/jenkviz
+
+medium: 72
+http://qa.nuxeo.org/jenkins/job/nuxeo-features-master/72/
+
+long: 782
+http://qa.nuxeo.org/jenkins/job/nuxeo-common-master/4/
+
+
 * TODO fix throughput
   file:///home/ben/dev/tools/jenkviz/nuxeo_common_master_7.svg
   > 24h sur 14h -> thput = 169%
@@ -6,20 +17,57 @@
   list hosts + charge
   ?
 
+* TODO bug on non maven job
+  https://issues.jenkins-ci.org/browse/JENKINS-6211
 
-* TODO use sqlite to save build
-  crawl 
-  1. check in cache
-  2. check in db
-  3. fetch
-
-
-  build = Build(...)
-  session.add(build)
-  session.commit()
   
+matrix job
+  there is no build number
+  http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-webdriver-cap-tomcat/70/
+  does not display
+  http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-webdriver-cap-tomcat-multios/63/
 
-  from model import session
-  get_build(url):
-      session.query(Build).filter_by(url=url).first()
+  either bug because of 
+
+
+ - http://qa.nuxeo.org/jenkins/job/nuxeo-distribution-master/82/
+
+   visible: http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-webdriver-cap-tomcat/70/
+
+   http://qa.nuxeo.org/jenkins/job/nuxeo-distribution-master/configure
+   after: dep change or git commit
+   downstream: 
+   - [X] FT-nuxeo-master-funkload-cmf-tomcat (désactivé)
+   - FT-nuxeo-master-selenium-cap-tomcat # 72 (not visible)
+   - FT-nuxeo-master-selenium-dm-tomcat
+   - FT-nuxeo-master-selenium-dam-tomcat
+   - FT-nuxeo-master-selenium-cmf-tomcat
+   - FT-nuxeo-master-selenium-social-collaboration-tomcat
+   - [X] FT-nuxeo-master-webdriver-cap-tomcat # 70
+   - FT-nuxeo-master-funkload-dm-tomcat-multidb
+
+ - OK http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-webdriver-cap-tomcat/configure
+   http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-webdriver-cap-tomcat/70/
+   after: nuxeo-distribution-master
+   downstream : FT-nuxeo-master-webdriver-cap-tomcat-windows, FT-nuxeo-master-webdriver-cap-tomcat-multios
+   -> maven2moduleset
+
+ - KO http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-selenium-cap-tomcat/configure
+   after: nuxeo-distribution-master
+   downstream : FT-nuxeo-master-selenium-cap-jboss
+   http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-selenium-cap-tomcat/72/
+   -> project 
+
+   does not show http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-selenium-cap-jboss/72/
+
+
+
+
+* TODO fix build import
+* TODO impl db
+  save downstream as a string 
+  add a root node id ?
+  -> will not work for sub graph
+  how to make stats from SQL then
      
+      
