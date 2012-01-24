@@ -1,0 +1,291 @@
+<!DOCTYPE html><html><head>
+
+    
+
+
+
+    <title>addons_nuxeo-dam-master #1009 [Jenkins]</title><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/css/style.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/css/color.css" /><link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/jenkins/static/58e2c472/favicon.ico" /><script>var isRunAsTest=false; var rootURL="/jenkins";</script><script src="/jenkins/static/58e2c472/scripts/prototype.js" type="text/javascript"></script><script src="/jenkins/static/58e2c472/scripts/behavior.js" type="text/javascript"></script><script src='/jenkins/adjuncts/58e2c472/org/kohsuke/stapler/bind.js' type='text/javascript'></script><script src="/jenkins/static/58e2c472/scripts/yui/yahoo/yahoo-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/dom/dom-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/event/event-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/animation/animation-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/dragdrop/dragdrop-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/container/container-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/connection/connection-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/datasource/datasource-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/autocomplete/autocomplete-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/menu/menu-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/element/element-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/button/button-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/storage/storage-min.js"></script><script src="/jenkins/static/58e2c472/scripts/hudson-behavior.js" type="text/javascript"></script><script src="/jenkins/static/58e2c472/scripts/sortable.js" type="text/javascript"></script><script>crumb.init("", "");</script><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/container/assets/container.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/assets/skins/sam/skin.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/container/assets/skins/sam/container.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/button/assets/skins/sam/button.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/menu/assets/skins/sam/menu.css" /><link title="Jenkins" rel="search" type="application/opensearchdescription+xml" href="/jenkins/opensearch.xml" /><meta name="ROBOTS" content="INDEX,NOFOLLOW" /><script src="/jenkins/static/58e2c472/scripts/yui/cookie/cookie-min.js"></script><script type="text/javascript">
+
+            var _gaq = _gaq || [];
+
+            _gaq.push(['_setAccount', 'UA-20627949-2']);
+
+            _gaq.push(['_setDomainName', 'qa.nuxeo.org']);
+
+            _gaq.push(['_trackPageview']);
+
+        
+
+            (function() {
+
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+            })();
+
+        </script></head><body class="yui-skin-sam"><a href="#skip2content" class="skiplink">Skip to content</a><table id="header" cellpadding="0" cellspacing="0" width="100%" border="0"><tr><td id="top-panel" colspan="2"><table cellpadding="0" cellspacing="0" width="100%" border="0"><tr><td style="font-weight:bold; font-size: 2em;"><a href="/jenkins/"><img alt="title" src="/jenkins/static/58e2c472/images/title.png" /></a></td><td style="vertical-align: middle; text-align: right; padding-right: 1em;"><form style="position:relative;" name="search" action="/jenkins/job/addons_nuxeo-dam-master/1009/search/" class="no-json" method="get"><div id="search-box-minWidth"></div><div id="search-box-sizer"></div><div id="searchform"><input id="search-box" name="q" value="search" class="has-default-text defaulted" /> <a href="http://wiki.jenkins-ci.org/display/JENKINS/Search+Box"><img height="16" alt="help for search" width="16" src="/jenkins/static/58e2c472/images/16x16/help.png" /></a><div id="search-box-completion"></div><script>createSearchBox("/jenkins/job/addons_nuxeo-dam-master/1009/search/");</script></div></form></td><td id="login-field"><span> <a style="color:inherit" href="/jenkins/login?from=%2Fjenkins%2Fjob%2Faddons_nuxeo-dam-master%2F1009%2F"><b>log in</b></a></span></td></tr></table></td></tr><tr id="top-nav"><td id="left-top-nav"><a href="/jenkins/">Jenkins</a> » <a href="/jenkins/job/addons_nuxeo-dam-master/">addons_nuxeo-dam-master</a> » <a href="/jenkins/job/addons_nuxeo-dam-master/1009/">#1009</a></td><td id="right-top-nav"><span class="smallfont"><a href="?auto_refresh=true">ENABLE AUTO REFRESH</a></span></td></tr></table><table id="main-table" height="70%" style="background-image: url(/jenkins/static/58e2c472/images/jenkins.png);                background-repeat: no-repeat; background-position: bottom left;" width="100%" border="0"><tr><td id="side-panel" width="20%"><div style="margin-left: 20px; margin-right: 20px; border-top: 1px solid #bbb"></div><div id="navigation" style="min-height: 323px; height: auto !important; height: 323px;"><div id="tasks"><div class="task"><a href="/jenkins/job/addons_nuxeo-dam-master/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/up.png" /></a> <a href="/jenkins/job/addons_nuxeo-dam-master/">Back to Project</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-dam-master/1009/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/search.png" /></a> <a href="/jenkins/job/addons_nuxeo-dam-master/1009/"><b>Status</b></a><div class="subtasks"></div></div><div class="task"><a href="/jenkins/job/addons_nuxeo-dam-master/1009/changes"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/notepad.png" /></a> <a href="/jenkins/job/addons_nuxeo-dam-master/1009/changes">Changes</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-dam-master/1009/console"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/terminal.png" /></a> <a href="/jenkins/job/addons_nuxeo-dam-master/1009/console">Console Output</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-dam-master/1009/configure"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/notepad.png" /></a> <a href="/jenkins/job/addons_nuxeo-dam-master/1009/configure">View Build Information</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-dam-master/1009/git"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/plugin/git/icons/git-32x32.png" /></a> <a href="/jenkins/job/addons_nuxeo-dam-master/1009/git">Git Build Data</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-dam-master/1009/tasksResult"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/plugin/tasks/icons/tasks-24x24.png" /></a> <a href="/jenkins/job/addons_nuxeo-dam-master/1009/tasksResult">Open Tasks</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-dam-master/1009/redeploy"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/redo.gif" /></a> <a href="/jenkins/job/addons_nuxeo-dam-master/1009/redeploy">Redeploy Artifacts</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-dam-master/1009/testReport"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/clipboard.png" /></a> <a href="/jenkins/job/addons_nuxeo-dam-master/1009/testReport">Test Result</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-dam-master/1009/fingerprints"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/fingerprint.png" /></a> <a href="/jenkins/job/addons_nuxeo-dam-master/1009/fingerprints">See Fingerprints</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-dam-master/1009/cigame"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/plugin/ci-game/icons/game-22x22.png" /></a> <a href="/jenkins/job/addons_nuxeo-dam-master/1009/cigame">Score card</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-dam-master/1008/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/previous.png" /></a> <a href="/jenkins/job/addons_nuxeo-dam-master/1008/">Previous Build</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-dam-master/1010/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/next.png" /></a> <a href="/jenkins/job/addons_nuxeo-dam-master/1010/">Next Build</a></div></div></div></td><td id="main-panel" width="80%" height="100%"><a name="skip2content"></a><div style="float:right; background-color:white; z-index: 1; position:relative; margin-left: 1em"><div style="margin-top:1em">Started 3 days 17 hr ago</div><div>
+
+            Took <a href="/jenkins/job/addons_nuxeo-dam-master/buildTimeTrend">1 min 17 sec</a>
+
+            on <a href="/jenkins/computer/dvalinn">dvalinn</a></div></div><h1><img height="48" alt="Success" width="48" src="buildStatus" tooltip="Success" />
+
+        Build #1009
+
+        (Jan 19, 2012 11:03:49 PM)
+
+      </h1><div><div id="description"><div></div></div></div><table style="margin-top: 1em; margin-left:1em;"><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/static/58e2c472/images/48x48/notepad.png" /></td><td style="vertical-align:middle">
+
+      No changes.
+
+    
+
+                Changes in dependency
+
+                <ol><li><a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp-core/">Nuxeo WebApp - Core</a> <a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp-core/50/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#50</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp-core/51/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#51</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp-core/changes?from=50&amp;to=51">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-api/">Nuxeo Platform Video API</a> <a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-api/42/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#42</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-api/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-api/changes?from=42&amp;to=43">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-core/">Nuxeo Platform Video Core</a> <a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-core/42/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#42</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-core/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-core/changes?from=42&amp;to=43">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-syndication/">*DEPRECATED* Nuxeo Syndication Service</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-syndication/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-syndication/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-syndication/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-importer-master/org.nuxeo.ecm.platform$nuxeo-platform-importer-jaxrs/">Nuxeo Importer JAXRS Binding</a> <a href="/jenkins/job/addons_nuxeo-platform-importer-master/org.nuxeo.ecm.platform$nuxeo-platform-importer-jaxrs/42/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#42</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-importer-master/org.nuxeo.ecm.platform$nuxeo-platform-importer-jaxrs/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-importer-master/org.nuxeo.ecm.platform$nuxeo-platform-importer-jaxrs/changes?from=42&amp;to=43">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-audio-master/org.nuxeo.ecm.platform$nuxeo-platform-audio-core/">Nuxeo Platform Audio Core</a> <a href="/jenkins/job/addons_nuxeo-platform-audio-master/org.nuxeo.ecm.platform$nuxeo-platform-audio-core/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-audio-master/org.nuxeo.ecm.platform$nuxeo-platform-audio-core/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-audio-master/org.nuxeo.ecm.platform$nuxeo-platform-audio-core/changes?from=43&amp;to=44">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-convert/">Nuxeo Platform Video Converters</a> <a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-convert/42/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#42</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-convert/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-convert/changes?from=42&amp;to=43">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-importer-master/org.nuxeo.ecm.platform$nuxeo-platform-importer-core/">Nuxeo Importer Core</a> <a href="/jenkins/job/addons_nuxeo-platform-importer-master/org.nuxeo.ecm.platform$nuxeo-platform-importer-core/42/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#42</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-importer-master/org.nuxeo.ecm.platform$nuxeo-platform-importer-core/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-importer-master/org.nuxeo.ecm.platform$nuxeo-platform-importer-core/changes?from=42&amp;to=43">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-base/">Nuxeo WebEngine Base</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-base/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-base/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-base/changes?from=71&amp;to=72">detail</a>)
+
+                    </li></ol></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/static/58e2c472/images/48x48/orange-square.png" /></td><td style="vertical-align:middle"><p><span>Started by upstream project <a href="/jenkins/job/nuxeo-dm-master/">nuxeo-dm-master</a> build number <a href="/jenkins/job/nuxeo-dm-master/51/">51</a></span></p></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/plugin/git/icons/git-48x48.png" /></td><td style="vertical-align:middle"><b>Revision</b>: 9c8efb2849000fc07eef592ca1ca8e76e7e49354
+
+        <ul><li>origin/master</li></ul></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/plugin/dry/icons/dry-48x48.png" /></td><td style="vertical-align:middle">
+
+		Duplicate Code: 0 warnings from one analysis.
+
+		<ul>
+
+		<li>No warnings since build 842.</li><li>New zero warnings highscore: no warnings for 128 days!</li>
+
+	    </ul></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/plugin/tasks/icons/tasks-48x48.png" /></td><td style="vertical-align:middle">
+
+		Task Scanner: <a href="tasksResult">10 open tasks</a> in 117 workspace files.
+
+		<ul>
+
+		<li>Plug-in Result:<img src="https://qa.nuxeo.org/jenkins//images/16x16/blue.png" alt="Success" title="Success"/>&nbsp;(Reference build: <a href="https://qa.nuxeo.org/jenkins//job/addons_nuxeo-dam-master/1008/">#1008</a>)</li><li>New highscore: only successful builds for 128 days!</li>
+
+	    </ul></td></tr><script type="text/javascript">
+
+    function showFailures() {
+
+
+
+    var elms = document.getElementsByClassName("hidden");
+
+    for(var i = 0; i < elms.length; i++) {
+
+    elms[i].style.display = "";
+
+    }
+
+    elm = document.getElementById("showLink");
+
+    elm.style.display = "none";
+
+    }
+
+  </script><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/static/58e2c472/images/48x48/clipboard.png" /></td><td style="vertical-align:middle"><a href="testReport/">Test Result</a> (no failures)<ul style="list-style-type: none; margin: 0;"></ul></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/static/58e2c472/images/48x48/package.gif" /></td><td style="vertical-align:middle">Maven Deployments:
+
+    <ul>
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/dam/nuxeo-dam-parent/5.6-SNAPSHOT/nuxeo-dam-parent-5.6-20120119.220409-45.pom">nuxeo-dam-parent-5.6-20120119.220409-45.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/dam/nuxeo-dam-api/5.6-SNAPSHOT/nuxeo-dam-api-5.6-20120119.220409-45.jar">nuxeo-dam-api-5.6-20120119.220409-45.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/dam/nuxeo-dam-core/5.6-SNAPSHOT/nuxeo-dam-core-5.6-20120119.220409-45.jar">nuxeo-dam-core-5.6-20120119.220409-45.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/dam/nuxeo-dam-importer-parent/5.6-SNAPSHOT/nuxeo-dam-importer-parent-5.6-20120119.220409-45.pom">nuxeo-dam-importer-parent-5.6-20120119.220409-45.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/dam/nuxeo-dam-importer-core/5.6-SNAPSHOT/nuxeo-dam-importer-core-5.6-20120119.220409-45.jar">nuxeo-dam-importer-core-5.6-20120119.220409-45.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/dam/nuxeo-dam-importer-jaxrs/5.6-SNAPSHOT/nuxeo-dam-importer-jaxrs-5.6-20120119.220409-45.jar">nuxeo-dam-importer-jaxrs-5.6-20120119.220409-45.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/dam/nuxeo-dam-lang/5.6-SNAPSHOT/nuxeo-dam-lang-5.6-20120119.220409-45.jar">nuxeo-dam-lang-5.6-20120119.220409-45.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/dam/nuxeo-dam-web/5.6-SNAPSHOT/nuxeo-dam-web-5.6-20120119.220409-44.jar">nuxeo-dam-web-5.6-20120119.220409-44.jar</a></li>
+
+</ul></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/plugin/ci-game/icons/game-48x48.png" /></td><td style="vertical-align:middle">The build was worth <a href="cigame/">1 points</a></td></tr></table><h2>Module Builds</h2><table><tr><td class="no-wrap"><a href="org.nuxeo.dam$nuxeo-dam-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.dam$nuxeo-dam-api/">Nuxeo DAM API</a></td><td data="3508">3.5 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.dam$nuxeo-dam-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.dam$nuxeo-dam-core/">Nuxeo DAM Core</a></td><td data="17929">17 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.dam$nuxeo-dam-importer-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.dam$nuxeo-dam-importer-core/">Nuxeo DAM Importer Core</a></td><td data="9452">9.4 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.dam$nuxeo-dam-importer-jaxrs/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.dam$nuxeo-dam-importer-jaxrs/">Nuxeo DAM Importer JAXRS</a></td><td data="3143">3.1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.dam$nuxeo-dam-importer-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.dam$nuxeo-dam-importer-parent/">Nuxeo DAM Importer Parent</a></td><td data="609">0.6 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.dam$nuxeo-dam-lang/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.dam$nuxeo-dam-lang/">Nuxeo DAM Language pack</a></td><td data="876">0.87 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.dam$nuxeo-dam-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.dam$nuxeo-dam-parent/">Nuxeo DAM Parent</a></td><td data="7867">7.8 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.dam$nuxeo-dam-web/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.dam$nuxeo-dam-web/">Nuxeo DAM Web</a></td><td data="15872">15 sec</td></tr><tr><td class="no-wrap"><img height="16" alt="" width="16" src="/jenkins/static/58e2c472/images/16x16/grey.gif" /> Nuxeo DAM WebApp (didn't run)
+
+            </td><td></td></tr><tr><td class="no-wrap"><img height="16" alt="" width="16" src="/jenkins/static/58e2c472/images/16x16/grey.gif" /> Nuxeo DAM WebApp Contributions (didn't run)
+
+            </td><td></td></tr><tr><td class="no-wrap"><img height="16" alt="" width="16" src="/jenkins/static/58e2c472/images/16x16/grey.gif" /> Nuxeo DAM WebApp Core (didn't run)
+
+            </td><td></td></tr><tr><td class="no-wrap"><img height="16" alt="" width="16" src="/jenkins/static/58e2c472/images/16x16/grey.gif" /> Nuxeo DAM WebApp Override (didn't run)
+
+            </td><td></td></tr></table><h2>Upstream Builds</h2><ul style="list-style-type: none;"><li><a href="/jenkins/job/nuxeo-dm-master/">nuxeo-dm-master</a><a href="/jenkins/job/nuxeo-dm-master/51/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#51</a></li><li><a href="/jenkins/job/addons_nuxeo-platform-audio-master/">addons_nuxeo-platform-audio-master</a><a href="/jenkins/job/addons_nuxeo-platform-audio-master/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a></li><li><a href="/jenkins/job/addons_nuxeo-platform-importer-master/">addons_nuxeo-platform-importer-master</a><a href="/jenkins/job/addons_nuxeo-platform-importer-master/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a></li><li><a href="/jenkins/job/nuxeo-features-master/">nuxeo-features-master</a><a href="/jenkins/job/nuxeo-features-master/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a></li><li><a href="/jenkins/job/addons_nuxeo-platform-video-master/">addons_nuxeo-platform-video-master</a><a href="/jenkins/job/addons_nuxeo-platform-video-master/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a></li></ul><h2>Downstream Builds</h2><ul style="list-style-type: none;"><li><a href="/jenkins/job/nuxeo-distribution-master/">nuxeo-distribution-master</a><a href="/jenkins/job/nuxeo-distribution-master/76/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#76</a> </li></ul></td></tr></table><table width="100%"><tr><td id="footer"><span style="padding-right:2em; color:gray">
+
+          Page generated:
+
+          Jan 23, 2012 4:39:33 PM</span><a href="http://jenkins-ci.org/">Jenkins ver. 1.444</a></td></tr></table><div id="l10n-dialog" class="dialog"></div><div id="l10n-footer" style="display:none; float:left"><a href="#" onclick="return showTranslationDialog();"><img src="/jenkins/plugin/translation/flags.png" />
+
+      Help us localize this page
+
+    </a></div><script>var footer = document.getElementById('l10n-footer');
+
+    var f = document.getElementById('footer');
+
+    f.insertBefore(footer,f.firstChild);
+
+    footer.style.display="block";
+
+
+
+    var translation={}; 
+
+    translation.bundles = "3uhmRnXtXWjSfOtMDOog84ofv19U8iCqNiy6FhcdwOf7AvpyP8AyUgcfV4E5K6bG72xvd7DAkMzgTr1rwbcGLbcl8Wt3ixW0uVi0mxHQN5lSl88Xh9TuAk+A1quQdunV3q55DWQI3EbxsWqUpt9UwXkcl2/wky0s44JgomhOtpyybqfwmmOBETldUlXl+h5OgFthJuys3BajSaeIcEuowHa/6MA5CMxji6/MFWv8iiHx1hi9kj09idFPpjjkuld0gHmmBZSHuzuneA8TWCwbwqgIHR0xu7T0M/RjBFdSAwpyCW6uPu0f+dKOsCOldXdYv2C9zzwWA5rX4BZBCOnGn3eMoBjV5iSs2iqCREItrQ6u8YirH6h107DZ+ECp3cFjQcSe2Zps9JFHsiSp8zHDQTu+0XdFOdjFLePqFU7nVkdXiMfvMVpWy+wFl7k/MakhjiD5lECLgaU5z00qefoHwcWKd49SB+celUiJEYtMRlcDGz/Vw+t3WWgJDLcIsq22z+gz5q6k23SvOS7oyfppjOG2xD4KOABvUsPcoyzzmqO2Tf6h0s/+o5SABon6O3sxH//mLuviLbAIDnMNZBh4BdzJ5YCw9osmk410z88E6Xk0s082GFH8hjrPvoZ05OMQOSfauq1wnv5j5kdj9zplw6g8cK9Ta2H6plc9JSeYMiN7x96xpbg5783mBDHuQbuGlGcnGJ+h+doXi2Rl5Jrbfa1+n4Pj1p37/lRXo/RKoR7kxbwkCN+f1kUwiTOuEXFoVs2k7fWBtPpyDO+iTgQXxRHksyRD/H++57Ag4vcu45Q=";
+
+    translation.detectedLocale = "";
+
+
+
+    function showTranslationDialog() {
+
+      if(!translation.launchDialog)
+
+        loadScript("/jenkins/plugin/translation/dialog.js");
+
+      else
+
+        translation.launchDialog();
+
+      return false; 
+
+    }</script></body></html>

@@ -94,3 +94,14 @@ def duration_to_second(duration):
 
 def time_to_datetime(str_time):
     return datetime.strptime(str_time, '%b %d, %Y %I:%M:%S %p')
+
+
+def extract_token(text, tag_start, tag_end):
+    """Extract a token from text, using the first occurence of
+    tag_start and ending with tag_end. Return None if tags are not
+    found."""
+    start = text.find(tag_start)
+    end = text.find(tag_end, start + len(tag_start))
+    if start < 0 or end < 0:
+        return None
+    return text[start + len(tag_start):end]

@@ -1,0 +1,2049 @@
+<!DOCTYPE html><html><head>
+
+    
+
+
+
+    <title>nuxeo-distribution-master #76 [Jenkins]</title><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/css/style.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/css/color.css" /><link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/jenkins/static/58e2c472/favicon.ico" /><script>var isRunAsTest=false; var rootURL="/jenkins";</script><script src="/jenkins/static/58e2c472/scripts/prototype.js" type="text/javascript"></script><script src="/jenkins/static/58e2c472/scripts/behavior.js" type="text/javascript"></script><script src='/jenkins/adjuncts/58e2c472/org/kohsuke/stapler/bind.js' type='text/javascript'></script><script src="/jenkins/static/58e2c472/scripts/yui/yahoo/yahoo-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/dom/dom-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/event/event-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/animation/animation-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/dragdrop/dragdrop-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/container/container-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/connection/connection-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/datasource/datasource-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/autocomplete/autocomplete-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/menu/menu-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/element/element-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/button/button-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/storage/storage-min.js"></script><script src="/jenkins/static/58e2c472/scripts/hudson-behavior.js" type="text/javascript"></script><script src="/jenkins/static/58e2c472/scripts/sortable.js" type="text/javascript"></script><script>crumb.init("", "");</script><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/container/assets/container.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/assets/skins/sam/skin.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/container/assets/skins/sam/container.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/button/assets/skins/sam/button.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/menu/assets/skins/sam/menu.css" /><link title="Jenkins" rel="search" type="application/opensearchdescription+xml" href="/jenkins/opensearch.xml" /><meta name="ROBOTS" content="INDEX,NOFOLLOW" /><script src="/jenkins/static/58e2c472/scripts/yui/cookie/cookie-min.js"></script><script type="text/javascript">
+
+            var _gaq = _gaq || [];
+
+            _gaq.push(['_setAccount', 'UA-20627949-2']);
+
+            _gaq.push(['_setDomainName', 'qa.nuxeo.org']);
+
+            _gaq.push(['_trackPageview']);
+
+        
+
+            (function() {
+
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+            })();
+
+        </script></head><body class="yui-skin-sam"><a href="#skip2content" class="skiplink">Skip to content</a><table id="header" cellpadding="0" cellspacing="0" width="100%" border="0"><tr><td id="top-panel" colspan="2"><table cellpadding="0" cellspacing="0" width="100%" border="0"><tr><td style="font-weight:bold; font-size: 2em;"><a href="/jenkins/"><img alt="title" src="/jenkins/static/58e2c472/images/title.png" /></a></td><td style="vertical-align: middle; text-align: right; padding-right: 1em;"><form style="position:relative;" name="search" action="/jenkins/job/nuxeo-distribution-master/76/search/" class="no-json" method="get"><div id="search-box-minWidth"></div><div id="search-box-sizer"></div><div id="searchform"><input id="search-box" name="q" value="search" class="has-default-text defaulted" /> <a href="http://wiki.jenkins-ci.org/display/JENKINS/Search+Box"><img height="16" alt="help for search" width="16" src="/jenkins/static/58e2c472/images/16x16/help.png" /></a><div id="search-box-completion"></div><script>createSearchBox("/jenkins/job/nuxeo-distribution-master/76/search/");</script></div></form></td><td id="login-field"><span> <a style="color:inherit" href="/jenkins/login?from=%2Fjenkins%2Fjob%2Fnuxeo-distribution-master%2F76%2F"><b>log in</b></a></span></td></tr></table></td></tr><tr id="top-nav"><td id="left-top-nav"><a href="/jenkins/">Jenkins</a> » <a href="/jenkins/job/nuxeo-distribution-master/">nuxeo-distribution-master</a> » <a href="/jenkins/job/nuxeo-distribution-master/76/">#76</a></td><td id="right-top-nav"><span class="smallfont"><a href="?auto_refresh=true">ENABLE AUTO REFRESH</a></span></td></tr></table><table id="main-table" height="70%" style="background-image: url(/jenkins/static/58e2c472/images/jenkins.png);                background-repeat: no-repeat; background-position: bottom left;" width="100%" border="0"><tr><td id="side-panel" width="20%"><div style="margin-left: 20px; margin-right: 20px; border-top: 1px solid #bbb"></div><div id="navigation" style="min-height: 323px; height: auto !important; height: 323px;"><div id="tasks"><div class="task"><a href="/jenkins/job/nuxeo-distribution-master/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/up.png" /></a> <a href="/jenkins/job/nuxeo-distribution-master/">Back to Project</a></div><div class="task"><a href="/jenkins/job/nuxeo-distribution-master/76/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/search.png" /></a> <a href="/jenkins/job/nuxeo-distribution-master/76/"><b>Status</b></a><div class="subtasks"></div></div><div class="task"><a href="/jenkins/job/nuxeo-distribution-master/76/changes"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/notepad.png" /></a> <a href="/jenkins/job/nuxeo-distribution-master/76/changes">Changes</a></div><div class="task"><a href="/jenkins/job/nuxeo-distribution-master/76/console"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/terminal.png" /></a> <a href="/jenkins/job/nuxeo-distribution-master/76/console">Console Output</a> <a href="/jenkins/job/nuxeo-distribution-master/76/consoleText">[raw]</a></div><div class="task"><a href="/jenkins/job/nuxeo-distribution-master/76/configure"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/notepad.png" /></a> <a href="/jenkins/job/nuxeo-distribution-master/76/configure">View Build Information</a></div><div class="task"><a href="/jenkins/job/nuxeo-distribution-master/76/git"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/plugin/git/icons/git-32x32.png" /></a> <a href="/jenkins/job/nuxeo-distribution-master/76/git">Git Build Data</a></div><div class="task"><a href="/jenkins/job/nuxeo-distribution-master/76/tasksResult"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/plugin/tasks/icons/tasks-24x24.png" /></a> <a href="/jenkins/job/nuxeo-distribution-master/76/tasksResult">Open Tasks</a></div><div class="task"><a href="/jenkins/job/nuxeo-distribution-master/76/redeploy"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/redo.gif" /></a> <a href="/jenkins/job/nuxeo-distribution-master/76/redeploy">Redeploy Artifacts</a></div><div class="task"><a href="/jenkins/job/nuxeo-distribution-master/76/testReport"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/clipboard.png" /></a> <a href="/jenkins/job/nuxeo-distribution-master/76/testReport">Test Result</a></div><div class="task"><a href="/jenkins/job/nuxeo-distribution-master/76/fingerprints"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/fingerprint.png" /></a> <a href="/jenkins/job/nuxeo-distribution-master/76/fingerprints">See Fingerprints</a></div><div class="task"><a href="/jenkins/job/nuxeo-distribution-master/76/cigame"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/plugin/ci-game/icons/game-22x22.png" /></a> <a href="/jenkins/job/nuxeo-distribution-master/76/cigame">Score card</a></div><div class="task"><a href="/jenkins/job/nuxeo-distribution-master/75/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/previous.png" /></a> <a href="/jenkins/job/nuxeo-distribution-master/75/">Previous Build</a></div><div class="task"><a href="/jenkins/job/nuxeo-distribution-master/77/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/next.png" /></a> <a href="/jenkins/job/nuxeo-distribution-master/77/">Next Build</a></div></div></div></td><td id="main-panel" width="80%" height="100%"><a name="skip2content"></a><div style="float:right; background-color:white; z-index: 1; position:relative; margin-left: 1em"><div style="margin-top:1em">Started 3 days 17 hr ago</div><div>
+
+            Took <a href="/jenkins/job/nuxeo-distribution-master/buildTimeTrend">10 min</a>
+
+            on <a href="/jenkins/computer/muradin">muradin</a></div></div><h1><img height="48" alt="Success" width="48" src="buildStatus" tooltip="Success" />
+
+        Build #76
+
+        (Jan 19, 2012 11:09:34 PM)
+
+      </h1><div><div id="description"><div></div></div></div><table style="margin-top: 1em; margin-left:1em;"><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/static/58e2c472/images/48x48/notepad.png" /></td><td style="vertical-align:middle">
+
+      No changes.
+
+    
+
+                Changes in dependency
+
+                <ol><li><a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-lang/">Nuxeo DAM Language pack</a> <a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-lang/1008/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#1008</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-lang/1009/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#1009</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-lang/changes?from=1008&amp;to=1009">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-core/">Nuxeo Platform Video Core</a> <a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-core/42/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#42</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-core/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-core/changes?from=42&amp;to=43">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-profile/">Nuxeo User Center Profile</a> <a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-profile/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-profile/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-profile/changes?from=44&amp;to=45">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-task/">Nuxeo Platform Publisher task</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-task/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-task/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-task/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-task-migration/">Nuxeo JPBM task migration</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-task-migration/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-task-migration/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-task-migration/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-generic-wss-front/">Nuxeo Generic WSS Front Filter</a> <a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-generic-wss-front/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-generic-wss-front/47/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#47</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-generic-wss-front/changes?from=46&amp;to=47">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-sites-core-contrib/">Nuxeo WebEngine Sites core contributions</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-sites-core-contrib/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-sites-core-contrib/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-sites-core-contrib/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-convert/">Nuxeo Platform Video Converters</a> <a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-convert/42/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#42</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-convert/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-convert/changes?from=42&amp;to=43">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/org.nuxeo.ecm.platform$nuxeo-platform-faceted-search-api/">Nuxeo Platform Faceted Search API</a> <a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/org.nuxeo.ecm.platform$nuxeo-platform-faceted-search-api/42/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#42</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/org.nuxeo.ecm.platform$nuxeo-platform-faceted-search-api/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/org.nuxeo.ecm.platform$nuxeo-platform-faceted-search-api/changes?from=42&amp;to=43">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-notification/">Nuxeo User Center Notification</a> <a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-notification/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-notification/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-notification/changes?from=44&amp;to=45">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-test/">Nuxeo Mail - Test</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-test/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-test/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-test/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-chemistry-master/org.nuxeo.ecm.core$nuxeo-opencmis-impl/">Nuxeo Chemistry OpenCMIS Implementation</a> <a href="/jenkins/job/addons_nuxeo-chemistry-master/org.nuxeo.ecm.core$nuxeo-opencmis-impl/47/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#47</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-chemistry-master/org.nuxeo.ecm.core$nuxeo-opencmis-impl/48/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#48</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-chemistry-master/org.nuxeo.ecm.core$nuxeo-opencmis-impl/changes?from=47&amp;to=48">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp/">Nuxeo WebApp</a> <a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp/50/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#50</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp/51/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#51</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp/changes?from=50&amp;to=51">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-types/">Nuxeo Mail - Types contrib</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-types/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-types/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-types/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-relationship/">Nuxeo Relationship</a> <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-relationship/910/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#910</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-relationship/911/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#911</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-relationship/changes?from=910&amp;to=911">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-gwt-richtexteditor/">GWT2 RichTextEditor</a> <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-gwt-richtexteditor/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-gwt-richtexteditor/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-gwt-richtexteditor/changes?from=45&amp;to=46">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-core-contrib/">Nuxeo Platform Publisher Core Contrib</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-core-contrib/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-core-contrib/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-core-contrib/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-theme-bank/">Nuxeo Theme Bank</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-theme-bank/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-theme-bank/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-theme-bank/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-classification-master/org.nuxeo.ecm.platform$nuxeo-classification-web/">Nuxeo Classification - WEB</a> <a href="/jenkins/job/addons_nuxeo-platform-classification-master/org.nuxeo.ecm.platform$nuxeo-classification-web/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-classification-master/org.nuxeo.ecm.platform$nuxeo-classification-web/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-classification-master/org.nuxeo.ecm.platform$nuxeo-classification-web/changes?from=44&amp;to=45">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-automation/">Nuxeo JPBM Automation Module</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-automation/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-automation/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-automation/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-http/">Nuxeo Platform Annotation Service HTTP Connector</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-http/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-http/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-http/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-server/">Nuxeo Automation Server</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-server/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-server/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-server/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-base/">Nuxeo WebEngine Base</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-base/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-base/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-base/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-social-workspace-core/">Nuxeo Social Workspace Core</a> <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-social-workspace-core/910/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#910</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-social-workspace-core/911/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#911</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-social-workspace-core/changes?from=910&amp;to=911">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/org.nuxeo.ecm.platform$nuxeo-platform-document-routing-api/">Nuxeo Platform Document Routing Addon Api</a> <a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/org.nuxeo.ecm.platform$nuxeo-platform-document-routing-api/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/org.nuxeo.ecm.platform$nuxeo-platform-document-routing-api/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/org.nuxeo.ecm.platform$nuxeo-platform-document-routing-api/changes?from=44&amp;to=45">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/org.nuxeo.ecm.platform$nuxeo-platform-document-routing-web/">Nuxeo Platform Document Routing Addon Web</a> <a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/org.nuxeo.ecm.platform$nuxeo-platform-document-routing-web/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/org.nuxeo.ecm.platform$nuxeo-platform-document-routing-web/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/org.nuxeo.ecm.platform$nuxeo-platform-document-routing-web/changes?from=44&amp;to=45">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-api/">Case Management API</a> <a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-api/49/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#49</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-api/50/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#50</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-api/changes?from=49&amp;to=50">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-sites-api/">Nuxeo WebEngine Sites Module API</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-sites-api/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-sites-api/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-sites-api/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum/">Nuxeo Forum Service</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-admin/">Nuxeo WebEngine Administration</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-admin/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-admin/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-admin/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-blogs-api/">Nuxeo Webengine Blogs API</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-blogs-api/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-blogs-api/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-blogs-api/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-web/">Nuxeo JPBM Web</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-web/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-web/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-web/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-jsf/">Nuxeo Automation JSF</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-jsf/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-jsf/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-jsf/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-dashboard-opensocial/">Nuxeo User OpenSocial Dashboard</a> <a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-dashboard-opensocial/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-dashboard-opensocial/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-dashboard-opensocial/changes?from=44&amp;to=45">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-localconfiguration-simple/">Nuxeo Platform Local Configuration Simple</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-localconfiguration-simple/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-localconfiguration-simple/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-localconfiguration-simple/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-features-test/">Nuxeo Features Test Framework</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-features-test/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-features-test/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-features-test/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-chemistry-master/org.nuxeo.ecm.core$nuxeo-opencmis-tests/">Nuxeo Chemistry OpenCMIS Tests</a> <a href="/jenkins/job/addons_nuxeo-chemistry-master/org.nuxeo.ecm.core$nuxeo-opencmis-tests/47/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#47</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-chemistry-master/org.nuxeo.ecm.core$nuxeo-opencmis-tests/48/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#48</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-chemistry-master/org.nuxeo.ecm.core$nuxeo-opencmis-tests/changes?from=47&amp;to=48">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-api/">Nuxeo Platform Video API</a> <a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-api/42/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#42</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-api/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-api/changes?from=42&amp;to=43">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-server/">Nuxeo OpenSocial - Shindig Integration</a> <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-server/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-server/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-server/changes?from=45&amp;to=46">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-core-contrib/">Nuxeo Platform Annotation Service core contributions</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-core-contrib/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-core-contrib/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-core-contrib/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-container-webapp/">Nuxeo GWT2 Container Webapp</a> <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-container-webapp/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-container-webapp/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-container-webapp/changes?from=45&amp;to=46">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell/">Nuxeo Shell</a> <a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell/52/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#52</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell/53/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#53</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell/changes?from=52&amp;to=53">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-suggestbox-master/org.nuxeo.ecm.platform$nuxeo-platform-suggestbox-jsf/">Nuxeo Platform Suggestbox JSF</a> <a href="/jenkins/job/addons_nuxeo-platform-suggestbox-master/org.nuxeo.ecm.platform$nuxeo-platform-suggestbox-jsf/172/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#172</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-suggestbox-master/org.nuxeo.ecm.platform$nuxeo-platform-suggestbox-jsf/173/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#173</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-suggestbox-master/org.nuxeo.ecm.platform$nuxeo-platform-suggestbox-jsf/changes?from=172&amp;to=173">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-web/">Nuxeo Platform Publisher Web</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-web/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-web/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-web/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-lang/">Nuxeo EP Language</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-lang/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-lang/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-lang/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-gadgets/">Nuxeo OpenSocial - Gadgets</a> <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-gadgets/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-gadgets/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-gadgets/changes?from=45&amp;to=46">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-admin-center/">Nuxeo Administration Center</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-admin-center/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-admin-center/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-admin-center/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-directory-web/">Nuxeo Directory Management Service - Web</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-directory-web/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-directory-web/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-directory-web/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-dashboard/">Nuxeo User Dashboard</a> <a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-dashboard/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-dashboard/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-dashboard/changes?from=44&amp;to=45">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-web/">Nuxeo Mail - Web</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-web/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-web/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-web/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-lang/">Case Management Lang</a> <a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-lang/49/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#49</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-lang/50/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#50</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-lang/changes?from=49&amp;to=50">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-social-workspace-web/">Nuxeo Social Workspace Web</a> <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-social-workspace-web/910/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#910</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-social-workspace-web/911/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#911</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-social-workspace-web/changes?from=910&amp;to=911">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-activity/">Nuxeo Activity</a> <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-activity/910/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#910</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-activity/911/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#911</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-activity/changes?from=910&amp;to=911">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-web/">Nuxeo Platform Annotation Service Client</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-web/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-web/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-web/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-dashboard-jsf/">Nuxeo User JSF Dashboard</a> <a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-dashboard-jsf/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-dashboard-jsf/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-dashboard-jsf/changes?from=44&amp;to=45">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-api/">Nuxeo DAM API</a> <a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-api/1008/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#1008</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-api/1009/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#1009</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-api/changes?from=1008&amp;to=1009">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-connect-client-wrapper/">Nuxeo Connect Client Wrapper</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-connect-client-wrapper/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-connect-client-wrapper/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-connect-client-wrapper/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-core/">Nuxeo JPBM Core Service</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-core/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-core/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-core/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-core/">Nuxeo Platform Annotation Service Implementation</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-core/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-core/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-core/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-classification-master/org.nuxeo.ecm.platform$nuxeo-classification-api/">Nuxeo Classification - API</a> <a href="/jenkins/job/addons_nuxeo-platform-classification-master/org.nuxeo.ecm.platform$nuxeo-classification-api/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-classification-master/org.nuxeo.ecm.platform$nuxeo-classification-api/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-classification-master/org.nuxeo.ecm.platform$nuxeo-classification-api/changes?from=44&amp;to=45">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-virtualnavigation-core-contrib/">Nuxeo platform virtual navigation core contribs</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-virtualnavigation-core-contrib/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-virtualnavigation-core-contrib/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-virtualnavigation-core-contrib/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-login-master/org.nuxeo.ecm.platform$nuxeo-platform-login-digest/">Nuxeo HTTP Digest Authentication plugin</a> <a href="/jenkins/job/addons_nuxeo-platform-login-master/org.nuxeo.ecm.platform$nuxeo-platform-login-digest/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-login-master/org.nuxeo.ecm.platform$nuxeo-platform-login-digest/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-login-master/org.nuxeo.ecm.platform$nuxeo-platform-login-digest/changes?from=44&amp;to=45">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-webdav/">Nuxeo WebDAV</a> <a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-webdav/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-webdav/47/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#47</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-webdav/changes?from=46&amp;to=47">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-platform-wi-backend/">Nuxeo Platform Windows Integration Backend</a> <a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-platform-wi-backend/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-platform-wi-backend/47/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#47</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-platform-wi-backend/changes?from=46&amp;to=47">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-client/">Nuxeo Automation Client</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-client/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-client/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-client/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-chemistry-master/org.nuxeo.ecm.core$nuxeo-opencmis-bindings/">Nuxeo Chemistry OpenCMIS Bindings</a> <a href="/jenkins/job/addons_nuxeo-chemistry-master/org.nuxeo.ecm.core$nuxeo-opencmis-bindings/47/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#47</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-chemistry-master/org.nuxeo.ecm.core$nuxeo-opencmis-bindings/48/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#48</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-chemistry-master/org.nuxeo.ecm.core$nuxeo-opencmis-bindings/changes?from=47&amp;to=48">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-virtualnavigation-web/">Nuxeo platform virtual navigation web client</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-virtualnavigation-web/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-virtualnavigation-web/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-virtualnavigation-web/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-audio-master/org.nuxeo.ecm.platform$nuxeo-platform-audio-core/">Nuxeo Platform Audio Core</a> <a href="/jenkins/job/addons_nuxeo-platform-audio-master/org.nuxeo.ecm.platform$nuxeo-platform-audio-core/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-audio-master/org.nuxeo.ecm.platform$nuxeo-platform-audio-core/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-audio-master/org.nuxeo.ecm.platform$nuxeo-platform-audio-core/changes?from=43&amp;to=44">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-api/">Nuxeo Platform Publisher API</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-api/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-api/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-api/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell-equinox/">Nuxeo Equinox Shell</a> <a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell-equinox/52/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#52</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell-equinox/53/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#53</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell-equinox/changes?from=52&amp;to=53">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-suggestbox-master/org.nuxeo.ecm.platform$nuxeo-platform-suggestbox-core/">Nuxeo Platform Suggestbox Core</a> <a href="/jenkins/job/addons_nuxeo-platform-suggestbox-master/org.nuxeo.ecm.platform$nuxeo-platform-suggestbox-core/172/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#172</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-suggestbox-master/org.nuxeo.ecm.platform$nuxeo-platform-suggestbox-core/173/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#173</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-suggestbox-master/org.nuxeo.ecm.platform$nuxeo-platform-suggestbox-core/changes?from=172&amp;to=173">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell-automation/">Nuxeo Automation Shell</a> <a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell-automation/52/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#52</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell-automation/53/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#53</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell-automation/changes?from=52&amp;to=53">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-center/">Nuxeo User Center</a> <a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-center/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-center/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-center/changes?from=44&amp;to=45">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-core/">Case Management Core</a> <a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-core/49/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#49</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-core/50/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#50</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-core/changes?from=49&amp;to=50">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-social-workspace-gadgets/">Nuxeo Social Workspace Gadgets</a> <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-social-workspace-gadgets/910/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#910</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-social-workspace-gadgets/911/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#911</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-social-workspace-gadgets/changes?from=910&amp;to=911">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp-types/">Nuxeo WebApp types contributions</a> <a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp-types/50/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#50</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp-types/51/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#51</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp-types/changes?from=50&amp;to=51">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum-api/">Nuxeo Forum Service API</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum-api/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum-api/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum-api/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-mini-message/">Nuxeo Mini Message</a> <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-mini-message/910/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#910</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-mini-message/911/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#911</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-mini-message/changes?from=910&amp;to=911">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-classification-master/org.nuxeo.ecm.platform$nuxeo-classification-core/">Nuxeo Classification - CORE</a> <a href="/jenkins/job/addons_nuxeo-platform-classification-master/org.nuxeo.ecm.platform$nuxeo-classification-core/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-classification-master/org.nuxeo.ecm.platform$nuxeo-classification-core/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-classification-master/org.nuxeo.ecm.platform$nuxeo-classification-core/changes?from=44&amp;to=45">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-test/">Nuxeo JPBM Service test</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-test/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-test/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-jbpm-test/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-user-relationship/">Nuxeo User's Relationship</a> <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-user-relationship/910/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#910</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-user-relationship/911/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#911</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-user-relationship/changes?from=910&amp;to=911">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum-core/">Nuxeo Forum Core contributions</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum-core/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum-core/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum-core/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-container/">GWT2 Container</a> <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-container/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-container/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-container/changes?from=45&amp;to=46">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-userworkspace-web/">Nuxeo User Workspace Service - Client</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-userworkspace-web/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-userworkspace-web/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-userworkspace-web/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-theme-editor/">Nuxeo Theme Editor</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-theme-editor/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-theme-editor/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-theme-editor/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-gadgets-core/">Nuxeo OpenSocial - Gadget Service</a> <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-gadgets-core/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-gadgets-core/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-gadgets-core/changes?from=45&amp;to=46">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/org.nuxeo.ecm.platform$nuxeo-platform-document-routing-core/">Nuxeo Platform Document Routing Addon Core</a> <a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/org.nuxeo.ecm.platform$nuxeo-platform-document-routing-core/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/org.nuxeo.ecm.platform$nuxeo-platform-document-routing-core/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/org.nuxeo.ecm.platform$nuxeo-platform-document-routing-core/changes?from=44&amp;to=45">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-imaging-tiling/">Nuxeo Picture Tiling service</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-imaging-tiling/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-imaging-tiling/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-imaging-tiling/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-sites/">Nuxeo WebEngine Sites Module</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-sites/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-sites/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-sites/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/org.nuxeo.ecm.platform$nuxeo-platform-faceted-search-jsf/">Nuxeo Platform Faceted Search JSF</a> <a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/org.nuxeo.ecm.platform$nuxeo-platform-faceted-search-jsf/42/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#42</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/org.nuxeo.ecm.platform$nuxeo-platform-faceted-search-jsf/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/org.nuxeo.ecm.platform$nuxeo-platform-faceted-search-jsf/changes?from=42&amp;to=43">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-webengine-gadgets/">Nuxeo OpenSocial - Webengine Gadget app</a> <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-webengine-gadgets/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-webengine-gadgets/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-webengine-gadgets/changes?from=45&amp;to=46">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-blogs/">Nuxeo Webengine Blogs</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-blogs/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-blogs/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-blogs/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-importer-master/org.nuxeo.ecm.platform$nuxeo-platform-importer-core/">Nuxeo Importer Core</a> <a href="/jenkins/job/addons_nuxeo-platform-importer-master/org.nuxeo.ecm.platform$nuxeo-platform-importer-core/42/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#42</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-importer-master/org.nuxeo.ecm.platform$nuxeo-platform-importer-core/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-importer-master/org.nuxeo.ecm.platform$nuxeo-platform-importer-core/changes?from=42&amp;to=43">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-features/">Nuxeo Automation Features</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-features/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-features/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-features/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-web/">Nuxeo DAM Web</a> <a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-web/1008/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#1008</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-web/1009/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#1009</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-web/changes?from=1008&amp;to=1009">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp-core/">Nuxeo WebApp - Core</a> <a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp-core/50/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#50</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp-core/51/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#51</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-webapp-core/changes?from=50&amp;to=51">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forms-layout-io-plugins/">Nuxeo Forms Layout IO</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forms-layout-io-plugins/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forms-layout-io-plugins/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forms-layout-io-plugins/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-imaging-tiling-preview/">Nuxeo Picture Tiling Preview</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-imaging-tiling-preview/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-imaging-tiling-preview/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-imaging-tiling-preview/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-web/">Case Management Web</a> <a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-web/49/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#49</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-web/50/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#50</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-cmf-master/org.nuxeo.cm$nuxeo-case-management-web/changes?from=49&amp;to=50">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-test/">Nuxeo Automation Tests</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-test/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-test/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.automation$nuxeo-automation-test/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-core/">Nuxeo DAM Core</a> <a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-core/1008/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#1008</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-core/1009/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#1009</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-core/changes?from=1008&amp;to=1009">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-oauth/">Nuxeo User OAuth Settings</a> <a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-oauth/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-oauth/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-user-center-master/org.nuxeo.ecm.platform$nuxeo-user-oauth/changes?from=44&amp;to=45">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-repository-plugin/">Nuxeo Platform Annotations Repository Plugin</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-repository-plugin/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-repository-plugin/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-repository-plugin/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forms-layout-export/">Nuxeo Forms Layout Export</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forms-layout-export/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forms-layout-export/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forms-layout-export/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-user-activity-stream/">Nuxeo User Activity Stream</a> <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-user-activity-stream/910/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#910</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-user-activity-stream/911/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#911</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-social-collaboration-master/org.nuxeo.ecm.social$nuxeo-user-activity-stream/changes?from=910&amp;to=911">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-syndication/">*DEPRECATED* Nuxeo Syndication Service</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-syndication/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-syndication/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-syndication/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-default-config/">Nuxeo Platform - default configuration</a> <a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-default-config/50/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#50</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-default-config/51/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#51</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-dm-master/org.nuxeo.ecm.platform$nuxeo-platform-default-config/changes?from=50&amp;to=51">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-jsf/">Nuxeo Platform Video JSF</a> <a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-jsf/42/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#42</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-jsf/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-video-master/org.nuxeo.ecm.platform$nuxeo-platform-video-jsf/changes?from=42&amp;to=43">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-connect-offline-update/">Nuxeo Connect Offline Update</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-connect-offline-update/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-connect-offline-update/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-connect-offline-update/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/org.nuxeo.ecm.platform$nuxeo-platform-faceted-search-dm/">Nuxeo Platform Faceted Search DM</a> <a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/org.nuxeo.ecm.platform$nuxeo-platform-faceted-search-dm/42/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#42</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/org.nuxeo.ecm.platform$nuxeo-platform-faceted-search-dm/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/org.nuxeo.ecm.platform$nuxeo-platform-faceted-search-dm/changes?from=42&amp;to=43">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell-core/">Nuxeo Shell Core</a> <a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell-core/52/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#52</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell-core/53/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#53</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-shell-master/org.nuxeo.shell$nuxeo-shell-core/changes?from=52&amp;to=53">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-importer-core/">Nuxeo DAM Importer Core</a> <a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-importer-core/1008/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#1008</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-importer-core/1009/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#1009</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-dam-master/org.nuxeo.dam$nuxeo-dam-importer-core/changes?from=1008&amp;to=1009">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-admin-center-monitoring/">Nuxeo Administration Center Monitoring</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-admin-center-monitoring/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-admin-center-monitoring/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-admin-center-monitoring/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-spaces/">Nuxeo OpenSocial Spaces</a> <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-spaces/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-spaces/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-spaces/changes?from=45&amp;to=46">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-features/">Nuxeo OpenSocial - Features</a> <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-features/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-features/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-opensocial-master/org.nuxeo.ecm.opensocial$nuxeo-opensocial-features/changes?from=45&amp;to=46">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-notification-web/">Nuxeo User Notification Service - Web</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-notification-web/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-notification-web/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-notification-web/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-connect-update/">Nuxeo Connect Update</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-connect-update/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-connect-update/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-connect-update/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-admin-center-oauth-opensocial/">Nuxeo Administration Center OAuth/Opensocial</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-admin-center-oauth-opensocial/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-admin-center-oauth-opensocial/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-admin-center-oauth-opensocial/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-blogs-core/">Nuxeo Webengine Blogs Core contributions</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-blogs-core/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-blogs-core/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.webengine$nuxeo-webengine-blogs-core/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-api/">Nuxeo Platform Annotation Service API</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-api/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-api/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-annotations-api/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-core/">Nuxeo Platform Publisher Core</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-core/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-core/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-publisher-core/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-core/">Nuxeo Mail - Core</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-core/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-core/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-mail-core/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum-workflow/">Nuxeo Forum Service Worklow Contributions</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum-workflow/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum-workflow/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-forum-workflow/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-localconfiguration-web/">Nuxeo Platform Local Configuration - Web</a> <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-localconfiguration-web/71/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#71</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-localconfiguration-web/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a>
+
+
+
+                      (<a href="/jenkins/job/nuxeo-features-master/org.nuxeo.ecm.platform$nuxeo-platform-localconfiguration-web/changes?from=71&amp;to=72">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-platform-audio-master/org.nuxeo.ecm.platform$nuxeo-platform-audio-jsf/">Nuxeo Platform Audio JSF</a> <a href="/jenkins/job/addons_nuxeo-platform-audio-master/org.nuxeo.ecm.platform$nuxeo-platform-audio-jsf/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-platform-audio-master/org.nuxeo.ecm.platform$nuxeo-platform-audio-jsf/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-platform-audio-master/org.nuxeo.ecm.platform$nuxeo-platform-audio-jsf/changes?from=43&amp;to=44">detail</a>)
+
+                    </li><li><a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-generic-wss-handler/">Nuxeo Generic WSS bindings</a> <a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-generic-wss-handler/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a>
+
+
+
+                      → 
+
+
+
+                      <a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-generic-wss-handler/47/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#47</a>
+
+
+
+                      (<a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/org.nuxeo.ecm.platform$nuxeo-generic-wss-handler/changes?from=46&amp;to=47">detail</a>)
+
+                    </li></ol></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/static/58e2c472/images/48x48/orange-square.png" /></td><td style="vertical-align:middle"><p><span>Started by upstream project <a href="/jenkins/job/addons_nuxeo-cmf-master/">addons_nuxeo-cmf-master</a> build number <a href="/jenkins/job/addons_nuxeo-cmf-master/50/">50</a></span></p></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/plugin/git/icons/git-48x48.png" /></td><td style="vertical-align:middle"><b>Revision</b>: 710fc6ec39b8a3729b4694a9c08a0247de4f6795
+
+        <ul><li>origin/master</li></ul></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/plugin/tasks/icons/tasks-48x48.png" /></td><td style="vertical-align:middle">
+
+		Task Scanner: <a href="tasksResult">78 open tasks</a> in 1,308 workspace files.
+
+		<ul>
+
+		<li>Plug-in Result:<img src="https://qa.nuxeo.org/jenkins//images/16x16/blue.png" alt="Success" title="Success"/>&nbsp;(Reference build: <a href="https://qa.nuxeo.org/jenkins//job/nuxeo-distribution-master/75/">#75</a>)</li><li>New highscore: only successful builds for 15 days!</li>
+
+	    </ul></td></tr><script type="text/javascript">
+
+    function showFailures() {
+
+
+
+    var elms = document.getElementsByClassName("hidden");
+
+    for(var i = 0; i < elms.length; i++) {
+
+    elms[i].style.display = "";
+
+    }
+
+    elm = document.getElementById("showLink");
+
+    elm.style.display = "none";
+
+    }
+
+  </script><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/static/58e2c472/images/48x48/clipboard.png" /></td><td style="vertical-align:middle"><a href="testReport/">Test Result</a> (no failures)<ul style="list-style-type: none; margin: 0;"></ul></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/static/58e2c472/images/48x48/package.gif" /></td><td style="vertical-align:middle">Maven Deployments:
+
+    <ul>
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-functional-tests/5.6-SNAPSHOT/nuxeo-functional-tests-5.6-20120119.220956-75.jar">nuxeo-functional-tests-5.6-20120119.220956-75.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution/5.6-SNAPSHOT/nuxeo-distribution-5.6-20120119.220956-75.pom">nuxeo-distribution-5.6-20120119.220956-75.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-startup-wizard/5.6-SNAPSHOT/nuxeo-startup-wizard-5.6-20120119.220956-75.war">nuxeo-startup-wizard-5.6-20120119.220956-75.war</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/nuxeo-launcher/5.6-SNAPSHOT/nuxeo-launcher-5.6-20120119.220956-75.jar">nuxeo-launcher-5.6-20120119.220956-75.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/nuxeo-launcher/5.6-SNAPSHOT/nuxeo-launcher-5.6-20120119.220956-75-jar-with-dependencies.jar">nuxeo-launcher-5.6-20120119.220956-75-jar-with-dependencies.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-resources/5.6-SNAPSHOT/nuxeo-distribution-resources-5.6-20120119.220956-75.pom">nuxeo-distribution-resources-5.6-20120119.220956-75.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-resources/5.6-SNAPSHOT/nuxeo-distribution-resources-5.6-20120119.220956-75-doc.zip">nuxeo-distribution-resources-5.6-20120119.220956-75-doc.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-resources/5.6-SNAPSHOT/nuxeo-distribution-resources-5.6-20120119.220956-75-doc-dm.zip">nuxeo-distribution-resources-5.6-20120119.220956-75-doc-dm.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-resources/5.6-SNAPSHOT/nuxeo-distribution-resources-5.6-20120119.220956-75-bin.zip">nuxeo-distribution-resources-5.6-20120119.220956-75-bin.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-resources/5.6-SNAPSHOT/nuxeo-distribution-resources-5.6-20120119.220956-75-root.zip">nuxeo-distribution-resources-5.6-20120119.220956-75-root.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-resources/5.6-SNAPSHOT/nuxeo-distribution-resources-5.6-20120119.220956-75-jetty-base.zip">nuxeo-distribution-resources-5.6-20120119.220956-75-jetty-base.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-resources/5.6-SNAPSHOT/nuxeo-distribution-resources-5.6-20120119.220956-75-templates-common.zip">nuxeo-distribution-resources-5.6-20120119.220956-75-templates-common.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-resources/5.6-SNAPSHOT/nuxeo-distribution-resources-5.6-20120119.220956-75-templates-common-dm.zip">nuxeo-distribution-resources-5.6-20120119.220956-75-templates-common-dm.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-resources/5.6-SNAPSHOT/nuxeo-distribution-resources-5.6-20120119.220956-75-templates-jboss.zip">nuxeo-distribution-resources-5.6-20120119.220956-75-templates-jboss.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-resources/5.6-SNAPSHOT/nuxeo-distribution-resources-5.6-20120119.220956-75-templates-tomcat.zip">nuxeo-distribution-resources-5.6-20120119.220956-75-templates-tomcat.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-resources/5.6-SNAPSHOT/nuxeo-distribution-resources-5.6-20120119.220956-75-templates-tomcat-coreserver.zip">nuxeo-distribution-resources-5.6-20120119.220956-75-templates-tomcat-coreserver.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-resources/5.6-SNAPSHOT/nuxeo-distribution-resources-5.6-20120119.220956-75-templates-jetty.zip">nuxeo-distribution-resources-5.6-20120119.220956-75-templates-jetty.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-tests/5.6-SNAPSHOT/nuxeo-distribution-tests-5.6-20120119.220956-75.pom">nuxeo-distribution-tests-5.6-20120119.220956-75.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-coreserver/5.6-SNAPSHOT/nuxeo-distribution-coreserver-5.6-20120119.220956-75.zip">nuxeo-distribution-coreserver-5.6-20120119.220956-75.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-cap/5.6-SNAPSHOT/nuxeo-distribution-cap-5.6-20120119.220956-75.zip">nuxeo-distribution-cap-5.6-20120119.220956-75.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-cap-tests/5.6-SNAPSHOT/nuxeo-distribution-cap-tests-5.6-20120119.220956-75.jar">nuxeo-distribution-cap-tests-5.6-20120119.220956-75.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-dm/5.6-SNAPSHOT/nuxeo-distribution-dm-5.6-20120119.220956-75.zip">nuxeo-distribution-dm-5.6-20120119.220956-75.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-marketplace-content-browser/5.6-SNAPSHOT/nuxeo-marketplace-content-browser-5.6-20120119.220956-75.zip">nuxeo-marketplace-content-browser-5.6-20120119.220956-75.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-marketplace-content-browser/5.6-SNAPSHOT/nuxeo-marketplace-content-browser-5.6-20120119.220956-75-cmf.zip">nuxeo-marketplace-content-browser-5.6-20120119.220956-75-cmf.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-marketplace-dm/5.6-SNAPSHOT/nuxeo-marketplace-dm-5.6-20120119.220956-75.zip">nuxeo-marketplace-dm-5.6-20120119.220956-75.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-dam/5.6-SNAPSHOT/nuxeo-distribution-dam-5.6-20120119.220956-75.zip">nuxeo-distribution-dam-5.6-20120119.220956-75.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-dam/5.6-SNAPSHOT/nuxeo-distribution-dam-5.6-20120119.220956-75-resources.zip">nuxeo-distribution-dam-5.6-20120119.220956-75-resources.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-marketplace-dam/5.6-SNAPSHOT/nuxeo-marketplace-dam-5.6-20120119.220956-75.zip">nuxeo-marketplace-dam-5.6-20120119.220956-75.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-social-collaboration/5.6-SNAPSHOT/nuxeo-distribution-social-collaboration-5.6-20120119.220956-75.zip">nuxeo-distribution-social-collaboration-5.6-20120119.220956-75.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-social-collaboration/5.6-SNAPSHOT/nuxeo-distribution-social-collaboration-5.6-20120119.220956-75-resources.zip">nuxeo-distribution-social-collaboration-5.6-20120119.220956-75-resources.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-marketplace-social-collaboration/5.6-SNAPSHOT/nuxeo-marketplace-social-collaboration-5.6-20120119.220956-75.zip">nuxeo-marketplace-social-collaboration-5.6-20120119.220956-75.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-cmf/5.6-SNAPSHOT/nuxeo-distribution-cmf-5.6-20120119.220956-75.zip">nuxeo-distribution-cmf-5.6-20120119.220956-75.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-cmf/5.6-SNAPSHOT/nuxeo-distribution-cmf-5.6-20120119.220956-75-resources.zip">nuxeo-distribution-cmf-5.6-20120119.220956-75-resources.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-marketplace-cmf/5.6-SNAPSHOT/nuxeo-marketplace-cmf-5.6-20120119.220956-75.zip">nuxeo-marketplace-cmf-5.6-20120119.220956-75.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-jboss/5.6-SNAPSHOT/nuxeo-distribution-jboss-5.6-20120119.220956-75.pom">nuxeo-distribution-jboss-5.6-20120119.220956-75.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-jboss/5.6-SNAPSHOT/nuxeo-distribution-jboss-5.6-20120119.220956-75-nuxeo-cap-ear.zip">nuxeo-distribution-jboss-5.6-20120119.220956-75-nuxeo-cap-ear.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-jboss/5.6-SNAPSHOT/nuxeo-distribution-jboss-5.6-20120119.220956-75-nuxeo-cap.zip">nuxeo-distribution-jboss-5.6-20120119.220956-75-nuxeo-cap.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-jboss/5.6-SNAPSHOT/nuxeo-distribution-jboss-5.6-20120119.220956-75-nuxeo-dm-ear.zip">nuxeo-distribution-jboss-5.6-20120119.220956-75-nuxeo-dm-ear.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-jboss/5.6-SNAPSHOT/nuxeo-distribution-jboss-5.6-20120119.220956-75-nuxeo-dm.zip">nuxeo-distribution-jboss-5.6-20120119.220956-75-nuxeo-dm.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-tomcat/5.6-SNAPSHOT/nuxeo-distribution-tomcat-5.6-20120119.220956-75.pom">nuxeo-distribution-tomcat-5.6-20120119.220956-75.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-tomcat/5.6-SNAPSHOT/nuxeo-distribution-tomcat-5.6-20120119.220956-75-coreserver.zip">nuxeo-distribution-tomcat-5.6-20120119.220956-75-coreserver.zip</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/distribution/nuxeo-distribution-tomcat/5.6-SNAPSHOT/nuxeo-distribution-tomcat-5.6-20120119.220956-75-nuxeo-cap.zip">nuxeo-distribution-tomcat-5.6-20120119.220956-75-nuxeo-cap.zip</a></li>
+
+</ul></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/plugin/ci-game/icons/game-48x48.png" /></td><td style="vertical-align:middle">The build was worth <a href="cigame/">1 points</a></td></tr></table><h2>Module Builds</h2><table><tr><td class="no-wrap"><a href="org.nuxeo$nuxeo-launcher/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo$nuxeo-launcher/">Nuxeo multi-OS startup</a></td><td data="10324">10 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-distribution/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-distribution/">Nuxeo Distribution Parent</a></td><td data="5382">5.3 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-distribution-cap/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-distribution-cap/">Nuxeo CAP</a></td><td data="51836">51 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-distribution-cap-tests/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-distribution-cap-tests/">Nuxeo CAP tests</a></td><td data="1659">1.6 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-distribution-cmf/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-distribution-cmf/">Case Management EAR</a></td><td data="28455">28 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-distribution-coreserver/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-distribution-coreserver/">Nuxeo Core Server</a></td><td data="33588">33 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-distribution-dam/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-distribution-dam/">Nuxeo DAM Distribution</a></td><td data="32154">32 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-distribution-dm/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-distribution-dm/">Nuxeo DM</a></td><td data="53437">53 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-distribution-jboss/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-distribution-jboss/">Nuxeo JBoss5 Distribution</a></td><td data="180452">3 min 0 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-distribution-resources/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-distribution-resources/">Nuxeo Distribution Resources</a></td><td data="7987">7.9 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-distribution-social-collaboration/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-distribution-social-collaboration/">Nuxeo Social Collaboration Distribution</a></td><td data="32137">32 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-distribution-tests/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-distribution-tests/">Helper POM with Nuxeo test dependencies</a></td><td data="10552">10 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-distribution-tomcat/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-distribution-tomcat/">Nuxeo Tomcat Build</a></td><td data="83624">1 min 23 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-functional-tests/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-functional-tests/">Nuxeo Functional Tests</a></td><td data="7418">7.4 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-marketplace-cmf/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-marketplace-cmf/">Marketplace package of Nuxeo CMF</a></td><td data="13175">13 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-marketplace-content-browser/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-marketplace-content-browser/">Virtual content browser marketplace package</a></td><td data="733">0.73 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-marketplace-dam/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-marketplace-dam/">Marketplace package of Nuxeo DAM</a></td><td data="12820">12 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-marketplace-dm/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-marketplace-dm/">Marketplace package of Nuxeo DM</a></td><td data="16787">16 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-marketplace-social-collaboration/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-marketplace-social-collaboration/">Marketplace package of Nuxeo Social Collaboration</a></td><td data="13505">13 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.distribution$nuxeo-startup-wizard/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.distribution$nuxeo-startup-wizard/">Nuxeo Startup Wizard</a></td><td data="7975">7.9 sec</td></tr></table><h2>Upstream Builds</h2><ul style="list-style-type: none;"><li><a href="/jenkins/job/nuxeo-dm-master/">nuxeo-dm-master</a><a href="/jenkins/job/nuxeo-dm-master/51/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#51</a></li><li><a href="/jenkins/job/addons_nuxeo-platform-audio-master/">addons_nuxeo-platform-audio-master</a><a href="/jenkins/job/addons_nuxeo-platform-audio-master/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a></li><li><a href="/jenkins/job/nuxeo-features-master/">nuxeo-features-master</a><a href="/jenkins/job/nuxeo-features-master/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a></li><li><a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/">addons_nuxeo-platform-document-routing-master</a><a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a></li><li><a href="/jenkins/job/nuxeo-webengine-master/">nuxeo-webengine-master</a><a href="/jenkins/job/nuxeo-webengine-master/35/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#35</a></li><li><a href="/jenkins/job/addons_nuxeo-platform-video-master/">addons_nuxeo-platform-video-master</a><a href="/jenkins/job/addons_nuxeo-platform-video-master/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a></li><li><a href="/jenkins/job/addons_nuxeo-social-collaboration-master/">addons_nuxeo-social-collaboration-master</a><a href="/jenkins/job/addons_nuxeo-social-collaboration-master/911/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#911</a></li><li><a href="/jenkins/job/addons_nuxeo-cmf-master/">addons_nuxeo-cmf-master</a><a href="/jenkins/job/addons_nuxeo-cmf-master/50/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#50</a></li><li><a href="/jenkins/job/addons_nuxeo-platform-lang-ext-master/">addons_nuxeo-platform-lang-ext-master</a><a href="/jenkins/job/addons_nuxeo-platform-lang-ext-master/3/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#3</a></li><li><a href="/jenkins/job/addons_nuxeo-platform-importer-master/">addons_nuxeo-platform-importer-master</a><a href="/jenkins/job/addons_nuxeo-platform-importer-master/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a></li><li><a href="/jenkins/job/addons_nuxeo-user-center-master/">addons_nuxeo-user-center-master</a><a href="/jenkins/job/addons_nuxeo-user-center-master/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a></li><li><a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/">addons_nuxeo-filesystem-connectors-master</a><a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/47/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#47</a></li><li><a href="/jenkins/job/addons_nuxeo-platform-login-master/">addons_nuxeo-platform-login-master</a><a href="/jenkins/job/addons_nuxeo-platform-login-master/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a></li><li><a href="/jenkins/job/nuxeo-theme-master/">nuxeo-theme-master</a><a href="/jenkins/job/nuxeo-theme-master/37/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#37</a></li><li><a href="/jenkins/job/addons_nuxeo-shell-master/">addons_nuxeo-shell-master</a><a href="/jenkins/job/addons_nuxeo-shell-master/53/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#53</a></li><li><a href="/jenkins/job/addons_nuxeo-dam-master/">addons_nuxeo-dam-master</a><a href="/jenkins/job/addons_nuxeo-dam-master/1009/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#1009</a></li><li><a href="/jenkins/job/addons_nuxeo-opensocial-master/">addons_nuxeo-opensocial-master</a><a href="/jenkins/job/addons_nuxeo-opensocial-master/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a></li><li><a href="/jenkins/job/addons_nuxeo-platform-suggestbox-master/">addons_nuxeo-platform-suggestbox-master</a><a href="/jenkins/job/addons_nuxeo-platform-suggestbox-master/173/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#173</a></li><li><a href="/jenkins/job/addons_nuxeo-chemistry-master/">addons_nuxeo-chemistry-master</a><a href="/jenkins/job/addons_nuxeo-chemistry-master/48/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#48</a></li><li><a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/">addons_nuxeo-platform-faceted-search-master</a><a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a></li><li><a href="/jenkins/job/addons_nuxeo-platform-classification-master/">addons_nuxeo-platform-classification-master</a><a href="/jenkins/job/addons_nuxeo-platform-classification-master/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a></li></ul><h2>Downstream Builds</h2><ul style="list-style-type: none;"><li><a href="/jenkins/job/FT-nuxeo-master-webdriver-cap-tomcat/">FT-nuxeo-master-webdriver-cap-tomcat</a><a href="/jenkins/job/FT-nuxeo-master-webdriver-cap-tomcat/64/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#64</a> </li></ul></td></tr></table><table width="100%"><tr><td id="footer"><span style="padding-right:2em; color:gray">
+
+          Page generated:
+
+          Jan 23, 2012 4:39:33 PM</span><a href="http://jenkins-ci.org/">Jenkins ver. 1.444</a></td></tr></table><div id="l10n-dialog" class="dialog"></div><div id="l10n-footer" style="display:none; float:left"><a href="#" onclick="return showTranslationDialog();"><img src="/jenkins/plugin/translation/flags.png" />
+
+      Help us localize this page
+
+    </a></div><script>var footer = document.getElementById('l10n-footer');
+
+    var f = document.getElementById('footer');
+
+    f.insertBefore(footer,f.firstChild);
+
+    footer.style.display="block";
+
+
+
+    var translation={}; 
+
+    translation.bundles = "mUxvnugRMNgAjNcV81J2g/3RthdJZno+jD7m8z0VDASxKPKNipUNxqxK2ZpteXdNny247zP+mpIcOagyqerT1+vvNoroYSezr86kJuiQfiQoimHRo9tyD0Pc7xXu+2BlFsi2A/vBHGtkWyrExWyUeEhmHsz765T5xJ/SsuzBQu/D2A7f9VHWay9AJiFvsGyFg5QOcWjaGsk9TIggL0JPLheDxesdnFDSVeky3KBON45TijvZfqsfJHmmd8ffy5tRZHVw2fgSVxUrOumXj9JS/zv0z626XLCNGpRN0wt9ySCOpE6pb1wC8UbukGA/Xrx5XYf+AVYD14PFXQ9RmLDPRs0bARj02WAv2g4dp8/o5hqhk6gvB7Nk9RFZXMx93iuyEmjmDlf0YiTzDzY88SsxFZR4ocQkD+4nva4KOAIdKXKMeyoqjP9oidXomOHVXHSqlpdG9Qjpn3narxKFxquKS7eA/q5AfKYNTQg/MdelfqsC+GD5uziKf3/k2VfIsMiEgCtX3PemIxS9bjzYng9DnNwDfWfoowJT+Mx2tFJMCEh+3dQjv0q/Zo8RMoRLNsl9KEOKSKGZv6R2xMLNntoZZNPy7nBhyaRgHxUF2ODS1wbqCMQVZMoATJvlvU7l2qQkRr+vijm2WlVZ3/DWX2r4yX1YK8ifW7BxRzwomwx31TQOfnyZPZ7G3QfVxgn80ksSJ1zH1gkC12LP2bjHnwSVNg8oVJyuAaHYPhrKU+ur+/wIZ1Yu2gNxFNA3SZYaoWFHqrHwdm106Sa+PYMFK+UgSQ==";
+
+    translation.detectedLocale = "";
+
+
+
+    function showTranslationDialog() {
+
+      if(!translation.launchDialog)
+
+        loadScript("/jenkins/plugin/translation/dialog.js");
+
+      else
+
+        translation.launchDialog();
+
+      return false; 
+
+    }</script></body></html>

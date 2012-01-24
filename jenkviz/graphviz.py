@@ -19,8 +19,9 @@ def graphviz(root, svg_file):
     out.write("""digraph g {
 graph [rankdir=LR];
 node [fontsize="16" shape="record"];
-info [label="start: %s|stop: %s|duration: %s|number of builds: %s|throughput: %s%%"];
-""" % (root.extra['start'], root.extra['stop'], timedelta(seconds=root.extra['duration']), root.extra['count'], root.extra['throughput']))
+info [label="start: %s|stop: %s|elapsed: %s|duration: %s|number of builds: %s|throughput: %s%%"];
+""" % (root.extra['start'], root.extra['stop'], root.extra['elapsed'], timedelta(seconds=root.extra['duration']),
+       root.extra['count'], root.extra['throughput']))
 
     visited = []
     _graphviz_recurse(root, out, visited)

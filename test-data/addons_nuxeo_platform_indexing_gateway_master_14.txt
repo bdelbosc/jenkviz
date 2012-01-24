@@ -1,0 +1,105 @@
+<!DOCTYPE html><html><head>
+
+    
+
+
+
+    <title>addons_nuxeo-platform-indexing-gateway-master #14 [Jenkins]</title><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/css/style.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/css/color.css" /><link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/jenkins/static/58e2c472/favicon.ico" /><script>var isRunAsTest=false; var rootURL="/jenkins";</script><script src="/jenkins/static/58e2c472/scripts/prototype.js" type="text/javascript"></script><script src="/jenkins/static/58e2c472/scripts/behavior.js" type="text/javascript"></script><script src='/jenkins/adjuncts/58e2c472/org/kohsuke/stapler/bind.js' type='text/javascript'></script><script src="/jenkins/static/58e2c472/scripts/yui/yahoo/yahoo-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/dom/dom-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/event/event-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/animation/animation-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/dragdrop/dragdrop-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/container/container-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/connection/connection-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/datasource/datasource-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/autocomplete/autocomplete-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/menu/menu-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/element/element-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/button/button-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/storage/storage-min.js"></script><script src="/jenkins/static/58e2c472/scripts/hudson-behavior.js" type="text/javascript"></script><script src="/jenkins/static/58e2c472/scripts/sortable.js" type="text/javascript"></script><script>crumb.init("", "");</script><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/container/assets/container.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/assets/skins/sam/skin.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/container/assets/skins/sam/container.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/button/assets/skins/sam/button.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/menu/assets/skins/sam/menu.css" /><link title="Jenkins" rel="search" type="application/opensearchdescription+xml" href="/jenkins/opensearch.xml" /><meta name="ROBOTS" content="INDEX,NOFOLLOW" /><script src="/jenkins/static/58e2c472/scripts/yui/cookie/cookie-min.js"></script><script type="text/javascript">
+
+            var _gaq = _gaq || [];
+
+            _gaq.push(['_setAccount', 'UA-20627949-2']);
+
+            _gaq.push(['_setDomainName', 'qa.nuxeo.org']);
+
+            _gaq.push(['_trackPageview']);
+
+        
+
+            (function() {
+
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+            })();
+
+        </script></head><body class="yui-skin-sam"><a href="#skip2content" class="skiplink">Skip to content</a><table id="header" cellpadding="0" cellspacing="0" width="100%" border="0"><tr><td id="top-panel" colspan="2"><table cellpadding="0" cellspacing="0" width="100%" border="0"><tr><td style="font-weight:bold; font-size: 2em;"><a href="/jenkins/"><img alt="title" src="/jenkins/static/58e2c472/images/title.png" /></a></td><td style="vertical-align: middle; text-align: right; padding-right: 1em;"><form style="position:relative;" name="search" action="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/search/" class="no-json" method="get"><div id="search-box-minWidth"></div><div id="search-box-sizer"></div><div id="searchform"><input id="search-box" name="q" value="search" class="has-default-text defaulted" /> <a href="http://wiki.jenkins-ci.org/display/JENKINS/Search+Box"><img height="16" alt="help for search" width="16" src="/jenkins/static/58e2c472/images/16x16/help.png" /></a><div id="search-box-completion"></div><script>createSearchBox("/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/search/");</script></div></form></td><td id="login-field"><span> <a style="color:inherit" href="/jenkins/login?from=%2Fjenkins%2Fjob%2Faddons_nuxeo-platform-indexing-gateway-master%2F14%2F"><b>log in</b></a></span></td></tr></table></td></tr><tr id="top-nav"><td id="left-top-nav"><a href="/jenkins/">Jenkins</a> » <a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/">addons_nuxeo-platform-indexing-gateway-master</a> » <a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/">#14</a></td><td id="right-top-nav"><span class="smallfont"><a href="?auto_refresh=true">ENABLE AUTO REFRESH</a></span></td></tr></table><table id="main-table" height="70%" style="background-image: url(/jenkins/static/58e2c472/images/jenkins.png);                background-repeat: no-repeat; background-position: bottom left;" width="100%" border="0"><tr><td id="side-panel" width="20%"><div style="margin-left: 20px; margin-right: 20px; border-top: 1px solid #bbb"></div><div id="navigation" style="min-height: 323px; height: auto !important; height: 323px;"><div id="tasks"><div class="task"><a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/up.png" /></a> <a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/">Back to Project</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/search.png" /></a> <a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/"><b>Status</b></a><div class="subtasks"></div></div><div class="task"><a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/changes"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/notepad.png" /></a> <a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/changes">Changes</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/console"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/terminal.png" /></a> <a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/console">Console Output</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/configure"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/notepad.png" /></a> <a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/configure">View Build Information</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/git"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/plugin/git/icons/git-32x32.png" /></a> <a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/git">Git Build Data</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/tasksResult"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/plugin/tasks/icons/tasks-24x24.png" /></a> <a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/tasksResult">Open Tasks</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/redeploy"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/redo.gif" /></a> <a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/redeploy">Redeploy Artifacts</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/fingerprints"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/fingerprint.png" /></a> <a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/fingerprints">See Fingerprints</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/cigame"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/plugin/ci-game/icons/game-22x22.png" /></a> <a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/cigame">Score card</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/13/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/previous.png" /></a> <a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/13/">Previous Build</a></div><div class="task"><a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/15/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/next.png" /></a> <a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/15/">Next Build</a></div></div></div></td><td id="main-panel" width="80%" height="100%"><a name="skip2content"></a><div style="float:right; background-color:white; z-index: 1; position:relative; margin-left: 1em"><div style="margin-top:1em">Started 3 days 17 hr ago</div><div>
+
+            Took <a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/buildTimeTrend">27 sec</a>
+
+            on <a href="/jenkins/computer/simplet">simplet</a></div></div><h1><img height="48" alt="Success" width="48" src="buildStatus" tooltip="Success" />
+
+        Build #14
+
+        (Jan 19, 2012 10:58:52 PM)
+
+      </h1><div><div id="description"><div></div></div></div><table style="margin-top: 1em; margin-left:1em;"><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/static/58e2c472/images/48x48/notepad.png" /></td><td style="vertical-align:middle">
+
+      No changes.
+
+    </td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/static/58e2c472/images/48x48/orange-square.png" /></td><td style="vertical-align:middle"><p><span>Started by upstream project <a href="/jenkins/job/nuxeo-features-master/">nuxeo-features-master</a> build number <a href="/jenkins/job/nuxeo-features-master/72/">72</a></span></p></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/plugin/git/icons/git-48x48.png" /></td><td style="vertical-align:middle"><b>Revision</b>: 85a48db0b79a5b7db8e00bd6dbca240544666283
+
+        <ul><li>origin/master</li></ul></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/plugin/dry/icons/dry-48x48.png" /></td><td style="vertical-align:middle">
+
+		Duplicate Code: 0 warnings from one analysis.
+
+		<ul>
+
+		<li>No warnings since build 3.</li><li>New zero warnings highscore: no warnings for 2 days!</li>
+
+	    </ul></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/plugin/tasks/icons/tasks-48x48.png" /></td><td style="vertical-align:middle">
+
+		Task Scanner: <a href="tasksResult">2 open tasks</a> in 19 workspace files.
+
+		<ul>
+
+		<li>Plug-in Result:<img src="https://qa.nuxeo.org/jenkins//images/16x16/blue.png" alt="Success" title="Success"/>&nbsp;(Reference build: <a href="https://qa.nuxeo.org/jenkins//job/addons_nuxeo-platform-indexing-gateway-master/13/">#13</a>)</li><li>New highscore: only successful builds for 2 days!</li>
+
+	    </ul></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/static/58e2c472/images/48x48/package.gif" /></td><td style="vertical-align:middle">Maven Deployments:
+
+    <ul>
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-indexing-gateway/5.6-SNAPSHOT/nuxeo-platform-indexing-gateway-5.6-20120119.215916-12.jar">nuxeo-platform-indexing-gateway-5.6-20120119.215916-12.jar</a></li>
+
+</ul></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/plugin/ci-game/icons/game-48x48.png" /></td><td style="vertical-align:middle">The build was worth <a href="cigame/">1 points</a></td></tr></table><h2>Module Builds</h2><table><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-indexing-gateway/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-indexing-gateway/">Nuxeo External Indexer WS Gateway</a></td><td data="13836">13 sec</td></tr></table><h2>Upstream Builds</h2><ul style="list-style-type: none;"><li><a href="/jenkins/job/nuxeo-features-master/">nuxeo-features-master</a><a href="/jenkins/job/nuxeo-features-master/72/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#72</a></li></ul></td></tr></table><table width="100%"><tr><td id="footer"><span style="padding-right:2em; color:gray">
+
+          Page generated:
+
+          Jan 23, 2012 4:39:33 PM</span><a href="http://jenkins-ci.org/">Jenkins ver. 1.444</a></td></tr></table><div id="l10n-dialog" class="dialog"></div><div id="l10n-footer" style="display:none; float:left"><a href="#" onclick="return showTranslationDialog();"><img src="/jenkins/plugin/translation/flags.png" />
+
+      Help us localize this page
+
+    </a></div><script>var footer = document.getElementById('l10n-footer');
+
+    var f = document.getElementById('footer');
+
+    f.insertBefore(footer,f.firstChild);
+
+    footer.style.display="block";
+
+
+
+    var translation={}; 
+
+    translation.bundles = "cKl8c29Xg+rBpPeh3UgBXXnQep4iqj2a09Xluz+uXdnWbLnC0svLcIt7DQZLKCJ9hNK6XfL+3nRqUA3Fg37K4RJRFyAJdwSPk8OypmfBcqhHl8yIYbCC1/1PufR9gb+kiKuBI9NZoeJy54TG55B3t6QGSc0yXA5NQsJId3ChwVjO9yW6D96qvmeUHOkcusuVtRKu1mxp00NJGeJd89y9mT52kIGd2aHlvlWoFFKorBn9km71LG6bhdkUzxrh8lyeu6zK1iKcde+Eg63qVWHfPBmx6DO/XGiIzcL+tHTLAGDgsrYnwl//mi7IOKUVp0aF9+ba6VFQ4gExux3P7b76YI1Q9kkkVJpLGZS/YCyQNk3aquQvNpMxHGyAIQI7UXZ+Y6YD34jSpgwt5CICA4TnIoRJ13wFHkUA/ClP4uutF5wFxKPqMDeavhEikGQdJcqQGISrqdZZ7iO5nsyEIU8AGfCx9Hq/3BGkrHSKllM53gQ1x8y1+//Zj2T89JB3jxndM9C0ein8NTumLjsRhZLgTJvXy51O7zAPQn4WiNXhJ3+bv/7CtRZcYMZ2jxoZxqDM9aX0d3arpj3dp7BXDkvjiBG9xjj0K5YSHxhZXO2V7v88Swm0G4j15Vn3vnGTI/OJICu+9Ve1lbEPpLcf+YkF4lpz+x3KLFZtunPXlBNSP1RYjbq+uHQj/7dMNF/gwZ/02kvXe8DluLqSCFokqTyx4A==";
+
+    translation.detectedLocale = "";
+
+
+
+    function showTranslationDialog() {
+
+      if(!translation.launchDialog)
+
+        loadScript("/jenkins/plugin/translation/dialog.js");
+
+      else
+
+        translation.launchDialog();
+
+      return false; 
+
+    }</script></body></html>

@@ -1,96 +1,17 @@
-
-short: 3
-jenkviz crawl http://qa.nuxeo.org/jenkins/job/nuxeo-features-master/56/ --from-file=/home/ben/tmp/jenkviz
-
-medium: 72
-http://qa.nuxeo.org/jenkins/job/nuxeo-features-master/72/
-
-long: 782
-http://qa.nuxeo.org/jenkins/job/nuxeo-common-master/4/
-
-* TODO remove funkload use std http
-
-* TODO check clean
-  -> pourquoi ça joue pas sur les stats ?
-     -> il faut réduire self.builds sur l'ensemble des children
-
-  -> ça supprime tout 
-  
-   jenkviz crawl http://qa.nuxeo.org/jenkins/job/nuxeo-common-master/7/ --from-file=/home/ben/tmp/jenkviz 
-   vs --direct 
-
-   sans direct : 172 build
-   avec direct : 267 ?
+#+TITLE: JenkViz todos 
 
 * TODO reverse 
   parse reverse
-  add link bold 
-* DONE use sqlalchemy
-  CLOSED: [2012-01-23 lun. 22:26]
-  :LOGBOOK:
-  - State "DONE"       from "TODO"       [2012-01-23 lun. 22:26]
-  :END:
-  setup db connexion from options
-  save/load
-  stats
 * TODO fix bug in throughput
-  file:///home/ben/dev/tools/jenkviz/nuxeo_common_master_7.svg
-  > 24h sur 14h -> thput = 169%
-
-  list slowest jobs
-  list hosts + charge
-  ?
-* TODO doc cleaning
+  sounds like if elapsed > 24h there is a pb
+* TODO render db stats
+  list slowest jobs, most frequent, slowest N ...
+  list hosts usage ...
 * TODO handle multiple upstream
   http://qa.nuxeo.org/jenkins/job/addons_nuxeo-social-collaboration-master/904/
-  
-* CANCELLED bug on non maven job                                  :CANCELLED:
-  CLOSED: [2012-01-23 lun. 17:06]
-  :LOGBOOK:
-  - State "CANCELLED"  from "TODO"       [2012-01-23 lun. 17:06] \\
-    jenkins bug
-  :END:
+* TODO find how to work around jenkins bug
   https://issues.jenkins-ci.org/browse/JENKINS-6211
-
-  
-matrix job
-  there is no build number
-  http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-webdriver-cap-tomcat/70/
-  does not display
-  http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-webdriver-cap-tomcat-multios/63/
-
-  either bug because of 
-
-
- - http://qa.nuxeo.org/jenkins/job/nuxeo-distribution-master/82/
-
-   visible: http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-webdriver-cap-tomcat/70/
-
-   http://qa.nuxeo.org/jenkins/job/nuxeo-distribution-master/configure
-   after: dep change or git commit
-   downstream: 
-   - [X] FT-nuxeo-master-funkload-cmf-tomcat (désactivé)
-   - FT-nuxeo-master-selenium-cap-tomcat # 72 (not visible)
-   - FT-nuxeo-master-selenium-dm-tomcat
-   - FT-nuxeo-master-selenium-dam-tomcat
-   - FT-nuxeo-master-selenium-cmf-tomcat
-   - FT-nuxeo-master-selenium-social-collaboration-tomcat
-   - [X] FT-nuxeo-master-webdriver-cap-tomcat # 70
-   - FT-nuxeo-master-funkload-dm-tomcat-multidb
-
- - OK http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-webdriver-cap-tomcat/configure
-   http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-webdriver-cap-tomcat/70/
-   after: nuxeo-distribution-master
-   downstream : FT-nuxeo-master-webdriver-cap-tomcat-windows, FT-nuxeo-master-webdriver-cap-tomcat-multios
-   -> maven2moduleset
-
- - KO http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-selenium-cap-tomcat/configure
-   after: nuxeo-distribution-master
-   downstream : FT-nuxeo-master-selenium-cap-jboss
-   http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-selenium-cap-tomcat/72/
-   -> project 
-
-   does not show http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-selenium-cap-jboss/72/
-
-* Limitation
-  some target are (aucun) because wait for another tree to build
+  prevent non maven job to display correctly downstream build
+* TODO explain limitation
+  - some downstream build have no build number and break the tree
+  - non maven job has no downstream build

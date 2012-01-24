@@ -1,0 +1,657 @@
+<!DOCTYPE html><html><head>
+
+    
+
+
+
+    <title>nuxeo-features-master #72 [Jenkins]</title><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/css/style.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/css/color.css" /><link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/jenkins/static/58e2c472/favicon.ico" /><script>var isRunAsTest=false; var rootURL="/jenkins";</script><script src="/jenkins/static/58e2c472/scripts/prototype.js" type="text/javascript"></script><script src="/jenkins/static/58e2c472/scripts/behavior.js" type="text/javascript"></script><script src='/jenkins/adjuncts/58e2c472/org/kohsuke/stapler/bind.js' type='text/javascript'></script><script src="/jenkins/static/58e2c472/scripts/yui/yahoo/yahoo-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/dom/dom-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/event/event-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/animation/animation-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/dragdrop/dragdrop-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/container/container-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/connection/connection-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/datasource/datasource-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/autocomplete/autocomplete-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/menu/menu-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/element/element-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/button/button-min.js"></script><script src="/jenkins/static/58e2c472/scripts/yui/storage/storage-min.js"></script><script src="/jenkins/static/58e2c472/scripts/hudson-behavior.js" type="text/javascript"></script><script src="/jenkins/static/58e2c472/scripts/sortable.js" type="text/javascript"></script><script>crumb.init("", "");</script><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/container/assets/container.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/assets/skins/sam/skin.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/container/assets/skins/sam/container.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/button/assets/skins/sam/button.css" /><link rel="stylesheet" type="text/css" href="/jenkins/static/58e2c472/scripts/yui/menu/assets/skins/sam/menu.css" /><link title="Jenkins" rel="search" type="application/opensearchdescription+xml" href="/jenkins/opensearch.xml" /><meta name="ROBOTS" content="INDEX,NOFOLLOW" /><script src="/jenkins/static/58e2c472/scripts/yui/cookie/cookie-min.js"></script><script type="text/javascript">
+
+            var _gaq = _gaq || [];
+
+            _gaq.push(['_setAccount', 'UA-20627949-2']);
+
+            _gaq.push(['_setDomainName', 'qa.nuxeo.org']);
+
+            _gaq.push(['_trackPageview']);
+
+        
+
+            (function() {
+
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+            })();
+
+        </script></head><body class="yui-skin-sam"><a href="#skip2content" class="skiplink">Skip to content</a><table id="header" cellpadding="0" cellspacing="0" width="100%" border="0"><tr><td id="top-panel" colspan="2"><table cellpadding="0" cellspacing="0" width="100%" border="0"><tr><td style="font-weight:bold; font-size: 2em;"><a href="/jenkins/"><img alt="title" src="/jenkins/static/58e2c472/images/title.png" /></a></td><td style="vertical-align: middle; text-align: right; padding-right: 1em;"><form style="position:relative;" name="search" action="/jenkins/job/nuxeo-features-master/72/search/" class="no-json" method="get"><div id="search-box-minWidth"></div><div id="search-box-sizer"></div><div id="searchform"><input id="search-box" name="q" value="search" class="has-default-text defaulted" /> <a href="http://wiki.jenkins-ci.org/display/JENKINS/Search+Box"><img height="16" alt="help for search" width="16" src="/jenkins/static/58e2c472/images/16x16/help.png" /></a><div id="search-box-completion"></div><script>createSearchBox("/jenkins/job/nuxeo-features-master/72/search/");</script></div></form></td><td id="login-field"><span> <a style="color:inherit" href="/jenkins/login?from=%2Fjenkins%2Fjob%2Fnuxeo-features-master%2F72%2F"><b>log in</b></a></span></td></tr></table></td></tr><tr id="top-nav"><td id="left-top-nav"><a href="/jenkins/">Jenkins</a> » <a href="/jenkins/job/nuxeo-features-master/">nuxeo-features-master</a> » <a href="/jenkins/job/nuxeo-features-master/72/">#72</a></td><td id="right-top-nav"><span class="smallfont"><a href="?auto_refresh=true">ENABLE AUTO REFRESH</a></span></td></tr></table><table id="main-table" height="70%" style="background-image: url(/jenkins/static/58e2c472/images/jenkins.png);                background-repeat: no-repeat; background-position: bottom left;" width="100%" border="0"><tr><td id="side-panel" width="20%"><div style="margin-left: 20px; margin-right: 20px; border-top: 1px solid #bbb"></div><div id="navigation" style="min-height: 323px; height: auto !important; height: 323px;"><div id="tasks"><div class="task"><a href="/jenkins/job/nuxeo-features-master/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/up.png" /></a> <a href="/jenkins/job/nuxeo-features-master/">Back to Project</a></div><div class="task"><a href="/jenkins/job/nuxeo-features-master/72/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/search.png" /></a> <a href="/jenkins/job/nuxeo-features-master/72/"><b>Status</b></a><div class="subtasks"></div></div><div class="task"><a href="/jenkins/job/nuxeo-features-master/72/changes"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/notepad.png" /></a> <a href="/jenkins/job/nuxeo-features-master/72/changes">Changes</a></div><div class="task"><a href="/jenkins/job/nuxeo-features-master/72/console"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/terminal.png" /></a> <a href="/jenkins/job/nuxeo-features-master/72/console">Console Output</a> <a href="/jenkins/job/nuxeo-features-master/72/consoleText">[raw]</a></div><div class="task"><a href="/jenkins/job/nuxeo-features-master/72/configure"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/notepad.png" /></a> <a href="/jenkins/job/nuxeo-features-master/72/configure">View Build Information</a></div><div class="task"><a href="/jenkins/job/nuxeo-features-master/72/git"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/plugin/git/icons/git-32x32.png" /></a> <a href="/jenkins/job/nuxeo-features-master/72/git">Git Build Data</a></div><div class="task"><a href="/jenkins/job/nuxeo-features-master/72/dryResult"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/plugin/dry/icons/dry-24x24.png" /></a> <a href="/jenkins/job/nuxeo-features-master/72/dryResult">Duplicate Code</a></div><div class="task"><a href="/jenkins/job/nuxeo-features-master/72/tasksResult"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/plugin/tasks/icons/tasks-24x24.png" /></a> <a href="/jenkins/job/nuxeo-features-master/72/tasksResult">Open Tasks</a></div><div class="task"><a href="/jenkins/job/nuxeo-features-master/72/redeploy"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/redo.gif" /></a> <a href="/jenkins/job/nuxeo-features-master/72/redeploy">Redeploy Artifacts</a></div><div class="task"><a href="/jenkins/job/nuxeo-features-master/72/testReport"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/clipboard.png" /></a> <a href="/jenkins/job/nuxeo-features-master/72/testReport">Test Result</a></div><div class="task"><a href="/jenkins/job/nuxeo-features-master/72/fingerprints"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/fingerprint.png" /></a> <a href="/jenkins/job/nuxeo-features-master/72/fingerprints">See Fingerprints</a></div><div class="task"><a href="/jenkins/job/nuxeo-features-master/72/cigame"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/plugin/ci-game/icons/game-22x22.png" /></a> <a href="/jenkins/job/nuxeo-features-master/72/cigame">Score card</a></div><div class="task"><a href="/jenkins/job/nuxeo-features-master/71/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/previous.png" /></a> <a href="/jenkins/job/nuxeo-features-master/71/">Previous Build</a></div><div class="task"><a href="/jenkins/job/nuxeo-features-master/73/"><img height="24" style="margin: 2px;" alt="" width="24" src="/jenkins/static/58e2c472/images/24x24/next.png" /></a> <a href="/jenkins/job/nuxeo-features-master/73/">Next Build</a></div></div></div></td><td id="main-panel" width="80%" height="100%"><a name="skip2content"></a><div style="float:right; background-color:white; z-index: 1; position:relative; margin-left: 1em"><div style="margin-top:1em">Started 3 days 18 hr ago</div><div>
+
+            Took <a href="/jenkins/job/nuxeo-features-master/buildTimeTrend">23 min</a>
+
+            on <a href="/jenkins/computer/simplet">simplet</a></div></div><h1><img height="48" alt="Success" width="48" src="buildStatus" tooltip="Success" />
+
+        Build #72
+
+        (Jan 19, 2012 10:33:53 PM)
+
+      </h1><div><div id="description"><div></div></div></div><table style="margin-top: 1em; margin-left:1em;"><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/static/58e2c472/images/48x48/notepad.png" /></td><td style="vertical-align:middle">
+
+      No changes.
+
+    </td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/static/58e2c472/images/48x48/orange-square.png" /></td><td style="vertical-align:middle"><p><span>Started by user <a href="/jenkins/user/bdelbosc">bdelbosc</a></span></p></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/plugin/git/icons/git-48x48.png" /></td><td style="vertical-align:middle"><b>Revision</b>: 0b1befce2778bcb542f535bfb1d99ee0483d2b7f
+
+        <ul><li>origin/master</li></ul></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/plugin/dry/icons/dry-48x48.png" /></td><td style="vertical-align:middle">
+
+		Duplicate Code: <a href="dryResult">63 warnings</a> from one analysis.
+
+		<ul>
+
+		<li>Plug-in Result:<img src="https://qa.nuxeo.org/jenkins//images/16x16/blue.png" alt="Success" title="Success"/>&nbsp;(Reference build: <a href="https://qa.nuxeo.org/jenkins//job/nuxeo-features-master/71/">#71</a>)</li><li>New highscore: only successful builds for 30 days!</li>
+
+	    </ul></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/plugin/tasks/icons/tasks-48x48.png" /></td><td style="vertical-align:middle">
+
+		Task Scanner: <a href="tasksResult">366 open tasks</a> in 3,274 workspace files.
+
+		<ul>
+
+		<li>Plug-in Result:<img src="https://qa.nuxeo.org/jenkins//images/16x16/blue.png" alt="Success" title="Success"/>&nbsp;(Reference build: <a href="https://qa.nuxeo.org/jenkins//job/nuxeo-features-master/71/">#71</a>)</li><li>New highscore: only successful builds for 30 days!</li>
+
+	    </ul></td></tr><script type="text/javascript">
+
+    function showFailures() {
+
+
+
+    var elms = document.getElementsByClassName("hidden");
+
+    for(var i = 0; i < elms.length; i++) {
+
+    elms[i].style.display = "";
+
+    }
+
+    elm = document.getElementById("showLink");
+
+    elm.style.display = "none";
+
+    }
+
+  </script><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/static/58e2c472/images/48x48/clipboard.png" /></td><td style="vertical-align:middle"><a href="testReport/">Test Result</a> (no failures)<ul style="list-style-type: none; margin: 0;"></ul></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/static/58e2c472/images/48x48/package.gif" /></td><td style="vertical-align:middle">Maven Deployments:
+
+    <ul>
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-features-parent/5.6-SNAPSHOT/nuxeo-features-parent-5.6-20120119.213521-71.pom">nuxeo-features-parent-5.6-20120119.213521-71.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-audit-parent/5.6-SNAPSHOT/nuxeo-platform-audit-parent-5.6-20120119.213521-71.pom">nuxeo-platform-audit-parent-5.6-20120119.213521-71.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-audit-api/5.6-SNAPSHOT/nuxeo-platform-audit-api-5.6-20120119.213521-71.jar">nuxeo-platform-audit-api-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-audit-core/5.6-SNAPSHOT/nuxeo-platform-audit-core-5.6-20120119.213521-71.jar">nuxeo-platform-audit-core-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-audit-client/5.6-SNAPSHOT/nuxeo-platform-audit-client-5.6-20120119.213521-71.jar">nuxeo-platform-audit-client-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-io-parent/5.6-SNAPSHOT/nuxeo-platform-io-parent-5.6-20120119.213521-71.pom">nuxeo-platform-io-parent-5.6-20120119.213521-71.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-io-api/5.6-SNAPSHOT/nuxeo-platform-io-api-5.6-20120119.213521-71.jar">nuxeo-platform-io-api-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-audit-io/5.6-SNAPSHOT/nuxeo-platform-audit-io-5.6-20120119.213521-71.jar">nuxeo-platform-audit-io-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-audit-ws/5.6-SNAPSHOT/nuxeo-platform-audit-ws-5.6-20120119.213521-71.jar">nuxeo-platform-audit-ws-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-task/5.6-SNAPSHOT/nuxeo-platform-task-5.6-20120119.213521-71.pom">nuxeo-platform-task-5.6-20120119.213521-71.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-task-api/5.6-SNAPSHOT/nuxeo-platform-task-api-5.6-20120119.213521-71.jar">nuxeo-platform-task-api-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-task-test/5.6-SNAPSHOT/nuxeo-platform-task-test-5.6-20120119.213521-71.jar">nuxeo-platform-task-test-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/automation/nuxeo-automation-parent/5.6-SNAPSHOT/nuxeo-automation-parent-5.6-20120119.213521-71.pom">nuxeo-automation-parent-5.6-20120119.213521-71.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/automation/nuxeo-automation-core/5.6-SNAPSHOT/nuxeo-automation-core-5.6-20120119.213521-71.jar">nuxeo-automation-core-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-userworkspace-parent/5.6-SNAPSHOT/nuxeo-platform-userworkspace-parent-5.6-20120119.213521-71.pom">nuxeo-platform-userworkspace-parent-5.6-20120119.213521-71.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-userworkspace-api/5.6-SNAPSHOT/nuxeo-platform-userworkspace-api-5.6-20120119.213521-71.jar">nuxeo-platform-userworkspace-api-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-userworkspace-types/5.6-SNAPSHOT/nuxeo-platform-userworkspace-types-5.6-20120119.213521-71.jar">nuxeo-platform-userworkspace-types-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-userworkspace-core/5.6-SNAPSHOT/nuxeo-platform-userworkspace-core-5.6-20120119.213521-71.jar">nuxeo-platform-userworkspace-core-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-notification-parent/5.6-SNAPSHOT/nuxeo-platform-notification-parent-5.6-20120119.213521-71.pom">nuxeo-platform-notification-parent-5.6-20120119.213521-71.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-notification-api/5.6-SNAPSHOT/nuxeo-platform-notification-api-5.6-20120119.213521-71.jar">nuxeo-platform-notification-api-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-task-core/5.6-SNAPSHOT/nuxeo-platform-task-core-5.6-20120119.213521-71.jar">nuxeo-platform-task-core-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-jbpm/5.6-SNAPSHOT/nuxeo-platform-jbpm-5.6-20120119.213521-71.pom">nuxeo-platform-jbpm-5.6-20120119.213521-71.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-jbpm-api/5.6-SNAPSHOT/nuxeo-platform-jbpm-api-5.6-20120119.213521-71.jar">nuxeo-platform-jbpm-api-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-task-automation/5.6-SNAPSHOT/nuxeo-platform-task-automation-5.6-20120119.213521-71.jar">nuxeo-platform-task-automation-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-task-web/5.6-SNAPSHOT/nuxeo-platform-task-web-5.6-20120119.213521-71.jar">nuxeo-platform-task-web-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-comment-parent/5.6-SNAPSHOT/nuxeo-platform-comment-parent-5.6-20120119.213521-71.pom">nuxeo-platform-comment-parent-5.6-20120119.213521-71.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-comment-api/5.6-SNAPSHOT/nuxeo-platform-comment-api-5.6-20120119.213521-71.jar">nuxeo-platform-comment-api-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-comment-core/5.6-SNAPSHOT/nuxeo-platform-comment-core-5.6-20120119.213521-71.jar">nuxeo-platform-comment-core-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-notification-core/5.6-SNAPSHOT/nuxeo-platform-notification-core-5.6-20120119.213521-71.jar">nuxeo-platform-notification-core-5.6-20120119.213521-71.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-relations-parent/5.6-SNAPSHOT/nuxeo-platform-relations-parent-5.6-20120119.213521-70.pom">nuxeo-platform-relations-parent-5.6-20120119.213521-70.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-relations-api/5.6-SNAPSHOT/nuxeo-platform-relations-api-5.6-20120119.213521-70.jar">nuxeo-platform-relations-api-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-relations-core/5.6-SNAPSHOT/nuxeo-platform-relations-core-5.6-20120119.213521-70.jar">nuxeo-platform-relations-core-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-relations-jena-plugin/5.6-SNAPSHOT/nuxeo-platform-relations-jena-plugin-5.6-20120119.213521-70.jar">nuxeo-platform-relations-jena-plugin-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-comment/5.6-SNAPSHOT/nuxeo-platform-comment-5.6-20120119.213521-70.jar">nuxeo-platform-comment-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-comment-web/5.6-SNAPSHOT/nuxeo-platform-comment-web-5.6-20120119.213521-70.jar">nuxeo-platform-comment-web-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-comment-workflow/5.6-SNAPSHOT/nuxeo-platform-comment-workflow-5.6-20120119.213521-70.jar">nuxeo-platform-comment-workflow-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-imaging-parent/5.6-SNAPSHOT/nuxeo-platform-imaging-parent-5.6-20120119.213521-70.pom">nuxeo-platform-imaging-parent-5.6-20120119.213521-70.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-imaging-api/5.6-SNAPSHOT/nuxeo-platform-imaging-api-5.6-20120119.213521-70.jar">nuxeo-platform-imaging-api-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-imaging-core/5.6-SNAPSHOT/nuxeo-platform-imaging-core-5.6-20120119.213521-70.jar">nuxeo-platform-imaging-core-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-imaging-convert/5.6-SNAPSHOT/nuxeo-platform-imaging-convert-5.6-20120119.213521-70.jar">nuxeo-platform-imaging-convert-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-imaging-jsf/5.6-SNAPSHOT/nuxeo-platform-imaging-jsf-5.6-20120119.213521-70.jar">nuxeo-platform-imaging-jsf-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-imaging-dm/5.6-SNAPSHOT/nuxeo-platform-imaging-dm-5.6-20120119.213521-70.jar">nuxeo-platform-imaging-dm-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-preview/5.6-SNAPSHOT/nuxeo-platform-preview-5.6-20120119.213521-70.jar">nuxeo-platform-preview-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-imaging-preview/5.6-SNAPSHOT/nuxeo-platform-imaging-preview-5.6-20120119.213521-70.jar">nuxeo-platform-imaging-preview-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-relations-core-listener/5.6-SNAPSHOT/nuxeo-platform-relations-core-listener-5.6-20120119.213521-70.jar">nuxeo-platform-relations-core-listener-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-relations-default-config/5.6-SNAPSHOT/nuxeo-platform-relations-default-config-5.6-20120119.213521-70.jar">nuxeo-platform-relations-default-config-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-io-core/5.6-SNAPSHOT/nuxeo-platform-io-core-5.6-20120119.213521-70.jar">nuxeo-platform-io-core-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-relations-io/5.6-SNAPSHOT/nuxeo-platform-relations-io-5.6-20120119.213521-70.jar">nuxeo-platform-relations-io-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-relations-web/5.6-SNAPSHOT/nuxeo-platform-relations-web-5.6-20120119.213521-70.jar">nuxeo-platform-relations-web-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-domsync-core/5.6-SNAPSHOT/nuxeo-platform-domsync-core-5.6-20120119.213521-70.jar">nuxeo-platform-domsync-core-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-io-client/5.6-SNAPSHOT/nuxeo-platform-io-client-5.6-20120119.213521-70.jar">nuxeo-platform-io-client-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-tag-parent/5.6-SNAPSHOT/nuxeo-platform-tag-parent-5.6-20120119.213521-70.pom">nuxeo-platform-tag-parent-5.6-20120119.213521-70.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-tag-api/5.6-SNAPSHOT/nuxeo-platform-tag-api-5.6-20120119.213521-70.jar">nuxeo-platform-tag-api-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-tag-core/5.6-SNAPSHOT/nuxeo-platform-tag-core-5.6-20120119.213521-70.jar">nuxeo-platform-tag-core-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-tag-web/5.6-SNAPSHOT/nuxeo-platform-tag-web-5.6-20120119.213521-70.jar">nuxeo-platform-tag-web-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-webengine-features/5.6-SNAPSHOT/nuxeo-webengine-features-5.6-20120119.213521-70.pom">nuxeo-webengine-features-5.6-20120119.213521-70.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/webengine/nuxeo-webengine-base/5.6-SNAPSHOT/nuxeo-webengine-base-5.6-20120119.213521-70.jar">nuxeo-webengine-base-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/webengine/nuxeo-webengine-admin/5.6-SNAPSHOT/nuxeo-webengine-admin-5.6-20120119.213521-70.jar">nuxeo-webengine-admin-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/webengine/nuxeo-webengine-sites-api/5.6-SNAPSHOT/nuxeo-webengine-sites-api-5.6-20120119.213521-70.jar">nuxeo-webengine-sites-api-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/webengine/nuxeo-webengine-sites-core-contrib/5.6-SNAPSHOT/nuxeo-webengine-sites-core-contrib-5.6-20120119.213521-70.jar">nuxeo-webengine-sites-core-contrib-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/webengine/nuxeo-webengine-sites/5.6-SNAPSHOT/nuxeo-webengine-sites-5.6-20120119.213521-70.jar">nuxeo-webengine-sites-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/webengine/nuxeo-webengine-management/5.6-SNAPSHOT/nuxeo-webengine-management-5.6-20120119.213521-70.jar">nuxeo-webengine-management-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/webengine/nuxeo-webengine-blogs-api/5.6-SNAPSHOT/nuxeo-webengine-blogs-api-5.6-20120119.213521-70.jar">nuxeo-webengine-blogs-api-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/webengine/nuxeo-webengine-blogs/5.6-SNAPSHOT/nuxeo-webengine-blogs-5.6-20120119.213521-70.jar">nuxeo-webengine-blogs-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/webengine/nuxeo-webengine-blogs-core/5.6-SNAPSHOT/nuxeo-webengine-blogs-core-5.6-20120119.213521-70.jar">nuxeo-webengine-blogs-core-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/webengine/nuxeo-webengine-samples-base/5.6-SNAPSHOT/nuxeo-webengine-samples-base-5.6-20120119.213521-70.jar">nuxeo-webengine-samples-base-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/webengine/nuxeo-webengine-samples-extended/5.6-SNAPSHOT/nuxeo-webengine-samples-extended-5.6-20120119.213521-70.jar">nuxeo-webengine-samples-extended-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-annotations-parent/5.6-SNAPSHOT/nuxeo-platform-annotations-parent-5.6-20120119.213521-70.pom">nuxeo-platform-annotations-parent-5.6-20120119.213521-70.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-annotations-api/5.6-SNAPSHOT/nuxeo-platform-annotations-api-5.6-20120119.213521-70.jar">nuxeo-platform-annotations-api-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-annotations-core-contrib/5.6-SNAPSHOT/nuxeo-platform-annotations-core-contrib-5.6-20120119.213521-70.jar">nuxeo-platform-annotations-core-contrib-5.6-20120119.213521-70.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-annotations-core/5.6-SNAPSHOT/nuxeo-platform-annotations-core-5.6-20120119.213521-68.jar">nuxeo-platform-annotations-core-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-annotations-http/5.6-SNAPSHOT/nuxeo-platform-annotations-http-5.6-20120119.213521-68.jar">nuxeo-platform-annotations-http-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-annotations-repository-plugin/5.6-SNAPSHOT/nuxeo-platform-annotations-repository-plugin-5.6-20120119.213521-68.jar">nuxeo-platform-annotations-repository-plugin-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-annotations-web/5.6-SNAPSHOT/nuxeo-platform-annotations-web-5.6-20120119.213521-68.jar">nuxeo-platform-annotations-web-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-imaging-tiling-parent/5.6-SNAPSHOT/nuxeo-platform-imaging-tiling-parent-5.6-20120119.213521-68.pom">nuxeo-platform-imaging-tiling-parent-5.6-20120119.213521-68.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-imaging-tiling/5.6-SNAPSHOT/nuxeo-platform-imaging-tiling-5.6-20120119.213521-68.jar">nuxeo-platform-imaging-tiling-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-imaging-tiling-preview/5.6-SNAPSHOT/nuxeo-platform-imaging-tiling-preview-5.6-20120119.213521-68.jar">nuxeo-platform-imaging-tiling-preview-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-syndication/5.6-SNAPSHOT/nuxeo-platform-syndication-5.6-20120119.213521-68.jar">nuxeo-platform-syndication-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-jbpm-test/5.6-SNAPSHOT/nuxeo-platform-jbpm-test-5.6-20120119.213521-68.jar">nuxeo-platform-jbpm-test-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-jbpm-core/5.6-SNAPSHOT/nuxeo-platform-jbpm-core-5.6-20120119.213521-68.jar">nuxeo-platform-jbpm-core-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-jbpm-web/5.6-SNAPSHOT/nuxeo-platform-jbpm-web-5.6-20120119.213521-68.jar">nuxeo-platform-jbpm-web-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-jbpm-automation/5.6-SNAPSHOT/nuxeo-platform-jbpm-automation-5.6-20120119.213521-68.jar">nuxeo-platform-jbpm-automation-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-publisher-parent/5.6-SNAPSHOT/nuxeo-platform-publisher-parent-5.6-20120119.213521-68.pom">nuxeo-platform-publisher-parent-5.6-20120119.213521-68.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-publisher-api/5.6-SNAPSHOT/nuxeo-platform-publisher-api-5.6-20120119.213521-68.jar">nuxeo-platform-publisher-api-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-publisher-core-contrib/5.6-SNAPSHOT/nuxeo-platform-publisher-core-contrib-5.6-20120119.213521-68.jar">nuxeo-platform-publisher-core-contrib-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-publisher-core/5.6-SNAPSHOT/nuxeo-platform-publisher-core-5.6-20120119.213521-68.jar">nuxeo-platform-publisher-core-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-publisher-task/5.6-SNAPSHOT/nuxeo-platform-publisher-task-5.6-20120119.213521-68.jar">nuxeo-platform-publisher-task-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-jbpm-task-migration/5.6-SNAPSHOT/nuxeo-platform-jbpm-task-migration-5.6-20120119.213521-68.jar">nuxeo-platform-jbpm-task-migration-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-lang/5.6-SNAPSHOT/nuxeo-platform-lang-5.6-20120119.213521-68.jar">nuxeo-platform-lang-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-mail-parent/5.6-SNAPSHOT/nuxeo-platform-mail-parent-5.6-20120119.213521-68.pom">nuxeo-platform-mail-parent-5.6-20120119.213521-68.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-mail-test/5.6-SNAPSHOT/nuxeo-platform-mail-test-5.6-20120119.213521-68.jar">nuxeo-platform-mail-test-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-mail-types/5.6-SNAPSHOT/nuxeo-platform-mail-types-5.6-20120119.213521-68.jar">nuxeo-platform-mail-types-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-mail-core/5.6-SNAPSHOT/nuxeo-platform-mail-core-5.6-20120119.213521-68.jar">nuxeo-platform-mail-core-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-mail-web/5.6-SNAPSHOT/nuxeo-platform-mail-web-5.6-20120119.213521-68.jar">nuxeo-platform-mail-web-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-notification-web/5.6-SNAPSHOT/nuxeo-platform-notification-web-5.6-20120119.213521-68.jar">nuxeo-platform-notification-web-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-publisher-web/5.6-SNAPSHOT/nuxeo-platform-publisher-web-5.6-20120119.213521-68.jar">nuxeo-platform-publisher-web-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-forum-parent/5.6-SNAPSHOT/nuxeo-platform-forum-parent-5.6-20120119.213521-68.pom">nuxeo-platform-forum-parent-5.6-20120119.213521-68.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-forum-api/5.6-SNAPSHOT/nuxeo-platform-forum-api-5.6-20120119.213521-68.jar">nuxeo-platform-forum-api-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-forum-core/5.6-SNAPSHOT/nuxeo-platform-forum-core-5.6-20120119.213521-68.jar">nuxeo-platform-forum-core-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-forum-workflow/5.6-SNAPSHOT/nuxeo-platform-forum-workflow-5.6-20120119.213521-68.jar">nuxeo-platform-forum-workflow-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-forum/5.6-SNAPSHOT/nuxeo-platform-forum-5.6-20120119.213521-68.jar">nuxeo-platform-forum-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-theme-editor/5.6-SNAPSHOT/nuxeo-theme-editor-5.6-20120119.213521-68.jar">nuxeo-theme-editor-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-theme-bank/5.6-SNAPSHOT/nuxeo-theme-bank-5.6-20120119.213521-68.jar">nuxeo-theme-bank-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-webwidgets-parent/5.6-SNAPSHOT/nuxeo-platform-webwidgets-parent-5.6-20120119.213521-68.pom">nuxeo-platform-webwidgets-parent-5.6-20120119.213521-68.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-theme-webwidgets/5.6-SNAPSHOT/nuxeo-theme-webwidgets-5.6-20120119.213521-68.jar">nuxeo-theme-webwidgets-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-theme-webwidgets-ui/5.6-SNAPSHOT/nuxeo-theme-webwidgets-ui-5.6-20120119.213521-68.jar">nuxeo-theme-webwidgets-ui-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-theme-webwidgets-samples/5.6-SNAPSHOT/nuxeo-theme-webwidgets-samples-5.6-20120119.213521-68.jar">nuxeo-theme-webwidgets-samples-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-userworkspace-web/5.6-SNAPSHOT/nuxeo-platform-userworkspace-web-5.6-20120119.213521-68.jar">nuxeo-platform-userworkspace-web-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-virtualnavigation/5.6-SNAPSHOT/nuxeo-platform-virtualnavigation-5.6-20120119.213521-68.pom">nuxeo-platform-virtualnavigation-5.6-20120119.213521-68.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-virtualnavigation-web/5.6-SNAPSHOT/nuxeo-platform-virtualnavigation-web-5.6-20120119.213521-68.jar">nuxeo-platform-virtualnavigation-web-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-virtualnavigation-core-contrib/5.6-SNAPSHOT/nuxeo-platform-virtualnavigation-core-contrib-5.6-20120119.213521-68.jar">nuxeo-platform-virtualnavigation-core-contrib-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-features-test/5.6-SNAPSHOT/nuxeo-features-test-5.6-20120119.213521-68.jar">nuxeo-features-test-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/automation/nuxeo-automation-client/5.6-SNAPSHOT/nuxeo-automation-client-5.6-20120119.213521-68.jar">nuxeo-automation-client-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/automation/nuxeo-automation-server/5.6-SNAPSHOT/nuxeo-automation-server-5.6-20120119.213521-68.jar">nuxeo-automation-server-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/automation/nuxeo-automation-features/5.6-SNAPSHOT/nuxeo-automation-features-5.6-20120119.213521-68.jar">nuxeo-automation-features-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/automation/nuxeo-automation-jsf/5.6-SNAPSHOT/nuxeo-automation-jsf-5.6-20120119.213521-68.jar">nuxeo-automation-jsf-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/automation/nuxeo-automation-test/5.6-SNAPSHOT/nuxeo-automation-test-5.6-20120119.213521-68.jar">nuxeo-automation-test-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-admin-parent/5.6-SNAPSHOT/nuxeo-admin-parent-5.6-20120119.213521-68.pom">nuxeo-admin-parent-5.6-20120119.213521-68.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-connect-client-wrapper/5.6-SNAPSHOT/nuxeo-connect-client-wrapper-5.6-20120119.213521-68.jar">nuxeo-connect-client-wrapper-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-connect-update/5.6-SNAPSHOT/nuxeo-connect-update-5.6-20120119.213521-68.jar">nuxeo-connect-update-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-connect-offline-update/5.6-SNAPSHOT/nuxeo-connect-offline-update-5.6-20120119.213521-68.jar">nuxeo-connect-offline-update-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-admin-center/5.6-SNAPSHOT/nuxeo-admin-center-5.6-20120119.213521-68.jar">nuxeo-admin-center-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-admin-center-monitoring/5.6-SNAPSHOT/nuxeo-admin-center-monitoring-5.6-20120119.213521-68.jar">nuxeo-admin-center-monitoring-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-directory-web/5.6-SNAPSHOT/nuxeo-platform-directory-web-5.6-20120119.213521-68.jar">nuxeo-platform-directory-web-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-admin-center-oauth-opensocial/5.6-SNAPSHOT/nuxeo-admin-center-oauth-opensocial-5.6-20120119.213521-68.jar">nuxeo-admin-center-oauth-opensocial-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-forms-layout-io-plugins/5.6-SNAPSHOT/nuxeo-platform-forms-layout-io-plugins-5.6-20120119.213521-68.jar">nuxeo-platform-forms-layout-io-plugins-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-forms-layout-export/5.6-SNAPSHOT/nuxeo-platform-forms-layout-export-5.6-20120119.213521-68.jar">nuxeo-platform-forms-layout-export-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-localconfiguration-parent/5.6-SNAPSHOT/nuxeo-platform-localconfiguration-parent-5.6-20120119.213521-68.pom">nuxeo-platform-localconfiguration-parent-5.6-20120119.213521-68.pom</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-localconfiguration-simple/5.6-SNAPSHOT/nuxeo-platform-localconfiguration-simple-5.6-20120119.213521-68.jar">nuxeo-platform-localconfiguration-simple-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-localconfiguration-web/5.6-SNAPSHOT/nuxeo-platform-localconfiguration-web-5.6-20120119.213521-68.jar">nuxeo-platform-localconfiguration-web-5.6-20120119.213521-68.jar</a></li>
+
+
+
+<li><a href="http://maven.in.nuxeo.com/nexus/content/repositories/daily-snapshots/org/nuxeo/ecm/platform/nuxeo-platform-userpreferences/5.6-SNAPSHOT/nuxeo-platform-userpreferences-5.6-20120119.213521-68.jar">nuxeo-platform-userpreferences-5.6-20120119.213521-68.jar</a></li>
+
+</ul></td></tr><tr><td><img height="48" style="margin-right:1em" alt="" width="48" src="/jenkins/plugin/ci-game/icons/game-48x48.png" /></td><td style="vertical-align:middle">The build was worth <a href="cigame/">1 points</a></td></tr></table><h2>Module Builds</h2><table><tr><td class="no-wrap"><a href="org.nuxeo.ecm.automation$nuxeo-automation-client/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.automation$nuxeo-automation-client/">Nuxeo Automation Client</a></td><td data="5978">5.9 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.automation$nuxeo-automation-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.automation$nuxeo-automation-core/">Nuxeo Automation Core</a></td><td data="24170">24 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.automation$nuxeo-automation-features/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.automation$nuxeo-automation-features/">Nuxeo Automation Features</a></td><td data="23949">23 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.automation$nuxeo-automation-jsf/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.automation$nuxeo-automation-jsf/">Nuxeo Automation JSF</a></td><td data="4324">4.3 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.automation$nuxeo-automation-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.automation$nuxeo-automation-parent/">Nuxeo Automation</a></td><td data="1065">1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.automation$nuxeo-automation-server/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.automation$nuxeo-automation-server/">Nuxeo Automation Server</a></td><td data="5067">5 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.automation$nuxeo-automation-test/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.automation$nuxeo-automation-test/">Nuxeo Automation Tests</a></td><td data="25597">25 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-admin-center/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-admin-center/">Nuxeo Administration Center</a></td><td data="14560">14 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-admin-center-monitoring/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-admin-center-monitoring/">Nuxeo Administration Center Monitoring</a></td><td data="4903">4.9 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-admin-center-oauth-opensocial/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-admin-center-oauth-opensocial/">Nuxeo Administration Center OAuth/Opensocial</a></td><td data="5231">5.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-admin-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-admin-parent/">Nuxeo Admin Parent</a></td><td data="4418">4.4 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-connect-client-wrapper/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-connect-client-wrapper/">Nuxeo Connect Client Wrapper</a></td><td data="15849">15 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-connect-offline-update/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-connect-offline-update/">Nuxeo Connect Offline Update</a></td><td data="5692">5.6 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-connect-update/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-connect-update/">Nuxeo Connect Update</a></td><td data="8731">8.7 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-features-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-features-parent/">Nuxeo Features - Parent POM</a></td><td data="22910">22 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-features-test/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-features-test/">Nuxeo Features Test Framework</a></td><td data="11166">11 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-annotations-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-annotations-api/">Nuxeo Platform Annotation Service API</a></td><td data="3147">3.1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-annotations-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-annotations-core/">Nuxeo Platform Annotation Service Implementation</a></td><td data="13042">13 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-annotations-core-contrib/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-annotations-core-contrib/">Nuxeo Platform Annotation Service core contributions</a></td><td data="2068">2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-annotations-http/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-annotations-http/">Nuxeo Platform Annotation Service HTTP Connector</a></td><td data="7006">7 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-annotations-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-annotations-parent/">Nuxeo Platform Annotations service parent</a></td><td data="1781">1.7 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-annotations-repository-plugin/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-annotations-repository-plugin/">Nuxeo Platform Annotations Repository Plugin</a></td><td data="32949">32 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-annotations-web/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-annotations-web/">Nuxeo Platform Annotation Service Client</a></td><td data="156534">2 min 36 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-audit-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-audit-api/">Nuxeo Audit Service - API</a></td><td data="9121">9.1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-audit-client/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-audit-client/">Nuxeo Audit Service - Client</a></td><td data="6965">6.9 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-audit-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-audit-core/">Nuxeo Platform Audit Service - Core</a></td><td data="29905">29 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-audit-io/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-audit-io/">Nuxeo Platform Audit IO Fragment</a></td><td data="3052">3 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-audit-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-audit-parent/">Nuxeo Platform audit service parent</a></td><td data="1326">1.3 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-audit-ws/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-audit-ws/">Nuxeo Audit Service - WebService</a></td><td data="3803">3.8 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-comment/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-comment/">Nuxeo Comment Service</a></td><td data="9114">9.1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-comment-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-comment-api/">Nuxeo Comment Service API</a></td><td data="2719">2.7 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-comment-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-comment-core/">Nuxeo Comment Service Core Contrib</a></td><td data="3544">3.5 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-comment-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-comment-parent/">Nuxeo Platform comment service parent</a></td><td data="1066">1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-comment-web/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-comment-web/">Nuxeo Comment Service Web client</a></td><td data="4023">4 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-comment-workflow/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-comment-workflow/">Nuxeo Comment Service Workflow Contributions</a></td><td data="4985">4.9 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-directory-web/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-directory-web/">Nuxeo Directory Management Service - Web</a></td><td data="7647">7.6 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-domsync-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-domsync-core/">Nuxeo DOM synchronization Core</a></td><td data="4690">4.6 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-forms-layout-export/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-forms-layout-export/">Nuxeo Forms Layout Export</a></td><td data="8356">8.3 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-forms-layout-io-plugins/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-forms-layout-io-plugins/">Nuxeo Forms Layout IO</a></td><td data="8226">8.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-forum/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-forum/">Nuxeo Forum Service</a></td><td data="4571">4.5 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-forum-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-forum-api/">Nuxeo Forum Service API</a></td><td data="2911">2.9 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-forum-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-forum-core/">Nuxeo Forum Core contributions</a></td><td data="2446">2.4 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-forum-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-forum-parent/">Nuxeo Platform forum service parent</a></td><td data="1391">1.3 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-forum-workflow/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-forum-workflow/">Nuxeo Forum Service Worklow Contributions</a></td><td data="4072">4 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-api/">Nuxeo Platform Imaging API</a></td><td data="3405">3.4 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-convert/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-convert/">Nuxeo Platform Imaging Convert</a></td><td data="22063">22 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-core/">Nuxeo Platform Imaging Core</a></td><td data="18832">18 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-dm/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-dm/">Nuxeo Platform Imaging DM</a></td><td data="5810">5.8 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-jsf/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-jsf/">Nuxeo Platform Imaging JSF</a></td><td data="5121">5.1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-parent/">Nuxeo Platform Imaging parent</a></td><td data="1277">1.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-preview/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-preview/">Nuxeo Platform Imaging Preview</a></td><td data="3501">3.5 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-tiling/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-tiling/">Nuxeo Picture Tiling service</a></td><td data="52546">52 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-tiling-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-tiling-parent/">Nuxeo Picture Tiling parent</a></td><td data="7024">7 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-tiling-preview/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-imaging-tiling-preview/">Nuxeo Picture Tiling Preview</a></td><td data="60827">1 min 0 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-io-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-io-api/">Nuxeo Platform IO API Fragment</a></td><td data="3304">3.3 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-io-client/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-io-client/">Nuxeo IO web client</a></td><td data="7149">7.1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-io-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-io-core/">Nuxeo Platform IO Core Fragment</a></td><td data="4596">4.5 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-io-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-io-parent/">Nuxeo Platform IO service parent</a></td><td data="1239">1.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-jbpm/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-jbpm/">Nuxeo JPBM Service</a></td><td data="1213">1.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-jbpm-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-jbpm-api/">Nuxeo JPBM Service API</a></td><td data="3463">3.4 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-jbpm-automation/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-jbpm-automation/">Nuxeo JPBM Automation Module</a></td><td data="13930">13 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-jbpm-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-jbpm-core/">Nuxeo JPBM Core Service</a></td><td data="46112">46 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-jbpm-task-migration/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-jbpm-task-migration/">Nuxeo JPBM task migration</a></td><td data="33693">33 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-jbpm-test/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-jbpm-test/">Nuxeo JPBM Service test</a></td><td data="3812">3.8 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-jbpm-web/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-jbpm-web/">Nuxeo JPBM Web</a></td><td data="23043">23 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-lang/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-lang/">Nuxeo EP Language</a></td><td data="2709">2.7 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-localconfiguration-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-localconfiguration-parent/">Nuxeo Platform Local Configuration Parent</a></td><td data="3864">3.8 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-localconfiguration-simple/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-localconfiguration-simple/">Nuxeo Platform Local Configuration Simple</a></td><td data="18072">18 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-localconfiguration-web/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-localconfiguration-web/">Nuxeo Platform Local Configuration - Web</a></td><td data="7514">7.5 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-mail-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-mail-core/">Nuxeo Mail - Core</a></td><td data="18276">18 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-mail-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-mail-parent/">Nuxeo Mail - Parent POM</a></td><td data="1336">1.3 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-mail-test/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-mail-test/">Nuxeo Mail - Test</a></td><td data="4039">4 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-mail-types/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-mail-types/">Nuxeo Mail - Types contrib</a></td><td data="3248">3.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-mail-web/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-mail-web/">Nuxeo Mail - Web</a></td><td data="4902">4.9 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-notification-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-notification-api/">Nuxeo Notifications - API</a></td><td data="2709">2.7 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-notification-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-notification-core/">Nuxeo User Notification Service - Core</a></td><td data="9990">9.9 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-notification-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-notification-parent/">Nuxeo Platform notification service parent</a></td><td data="1178">1.1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-notification-web/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-notification-web/">Nuxeo User Notification Service - Web</a></td><td data="8319">8.3 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-preview/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-preview/">Nuxeo Platform Preview Addon</a></td><td data="7360">7.3 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-publisher-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-publisher-api/">Nuxeo Platform Publisher API</a></td><td data="3810">3.8 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-publisher-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-publisher-core/">Nuxeo Platform Publisher Core</a></td><td data="27895">27 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-publisher-core-contrib/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-publisher-core-contrib/">Nuxeo Platform Publisher Core Contrib</a></td><td data="2466">2.4 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-publisher-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-publisher-parent/">Nuxeo Platform Publisher Parent</a></td><td data="1890">1.8 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-publisher-task/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-publisher-task/">Nuxeo Platform Publisher task</a></td><td data="24656">24 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-publisher-web/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-publisher-web/">Nuxeo Platform Publisher Web</a></td><td data="4365">4.3 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-api/">Nuxeo Relation Service - API</a></td><td data="4216">4.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-core/">Nuxeo Relation Service - Core</a></td><td data="17887">17 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-core-listener/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-core-listener/">Nuxeo Platform Relations Core Listener</a></td><td data="3968">3.9 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-default-config/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-default-config/">Nuxeo Relation Service - Default config</a></td><td data="2237">2.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-io/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-io/">Nuxeo Platform Relations IO Fragment</a></td><td data="7239">7.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-jena-plugin/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-jena-plugin/">Nuxeo Relation Service - JENA Store Plugin</a></td><td data="8231">8.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-parent/">Nuxeo Platform relations service parent</a></td><td data="1095">1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-web/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-relations-web/">Nuxeo Relation Service - Web UI</a></td><td data="4229">4.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-syndication/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-syndication/">*DEPRECATED* Nuxeo Syndication Service</a></td><td data="14832">14 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-tag-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-tag-api/">Nuxeo Tag Service - API</a></td><td data="2593">2.5 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-tag-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-tag-core/">Nuxeo Tag Service - Core</a></td><td data="12295">12 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-tag-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-tag-parent/">Nuxeo Tag Service Module</a></td><td data="1089">1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-tag-web/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-tag-web/">Nuxeo Tag Service - Web</a></td><td data="5276">5.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-task/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-task/">Nuxeo task Service</a></td><td data="1065">1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-task-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-task-api/">Nuxeo task Service API</a></td><td data="3833">3.8 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-task-automation/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-task-automation/">Nuxeo task Automation Module</a></td><td data="11023">11 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-task-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-task-core/">Nuxeo task Core Service</a></td><td data="15508">15 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-task-test/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-task-test/">Nuxeo task Service test</a></td><td data="4021">4 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-task-web/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-task-web/">Nuxeo task Web</a></td><td data="3819">3.8 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-userpreferences/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-userpreferences/">Nuxeo User Preferences</a></td><td data="7740">7.7 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-userworkspace-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-userworkspace-api/">Nuxeo User Workspace Service - API</a></td><td data="3241">3.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-userworkspace-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-userworkspace-core/">Nuxeo Platform User Workspace - Core</a></td><td data="12735">12 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-userworkspace-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-userworkspace-parent/">Nuxeo User Workspace Service - Parent</a></td><td data="1202">1.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-userworkspace-types/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-userworkspace-types/">Nuxeo Platform User Workspace - Types</a></td><td data="2283">2.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-userworkspace-web/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-userworkspace-web/">Nuxeo User Workspace Service - Client</a></td><td data="3693">3.6 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-virtualnavigation/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-virtualnavigation/">Nuxeo platform virtual navigation</a></td><td data="1125">1.1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-virtualnavigation-core-contrib/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-virtualnavigation-core-contrib/">Nuxeo platform virtual navigation core contribs</a></td><td data="2199">2.1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-virtualnavigation-web/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-virtualnavigation-web/">Nuxeo platform virtual navigation web client</a></td><td data="5584">5.5 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-platform-webwidgets-parent/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-platform-webwidgets-parent/">Nuxeo WebWidgets Parent</a></td><td data="1292">1.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-theme-bank/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-theme-bank/">Nuxeo Theme Bank</a></td><td data="6908">6.9 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-theme-editor/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-theme-editor/">Nuxeo Theme Editor</a></td><td data="6901">6.9 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-theme-webwidgets/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-theme-webwidgets/">Nuxeo Theme Web Widgets Core</a></td><td data="11662">11 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-theme-webwidgets-samples/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-theme-webwidgets-samples/">Nuxeo Theme Web Widgets Samples</a></td><td data="4527">4.5 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-theme-webwidgets-ui/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-theme-webwidgets-ui/">Nuxeo Theme Web Widgets UI</a></td><td data="6716">6.7 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.platform$nuxeo-webengine-features/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.platform$nuxeo-webengine-features/">Nuxeo WebEngine features</a></td><td data="1929">1.9 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.webengine$nuxeo-webengine-admin/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.webengine$nuxeo-webengine-admin/">Nuxeo WebEngine Administration</a></td><td data="4159">4.1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.webengine$nuxeo-webengine-base/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.webengine$nuxeo-webengine-base/">Nuxeo WebEngine Base</a></td><td data="9175">9.1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.webengine$nuxeo-webengine-blogs/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.webengine$nuxeo-webengine-blogs/">Nuxeo Webengine Blogs</a></td><td data="8148">8.1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.webengine$nuxeo-webengine-blogs-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.webengine$nuxeo-webengine-blogs-api/">Nuxeo Webengine Blogs API</a></td><td data="3282">3.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.webengine$nuxeo-webengine-blogs-core/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.webengine$nuxeo-webengine-blogs-core/">Nuxeo Webengine Blogs Core contributions</a></td><td data="3051">3 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.webengine$nuxeo-webengine-management/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.webengine$nuxeo-webengine-management/">Nuxeo WebEngine Server Management</a></td><td data="6837">6.8 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.webengine$nuxeo-webengine-samples-base/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.webengine$nuxeo-webengine-samples-base/">Nuxeo WebEngine Samples Base</a></td><td data="3194">3.1 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.webengine$nuxeo-webengine-samples-extended/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.webengine$nuxeo-webengine-samples-extended/">Nuxeo WebEngine Samples Extended</a></td><td data="2829">2.8 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.webengine$nuxeo-webengine-sites/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.webengine$nuxeo-webengine-sites/">Nuxeo WebEngine Sites Module</a></td><td data="21765">21 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.webengine$nuxeo-webengine-sites-api/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.webengine$nuxeo-webengine-sites-api/">Nuxeo WebEngine Sites Module API</a></td><td data="5237">5.2 sec</td></tr><tr><td class="no-wrap"><a href="org.nuxeo.ecm.webengine$nuxeo-webengine-sites-core-contrib/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" /></a> <a href="org.nuxeo.ecm.webengine$nuxeo-webengine-sites-core-contrib/">Nuxeo WebEngine Sites core contributions</a></td><td data="11423">11 sec</td></tr></table><h2>Upstream Builds</h2><ul style="list-style-type: none;"><li><a href="/jenkins/job/nuxeo-runtime-master/">nuxeo-runtime-master</a><a href="/jenkins/job/nuxeo-runtime-master/"></a>
+
+          #1
+
+	      </li><li><a href="/jenkins/job/nuxeo-webengine-master/">nuxeo-webengine-master</a><a href="/jenkins/job/nuxeo-webengine-master/35/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#35</a></li><li><a href="/jenkins/job/nuxeo-core-master/">nuxeo-core-master</a><a href="/jenkins/job/nuxeo-core-master/"></a>
+
+          #10
+
+	      </li><li><a href="/jenkins/job/nuxeo-theme-master/">nuxeo-theme-master</a><a href="/jenkins/job/nuxeo-theme-master/37/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#37</a></li><li><a href="/jenkins/job/nuxeo-services-master/">nuxeo-services-master</a><a href="/jenkins/job/nuxeo-services-master/"></a>
+
+          #1
+
+	      </li></ul><h2>Downstream Builds</h2><ul style="list-style-type: none;"><li><a href="/jenkins/job/addons_nuxeo-platform-audio-master/">addons_nuxeo-platform-audio-master</a><a href="/jenkins/job/addons_nuxeo-platform-audio-master/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a> </li><li><a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/">addons_nuxeo-platform-document-routing-master</a><a href="/jenkins/job/addons_nuxeo-platform-document-routing-master/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a> </li><li><a href="/jenkins/job/addons_nuxeo-platform-replication-master/">addons_nuxeo-platform-replication-master</a><a href="/jenkins/job/addons_nuxeo-platform-replication-master/42/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#42</a> </li><li><a href="/jenkins/job/addons_nuxeo-platform-shibboleth-groups-web-master/">addons_nuxeo-platform-shibboleth-groups-web-master</a><a href="/jenkins/job/addons_nuxeo-platform-shibboleth-groups-web-master/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a> </li><li><a href="/jenkins/job/addons_nuxeo-platform-video-master/">addons_nuxeo-platform-video-master</a><a href="/jenkins/job/addons_nuxeo-platform-video-master/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a> </li><li><a href="/jenkins/job/addons_nuxeo-social-collaboration-master/">addons_nuxeo-social-collaboration-master</a><a href="/jenkins/job/addons_nuxeo-social-collaboration-master/911/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#911</a> </li><li><a href="/jenkins/job/addons_nuxeo-platform-semantic-entities-master/">addons_nuxeo-platform-semantic-entities-master</a><a href="/jenkins/job/addons_nuxeo-platform-semantic-entities-master/48/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#48</a> </li><li><a href="/jenkins/job/addons_nuxeo-platform-importer-master/">addons_nuxeo-platform-importer-master</a><a href="/jenkins/job/addons_nuxeo-platform-importer-master/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a> </li><li><a href="/jenkins/job/addons_nuxeo-user-center-master/">addons_nuxeo-user-center-master</a><a href="/jenkins/job/addons_nuxeo-user-center-master/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a> </li><li><a href="/jenkins/job/addons_nuxeo-platform-user-dashboard-compat-master/">addons_nuxeo-platform-user-dashboard-compat-master</a><a href="/jenkins/job/addons_nuxeo-platform-user-dashboard-compat-master/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a> </li><li><a href="/jenkins/job/addons_nuxeo-quota-master/">addons_nuxeo-quota-master</a><a href="/jenkins/job/addons_nuxeo-quota-master/14/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#14</a> </li><li><a href="/jenkins/job/addons_nuxeo-platform-login-master/">addons_nuxeo-platform-login-master</a><a href="/jenkins/job/addons_nuxeo-platform-login-master/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a> </li><li><a href="/jenkins/job/addons_nuxeo-dam-master/">addons_nuxeo-dam-master</a><a href="/jenkins/job/addons_nuxeo-dam-master/1009/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#1009</a> </li><li><a href="/jenkins/job/addons_nuxeo-platform-suggestbox-master/">addons_nuxeo-platform-suggestbox-master</a><a href="/jenkins/job/addons_nuxeo-platform-suggestbox-master/173/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#173</a> </li><li><a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/">addons_nuxeo-platform-faceted-search-master</a><a href="/jenkins/job/addons_nuxeo-platform-faceted-search-master/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a> </li><li><a href="/jenkins/job/addons_nuxeo-chemistry-master/">addons_nuxeo-chemistry-master</a><a href="/jenkins/job/addons_nuxeo-chemistry-master/48/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#48</a> </li><li><a href="/jenkins/job/addons_nuxeo-apidoc-server-master/">addons_nuxeo-apidoc-server-master</a><a href="/jenkins/job/addons_nuxeo-apidoc-server-master/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a> </li><li><a href="/jenkins/job/addons_nuxeo-platform-classification-master/">addons_nuxeo-platform-classification-master</a><a href="/jenkins/job/addons_nuxeo-platform-classification-master/45/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#45</a> </li><li><a href="/jenkins/job/nuxeo-dm-master/">nuxeo-dm-master</a><a href="/jenkins/job/nuxeo-dm-master/51/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#51</a> </li><li><a href="/jenkins/job/addons_nuxeo-rss-reader-master/">addons_nuxeo-rss-reader-master</a><a href="/jenkins/job/addons_nuxeo-rss-reader-master/314/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#314</a> </li><li><a href="/jenkins/job/addons_nuxeo-poll-master/">addons_nuxeo-poll-master</a><a href="/jenkins/job/addons_nuxeo-poll-master/289/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#289</a> </li><li><a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/">addons_nuxeo-platform-indexing-gateway-master</a><a href="/jenkins/job/addons_nuxeo-platform-indexing-gateway-master/14/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#14</a> </li><li><a href="/jenkins/job/addons_nuxeo-cmf-master/">addons_nuxeo-cmf-master</a><a href="/jenkins/job/addons_nuxeo-cmf-master/50/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#50</a> </li><li><a href="/jenkins/job/addons_nuxeo-platform-rendition-master/">addons_nuxeo-platform-rendition-master</a><a href="/jenkins/job/addons_nuxeo-platform-rendition-master/43/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#43</a> </li><li><a href="/jenkins/job/addons_nuxeo-platform-sync-master/">addons_nuxeo-platform-sync-master</a><a href="/jenkins/job/addons_nuxeo-platform-sync-master/44/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#44</a> </li><li><a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/">addons_nuxeo-filesystem-connectors-master</a><a href="/jenkins/job/addons_nuxeo-filesystem-connectors-master/47/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#47</a> </li><li><a href="/jenkins/job/addons_nuxeo-opensocial-master/">addons_nuxeo-opensocial-master</a><a href="/jenkins/job/addons_nuxeo-opensocial-master/46/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#46</a> </li><li><a href="/jenkins/job/addons_nuxeo-shell-master/">addons_nuxeo-shell-master</a><a href="/jenkins/job/addons_nuxeo-shell-master/53/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#53</a> </li><li><a href="/jenkins/job/nuxeo-distribution-master/">nuxeo-distribution-master</a><a href="/jenkins/job/nuxeo-distribution-master/76/"><img height="16" alt="Success" width="16" src="/jenkins/static/58e2c472/images/16x16/blue.png" />#76</a> </li></ul></td></tr></table><table width="100%"><tr><td id="footer"><span style="padding-right:2em; color:gray">
+
+          Page generated:
+
+          Jan 23, 2012 4:39:32 PM</span><a href="http://jenkins-ci.org/">Jenkins ver. 1.444</a></td></tr></table><div id="l10n-dialog" class="dialog"></div><div id="l10n-footer" style="display:none; float:left"><a href="#" onclick="return showTranslationDialog();"><img src="/jenkins/plugin/translation/flags.png" />
+
+      Help us localize this page
+
+    </a></div><script>var footer = document.getElementById('l10n-footer');
+
+    var f = document.getElementById('footer');
+
+    f.insertBefore(footer,f.firstChild);
+
+    footer.style.display="block";
+
+
+
+    var translation={}; 
+
+    translation.bundles = "EjHaaXjl9vP0x00Bc1PgOEFwWyNYcGEASmUXNaI6fybVsBCm/OP13p0yt96POrL1JoV7/95ws2SE2hvdUA5mTOUT1WE+/R9r5qaSWNjPesgS6pTh6mAyQkOx6iHHocKQag5PF4xy0iTJuuUazIUOqOzKPPWYbIBdNs8sNI1Uxixc+qoStHvKBY4zKpp4gvIND/jLhTEhR8kOOCEZkp3CDFUaNMrV7oniPtPGKEcjecvUKLbznzP7sJQynGs2mC3uagBdM8kbAPGOb/ZMIwNJr9RAOlDrMp6D9dfs6nJSKvqwLwftOdATvTs8jUkVPMWOfV1ME23VDDjdjE6CmFvnNEw3BGvVxWBBhKoCQ1zrXl60a6OOfNtzaK+RW4w/shp9lKjsxpCfHTGLCLSiFRDJuk+U+3IpVnSo90BhLwiAJ6bT3cce43c8t1VpAGsAiulN3Q/Po/79cfl3J4ZUZFYzc8tiJdfxSaRj6WrnDtb/RZSqbClGO1zdFxhJGf5rWNOV382O3LDsQkGPRpeKag/sh2hIz4zL1in2DapUTloQZdDu8XO3YmvFZV6jQhrpAJxU2hbGzEfQ8KRFx39LXzZCS3PESiZ12n1Qf7Az1526bZEJ/6iLYvCEdF23AhUe0OAsLF5vRx7bro0sCw4/T5jLrHY3HcY40GG2FqjR0idpJmlBZnk7yPrG7XK5gbSeTe3k4UdvV6qPDrAji+L+sGCBgdq1mxWAll9geOnDxi4+biExai98WErm1I/TVKgwVi4W";
+
+    translation.detectedLocale = "";
+
+
+
+    function showTranslationDialog() {
+
+      if(!translation.launchDialog)
+
+        loadScript("/jenkins/plugin/translation/dialog.js");
+
+      else
+
+        translation.launchDialog();
+
+      return false; 
+
+    }</script></body></html>

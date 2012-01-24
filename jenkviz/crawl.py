@@ -11,10 +11,10 @@ __copyright__ = "Copyright (C) 2012 Nuxeo SA <http://nuxeo.com>"
 import os
 import re
 from urlparse import urlparse
-from funkload.FunkLoadDocTest import FunkLoadDocTest
-from funkload.utils import extract_token
+from requests import get as http_get
 from model import Build
 from util import str2id
+from util import extract_token
 from model import get_build
 from model import save_build
 from model import update_build
@@ -24,8 +24,6 @@ class Crawl(object):
     def __init__(self, db, options):
         self.db = db
         self.options = options
-        self.fl = FunkLoadDocTest(debug=False)
-        self.fl._simple_fetch = True
         self.builds = {}
         self.count = 0
         self.root = None
@@ -80,8 +78,13 @@ class Crawl(object):
 
     def fetch_build(self, url):
         if self.options.from_file:
-            return self.fetch_build_from_file(url)
-        return self.fetch_build_from_server(url)
+            body = self.fetch_build_from_file(url)
+        else:
+            body = self.fetch_build_from_server(url)
+        ret = self.parse_build(url, body)
+        if self.options.to_file:
+            self.save_build_to_file(ret, body)
+        return ret
 
     def fetch_build_from_db(self, url):
         return get_build(self.db, url)
@@ -93,18 +96,16 @@ class Crawl(object):
         update_build(self.db, build)
 
     def fetch_build_from_server(self, url):
-        self.fl.get(self.server_url + url, description="Get build page " + url)
-        ret = self.parse_build(url, self.fl.getBody())
-        if self.options.to_file:
-            self.save_build_to_file(ret, self.fl.getBody())
-        return ret
+        response = http_get(self.server_url + url)
+        assert(response.status_code == 200)
+        return response.text
 
     def fetch_build_from_file(self, url):
         dir_path = self.options.from_file
         build_id = str2id(' '.join([i for i in url.split('/') if i][-2:]))
         file_path = os.path.join(dir_path, build_id + '.txt')
         body = '\n'.join(open(file_path).readlines())
-        return self.parse_build(url, body)
+        return body
 
     def save_build_to_file(self, build, body):
         dir_path = self.options.to_file
@@ -190,7 +191,7 @@ class Crawl(object):
 
     def clean(self, parent):
         for i in range(10):
-            # wtf :)
+            # wtf is that :)
             self.clean_orphan(parent)
         all_builds = []
         self.list_builds(parent, all_builds)
