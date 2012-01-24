@@ -35,8 +35,8 @@ def cmd_crawl(args, options):
     root = crawl.crawl(args[0])
     close_db(db)
     stat = root.extra
-    logging.info("Started: %s\n\tend: %s\n\tduration: %ss\n\tNb builds: %s\n\ttrhoughput: %s\n" % (
-            stat['start'], stat['stop'], stat['duration'], stat['count'], stat['throughput']))
+    logging.info("Started: %s\n\tend: %s\n\telapsed: %s\n\tduration: %ss\n\tNb builds: %s\n\ttrhoughput: %s\n" % (
+            stat['start'], stat['stop'], stat['elapsed'], stat['duration'], stat['count'], stat['throughput']))
     svg_file = root.getId() + ".svg"
     graphviz(root, svg_file)
     logging.info("%s generated." % svg_file)

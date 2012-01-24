@@ -36,6 +36,7 @@ class Crawl(object):
         self.path_root = u.path
         self.server_url = url[:-len(self.path_root)]
         self._crawl(self.path_root)
+        self.clean(self.root)
         self.root.extra = self.stats()
         return self.root
 
@@ -51,7 +52,8 @@ class Crawl(object):
             if url in self.builds.keys():
                 known = True
             build = self.get_build(url)
-            parent.children.append(build)
+            if not self.options.direct or build.upstream == parent.url:
+                parent.children.append(build)
             if not known:
                 self._crawl(url)
 
@@ -150,13 +152,48 @@ class Crawl(object):
             if stop is None or build.stop_t > stop:
                 stop = build.stop_t
             duration += build.duration_s
-        duration_total = stop - start
+        elapsed = stop - start
         throughput = 0
-        if duration_total.seconds:
-            throughput = duration * 100. / duration_total.seconds
+        if elapsed.seconds:
+            throughput = duration * 100. / elapsed.seconds
         ret = {'start': start,
                'stop': stop,
+               'elapsed': elapsed,
                'duration': duration,
                'throughput': throughput,
-               'count': self.count}
+               'count': len(self.builds)}
         return ret
+
+    def clean_orphan(self, parent):
+        """Remove build with no direct upstream."""
+        for child in parent.children:
+            if child.upstream not in self.builds:
+                parent.children.remove(child)
+                if child.url in self.builds:
+                    print "Removing orphean: %s" % child.url
+                    self.builds.pop(child.url)
+            self.clean_orphan(child)
+
+    def list_builds(self, parent, builds):
+        """Walk the tree to list the builds."""
+        if parent.url not in builds:
+            builds.append(parent.url)
+        for build in parent.children:
+            self.list_builds(build, builds)
+
+    def list_upstreams(self, parent, upstreams):
+        """Walk the tree to list the upstreams."""
+        if parent.upstream and parent.upstream not in upstreams:
+            upstreams.append(parent.upstream)
+        for build in parent.children:
+            self.list_upstreams(build, upstreams)
+
+    def clean(self, parent):
+        for i in range(10):
+            # wtf :)
+            self.clean_orphan(parent)
+        all_builds = []
+        self.list_builds(parent, all_builds)
+        for url in self.builds.keys():
+            if url not in all_builds:
+                self.builds.pop(url)

@@ -8,6 +8,19 @@ http://qa.nuxeo.org/jenkins/job/nuxeo-features-master/72/
 long: 782
 http://qa.nuxeo.org/jenkins/job/nuxeo-common-master/4/
 
+* TODO remove funkload use std http
+
+* TODO check clean
+  -> pourquoi ça joue pas sur les stats ?
+     -> il faut réduire self.builds sur l'ensemble des children
+
+  -> ça supprime tout 
+  
+   jenkviz crawl http://qa.nuxeo.org/jenkins/job/nuxeo-common-master/7/ --from-file=/home/ben/tmp/jenkviz 
+   vs --direct 
+
+   sans direct : 172 build
+   avec direct : 267 ?
 
 * TODO reverse 
   parse reverse
@@ -28,6 +41,9 @@ http://qa.nuxeo.org/jenkins/job/nuxeo-common-master/4/
   list hosts + charge
   ?
 * TODO doc cleaning
+* TODO handle multiple upstream
+  http://qa.nuxeo.org/jenkins/job/addons_nuxeo-social-collaboration-master/904/
+  
 * CANCELLED bug on non maven job                                  :CANCELLED:
   CLOSED: [2012-01-23 lun. 17:06]
   :LOGBOOK:
@@ -75,3 +91,6 @@ matrix job
    -> project 
 
    does not show http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-selenium-cap-jboss/72/
+
+* Limitation
+  some target are (aucun) because wait for another tree to build
