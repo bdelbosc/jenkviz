@@ -47,4 +47,4 @@ INSTALLATION
   sudo aptitude install graphviz
   sudo easy_install jenkviz
 
-.. _SVG: https://raw.github.com/bdelbosc/jenkviz/master/demo.svg
+.. _SVG: http://public.dev.nuxeo.com/~ben/demo.svg
