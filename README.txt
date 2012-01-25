@@ -44,9 +44,9 @@ COMMANDS
     -- Slowest jobs
     sqlite> SELECT name, SUM(duration_s), MAX(duration_s), AVG(duration_s), COUNT(1) 
             FROM build 
-	    GROUP BY name
-	    ORDER BY SUM(duration_s) DESC 
-	    LIMIT 10;
+            GROUP BY name
+            ORDER BY SUM(duration_s) DESC 
+            LIMIT 10;
     -- Slave load
     sqlite> SELECT host, SUM(duration_s) FROM build GROUP BY host ORDER BY SUM(duration_s) DESC LIMIT 10;
 
@@ -61,7 +61,7 @@ EXAMPLES
 
    
 LIMITATIONS
-~~~~~~~~~~~~
+-----------
 
    Due to JENKINS-6211_ bug, this works only for maven job because
    current Jenkins (at least 1.444) don't display build number for
@@ -77,12 +77,28 @@ LIMITATIONS
 
 INSTALLATION
 ------------
-::
 
-  sudo aptitude install graphviz
-  sudo easy_install jenkviz
+  On Debian/Ubuntu::
+
+    sudo aptitude install graphviz
+    sudo easy_install jenkviz
+
+
+SOURCE REPOSITORY
+~~~~~~~~~~~~~~~~~~~~
+
+  Jenkviz is currently hosted at github_.
+
+ISSUES AND BUG REPORTS
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Feature requests and bug reports can be made here:
+
+    * https://github.com/bdelbosc/jenkviz/issues
+
 
 .. _SVG: http://public.dev.nuxeo.com/~ben/demo.svg
 .. _JENKINS-6211: https://issues.jenkins-ci.org/browse/JENKINS-6211
 .. _Jenkins: http://jenkins-ci.org/
 .. _graphviz: http://www.graphviz.org/
+.. _github: https://github.com/bdelbosc/jenkviz
