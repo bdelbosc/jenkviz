@@ -7,19 +7,37 @@ NAME
 
   jenkviz - visualization of a Jenkins_ build flow using graphviz_.
 
-  See this examples of SVG_ output.
 
-  You can see that:
+DESCRIPTION
+-----------
 
-  - There is summary box that displays:
+  Tool to crawl a Jenkins site using a build url and producing a SVG_
+  output to render the build flow.
+
+  The SVG_ graph displays:
+  - A summary box with:
     - the total elapsed time 
     - the cumulated duration for each build
     - a throughput (duration/elapsed)
-  - Black edge are upstream/downstream dependences
-  - Orange edge are only downstream dependences
-  - Blue box are for successfull build
-  - Yellow box are for unstable build
-  - Red box are build in failure
+    - number of builds
+  - Black arrows to render upstream and downstream relation
+  - Orange arrows to render downstream only relation
+  - Build with a Blue/Yellow/Red box for Success/Unstable/Failure
+    build status
+
+  Build information are stored in a local sqlite database. The
+  database is used as a cache to not fetch twice a build page
+  but also to get information using plain SQL::
+
+    sqlite3 ~/jenkviz.db
+    -- Slowest jobs
+    sqlite> SELECT name, SUM(duration_s), MAX(duration_s), AVG(duration_s), COUNT(1)
+            FROM build
+            GROUP BY name
+            ORDER BY SUM(duration_s) DESC
+            LIMIT 10;
+    -- Slave load
+    sqlite> SELECT host, SUM(duration_s) FROM build GROUP BY host ORDER BY SUM(duration_s) DESC LIMIT 10;
 
 
 USAGE
@@ -33,46 +51,34 @@ USAGE
 COMMANDS
 ~~~~~~~~~
 
-  crawl [--direct] [--output SVG_FILE] JENKINS_BUILD_URL
+  crawl [--direct|--explore] [--output SVG_FILE] JENKINS_BUILD_URL
 
-  Crawl a Jenkins build for downstream buils and produces a SVG graph
-  the build information is stored in a local sqlite database that is
-  used as a cache to not request twice a build, it also enable to requests
-  data using plain SQL::
-
-    sqlite3 ~/jenkviz.db
-    -- Slowest jobs
-    sqlite> SELECT name, SUM(duration_s), MAX(duration_s), AVG(duration_s), COUNT(1) 
-            FROM build 
-            GROUP BY name
-            ORDER BY SUM(duration_s) DESC 
-            LIMIT 10;
-    -- Slave load
-    sqlite> SELECT host, SUM(duration_s) FROM build GROUP BY host ORDER BY SUM(duration_s) DESC LIMIT 10;
-
-  The ``--direct`` option shows only downstream/upstream relation,
+  The ``--direct`` option shows only downstream and upstream relation,
   removing downstream only link.
 
+  The ``--explore`` option to keep downstream builds that have
+  upstream build out of the scope of the origin build (the upstream
+  build is not a descendant of the root build)
 
 EXAMPLES
 ~~~~~~~~~
 
-   jenkviz crawl http://jenkins.site/jenkviz/job_name/42/
+  jenkviz crawl http://jenkins.site/jenkviz/job_name/42/
 
    
 LIMITATIONS
 -----------
 
-   Due to JENKINS-6211_ bug, this works only for maven job because
-   current Jenkins (at least 1.444) don't display build number for
-   downstream builds for freestyle jobs or non maven jobs.
+  Due to JENKINS-6211_ bug, this works only for maven job because
+  current Jenkins (at least 1.444) don't display build number for
+  downstream builds for freestyle jobs or non maven jobs.
 
-   Also sometime downstream build number is None and it stops the
-   crawling, in this case Jenkins don't give any way to go directly to
-   the downstream builds.
+  Also sometime downstream build number is None and it stops the
+  crawling, in this case Jenkins don't give any way to go directly to
+  the downstream builds.
 
-   At the moment Jenkviz don't handle build with multiple upstream
-   builds, only taking care of the first one.
+  At the moment Jenkviz don't handle build with multiple upstream
+  builds, only taking care of the first one.
 
 
 INSTALLATION
@@ -89,12 +95,13 @@ SOURCE REPOSITORY
 
   Jenkviz is currently hosted at github_.
 
+
 ISSUES AND BUG REPORTS
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
   Feature requests and bug reports can be made here:
 
-    * https://github.com/bdelbosc/jenkviz/issues
+  * https://github.com/bdelbosc/jenkviz/issues
 
 
 .. _SVG: http://public.dev.nuxeo.com/~ben/demo.svg

@@ -77,7 +77,7 @@ class Build(Base):
     duration_s = Column(Integer)
     trigger = Column(String(64))
     downstream = Column(String(4096))
-    upstream = Column(String(256))
+    upstream = Column(String(512))
 
     def __init__(self, url, host, name, build_number, start, duration, status, downstream,
                  base_url, trigger, upstream):
@@ -88,7 +88,6 @@ class Build(Base):
         self.start = start
         self.duration = duration
         self.status = status
-        self.downstream = downstream
         self.children = []
         self.base_url = base_url
         self.trigger = trigger
@@ -96,7 +95,7 @@ class Build(Base):
         self.duration_s = duration_to_second(duration)
         self.stop_t = self.start_t + timedelta(seconds=self.duration_s)
         self.downstream = ','.join(downstream)
-        self.upstream = upstream
+        self.upstream = ','.join(upstream)
 
     def __repr__(self):
         return '''URL: "%s"\n\tname: %s\n\tbuild #: %s\n\thost: %s\n\tstart: %s\n\tstop: %s
@@ -122,4 +121,9 @@ class Build(Base):
     def get_downstream(self):
         if self.downstream:
             return self.downstream.split(',')
+        return []
+
+    def get_upstream(self):
+        if self.upstream:
+            return self.upstream.split(',')
         return []

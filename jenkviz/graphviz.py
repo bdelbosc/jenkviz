@@ -19,7 +19,7 @@ def graphviz(root, svg_file):
     out.write("""digraph g {
 graph [rankdir=LR];
 node [fontsize="16" shape="record"];
-info [label="start: %s|stop: %s|elapsed: %s|duration: %s|number of builds: %s|throughput: %s%%"];
+info [label="start: %s|stop: %s|elapsed: %s|duration: %s|number of builds: %s|throughput: %.2f%%"];
 """ % (root.extra['start'], root.extra['stop'], root.extra['elapsed'], timedelta(seconds=root.extra['duration']),
        root.extra['count'], root.extra['throughput']))
 
@@ -45,11 +45,11 @@ def _graphviz_recurse(parent, out, visited):
         return
     out.write("%s -> {" % parent.getId())
     for build in parent.children:
-        if build.upstream == parent.url:
+        if parent.url in build.get_upstream():
             out.write(build.getId() + ";")
     out.write("}\n")
     for build in parent.children:
-        if build.upstream != parent.url:
+        if parent.url not in build.get_upstream():
             out.write('%s -> %s [color=orange]\n' % (parent.getId(), build.getId()))
     for build in parent.children:
         _graphviz_recurse(build, out, visited)

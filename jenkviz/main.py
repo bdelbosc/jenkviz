@@ -18,20 +18,8 @@ USAGE = """jenkviz [--version] [--logfile=LOGFILE] [--database=DATABASE] COMMAND
 
 COMMANDS:
 
-  list
-     List the builds from the local database.
-
-  crawl [--reverse| URL
-     crawl the jenkins. Output the BID number.
-
-EXAMPLES
-
-   jenkviz list
-      List of crawled build.
-
-   jenkviz crawl http://jenkins/jenkins/job/foo/34/
-      Import a build #34 of foo
-.
+  crawl [OPTIONS] URL
+     crawl the jenkins build produces a SVG file.
 
 """
 
@@ -61,11 +49,16 @@ def main(argv=sys.argv):
     parser.add_option("--direct", action="store_true",
                       default=False,
                       help="Display only direct upstream dependencies")
+    parser.add_option("--explore", action="store_true",
+                      default=False,
+                      help="Display downstream build with external upstream")
     parser.add_option("-u", "--update", action="store_true",
                       default=False,
                       help="Always fetch build from server (update local database)")
 
     options, args = parser.parse_args(argv)
+    if options.explore:
+        options.direct = False
     init_logging(options)
     if len(args) == 1:
         parser.error("Missing command")

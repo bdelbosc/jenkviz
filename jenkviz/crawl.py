@@ -50,7 +50,7 @@ class Crawl(object):
             if url in self.builds.keys():
                 known = True
             build = self.get_build(url)
-            if not self.options.direct or build.upstream == parent.url:
+            if not self.options.direct or parent.url in build.get_upstream():
                 parent.children.append(build)
             if not known:
                 self._crawl(url)
@@ -111,7 +111,7 @@ class Crawl(object):
         dir_path = self.options.to_file
         build_id = build.getId()
         file_path = os.path.join(dir_path, build_id + '.txt')
-        open(file_path, 'w+').write(body)
+        open(file_path, 'w+').write(body.encode('utf-8'))
 
     def parse_build(self, url, body):
         name = extract_token(body, '<title>', ' ')
@@ -123,11 +123,10 @@ class Crawl(object):
         host = extract_token(body, '<a href="/jenkins/computer/', '"')
         downstream_builds = extract_token(body, 'h2>Downstream Builds</h2', '</ul>')
         trigger = "Unknown"
-        upstream = None
+        upstream_urls = []
         if 'Started by upstream project' in body:
-            upstream = extract_token(body, 'Started by upstream project', '</span')
+            upstream = extract_token(body, 'Started by upstream project', '</td')
             upstream_urls = re.findall(r'href="([^"]+[0-9]/)"', upstream)
-            upstream = upstream_urls[0]
             trigger = None
         if 'Started by GitHub push' in body:
             try:
@@ -140,7 +139,7 @@ class Crawl(object):
         if downstream_builds:
             downstream_urls = re.findall(r'href="([^"]+[0-9]/)"', downstream_builds)
         build = Build(url, host, name, build_number, start, duration, status, downstream_urls,
-                      self.server_url, trigger, upstream)
+                      self.server_url, trigger, upstream_urls)
         return build
 
     def stats(self):
@@ -168,7 +167,7 @@ class Crawl(object):
     def clean_orphan(self, parent):
         """Remove build with no direct upstream."""
         for child in parent.children:
-            if child.upstream not in self.builds:
+            if len(set(child.get_upstream()).intersection(set(self.builds.keys()))) == 0:
                 parent.children.remove(child)
                 if child.url in self.builds:
                     print "Removing orphean: %s" % child.url
@@ -182,17 +181,11 @@ class Crawl(object):
         for build in parent.children:
             self.list_builds(build, builds)
 
-    def list_upstreams(self, parent, upstreams):
-        """Walk the tree to list the upstreams."""
-        if parent.upstream and parent.upstream not in upstreams:
-            upstreams.append(parent.upstream)
-        for build in parent.children:
-            self.list_upstreams(build, upstreams)
-
     def clean(self, parent):
-        for i in range(10):
-            # wtf is that :)
-            self.clean_orphan(parent)
+        if not self.options.explore:
+            for i in range(10):
+                # wtf is that :)
+                self.clean_orphan(parent)
         all_builds = []
         self.list_builds(parent, all_builds)
         for url in self.builds.keys():
