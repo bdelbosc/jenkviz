@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 __author__ = "Benoit Delbosc"
 __copyright__ = "Copyright (C) 2012 Nuxeo SA <http://nuxeo.com/>"
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 """jenkviz package setup"""
 from setuptools import setup, find_packages
 
@@ -31,7 +31,7 @@ setup(
         'Topic :: Software Development :: Quality Assurance',
     ],
     # setuptools specific keywords
-    install_requires=['requests', ],
+    install_requires=['requests', 'sqlalchemy'],
     zip_safe=True,
     test_suite='nose.collector',
     entry_points={
