@@ -12,6 +12,4 @@
 * TODO find how to work around jenkins bug
   https://issues.jenkins-ci.org/browse/JENKINS-6211
   prevent non maven job to display correctly downstream build
-* TODO explain limitation
-  - some downstream build have no build number and break the tree
-  - non maven job has no downstream build
+  -> impl the reverse mode
