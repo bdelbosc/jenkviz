@@ -12,8 +12,9 @@ from commands import getstatusoutput
 from datetime import timedelta
 
 
-def graphviz(root, svg_file):
+def graphviz(roots, svg_file):
     """Create a fpath svg from build tree."""
+    root = roots[0]
     dot_file = svg_file.replace('.svg', '.dot')
     out = open(dot_file, "w+")
     out.write("""digraph g {
@@ -24,7 +25,8 @@ info [label="start: %s|stop: %s|elapsed: %s|duration: %s|number of builds: %s|th
        root.extra['count'], root.extra['throughput']))
 
     visited = []
-    _graphviz_recurse(root, out, visited)
+    for root in roots:
+        _graphviz_recurse(root, out, visited)
     out.write("}\n")
     out.close()
     _make_svg(dot_file, svg_file)

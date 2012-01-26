@@ -32,16 +32,19 @@ def cmd_crawl(args, options):
         os.mkdir(options.from_file)
     db = open_db(options)
     crawl = Crawl(db, options)
-    root = crawl.crawl(args[0])
+    if options.reverse:
+        roots = crawl.reverse_crawl(args[0])
+    else:
+        roots = crawl.crawl(args[0])
     close_db(db)
-    stat = root.extra
+    stat = roots[0].extra
     logging.info("Started: %s\n\tend: %s\n\telapsed: %s\n\tduration: %ss\n\tNb builds: %s\n\ttrhoughput: %s\n" % (
             stat['start'], stat['stop'], stat['elapsed'], stat['duration'], stat['count'], stat['throughput']))
     if not options.output:
-        svg_file = root.getId() + ".svg"
+        svg_file = roots[0].getId() + ".svg"
     else:
         svg_file = options.output
-    graphviz(root, svg_file)
+    graphviz(roots, svg_file)
     logging.info("%s generated." % svg_file)
     return 0
 

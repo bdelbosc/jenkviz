@@ -1,15 +1,18 @@
 #+TITLE: JenkViz todos 
 
-* TODO reverse 
-  parse reverse
+* TODO reverse explore
+  parse reverse then crow downstream using roots
+* TODO use rest api to find missing downstream
+  when missing downstream build number try to use the rest api
+  for instance this gives the downstream build number nuxeo-distribution-master #90
+  http://qa.nuxeo.org/jenkins/job/FT-nuxeo-master-selenium-cmf-tomcat/api/xml?depth=1&xpath=/freeStyleProject/build[action/cause/upstreamProject="nuxeo-distribution-master" and action/cause/upstreamBuild=90]/number/text()
 * TODO fix bug in throughput
   sounds like if elapsed > 24h there is a pb
 * TODO render db stats
   list slowest jobs, most frequent, slowest N ...
   list hosts usage ...
-* TODO handle multiple upstream
-  http://qa.nuxeo.org/jenkins/job/addons_nuxeo-social-collaboration-master/904/
 * TODO find how to work around jenkins bug
   https://issues.jenkins-ci.org/browse/JENKINS-6211
   prevent non maven job to display correctly downstream build
   -> impl the reverse mode
+  -> use rest api

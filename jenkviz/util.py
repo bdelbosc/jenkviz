@@ -80,6 +80,8 @@ class truncate(BaseFilter):
 
 def duration_to_second(duration):
     """Convert jenkins duration into second"""
+    if not duration:
+        return None
     match = re.match('^(([0-9])+ h)? ?(([0-9]+) min)? ?(([0-9]+) sec)?$', duration)
     ret = 0
     if match and len(match.groups()) == 6:
@@ -93,7 +95,9 @@ def duration_to_second(duration):
 
 
 def time_to_datetime(str_time):
-    return datetime.strptime(str_time, '%b %d, %Y %I:%M:%S %p')
+    if str_time:
+        return datetime.strptime(str_time, '%b %d, %Y %I:%M:%S %p')
+    return None
 
 
 def extract_token(text, tag_start, tag_end):

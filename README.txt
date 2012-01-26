@@ -22,7 +22,7 @@ DESCRIPTION
     - number of builds
   - Black arrows to render upstream and downstream relation
   - Orange arrows to render downstream only relation
-  - Build with a Blue/Yellow/Red box for Success/Unstable/Failure
+  - Build with a blue/yellow/red/gray box for Success/Unstable/Failed/Aborted
     build status
 
   Build information are stored in a local sqlite database. The
@@ -51,10 +51,12 @@ USAGE
 COMMANDS
 ~~~~~~~~~
 
-  crawl [--direct|--explore] [--output SVG_FILE] JENKINS_BUILD_URL
+  crawl [--direct|--reverse|--explore] [--output SVG_FILE] JENKINS_BUILD_URL
 
   The ``--direct`` option shows only downstream and upstream relation,
   removing downstream only link.
+
+  The ``--reverse`` option crawl backward using upstream builds.
 
   The ``--explore`` option to keep downstream builds that have
   upstream build out of the scope of the origin build (the upstream

@@ -93,7 +93,10 @@ class Build(Base):
         self.trigger = trigger
         self.start_t = time_to_datetime(start)
         self.duration_s = duration_to_second(duration)
-        self.stop_t = self.start_t + timedelta(seconds=self.duration_s)
+        if self.start_t and self.duration_s:
+            self.stop_t = self.start_t + timedelta(seconds=self.duration_s)
+        else:
+            self.stop_t = None
         self.downstream = ','.join(downstream)
         self.upstream = ','.join(upstream)
 
@@ -109,10 +112,14 @@ class Build(Base):
     def color(self):
         if self.status == 'Success':
             return "blue"
-        if self.status == 'Failure':
+        if self.status == 'Failed':
             return "red"
         if self.status == 'Unstable':
             return "gold"
+        if self.status == 'Unknown':
+            return "brown"
+        if self.status == 'Aborted':
+            return "dimgray"
         return "black"
 
     def full_url(self):

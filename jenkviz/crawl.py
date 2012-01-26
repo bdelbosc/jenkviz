@@ -10,6 +10,7 @@ __copyright__ = "Copyright (C) 2012 Nuxeo SA <http://nuxeo.com>"
 """
 import os
 import re
+import logging
 from urlparse import urlparse
 from requests import get as http_get
 from model import Build
@@ -36,7 +37,7 @@ class Crawl(object):
         self._crawl(self.path_root)
         self.clean(self.root)
         self.root.extra = self.stats()
-        return self.root
+        return [self.root]
 
     def _crawl(self, url):
         parent = self.get_build(url)
@@ -45,15 +46,43 @@ class Crawl(object):
         print parent
         if not len(parent.get_downstream()):
             return
-        for url in parent.get_downstream():
+        for child_url in parent.get_downstream():
             known = False
-            if url in self.builds.keys():
+            if child_url in self.builds.keys():
                 known = True
-            build = self.get_build(url)
-            if not self.options.direct or parent.url in build.get_upstream():
-                parent.children.append(build)
+            child = self.get_build(child_url)
+            if not self.options.direct or parent.url in child.get_upstream():
+                parent.children.append(child)
             if not known:
-                self._crawl(url)
+                self._crawl(child_url)
+
+    def reverse_crawl(self, url):
+        self.url = url
+        u = urlparse(url)
+        self.path_leaf = u.path
+        self.server_url = url[:-len(self.path_leaf)]
+        self.roots = []
+        self._reverse_crawl(self.path_leaf)
+        # TODO: disable cache and craw from roots
+        # for root in self.roots:
+        #    self._crawl(root.url)
+        self.roots[0].extra = self.stats()
+        return self.roots
+
+    def _reverse_crawl(self, url):
+        child = self.get_build(url)
+        print child
+        if len(child.get_upstream()) == 0:
+            self.roots.append(child)
+            return
+        for parent_url in child.get_upstream():
+            known = False
+            if parent_url in self.builds.keys():
+                known = True
+            parent = self.get_build(parent_url)
+            parent.children.append(child)
+            if not known:
+                self._reverse_crawl(parent_url)
 
     def get_build(self, url):
         self.count += 1
@@ -66,6 +95,8 @@ class Crawl(object):
         # 3. fetch jenkins page
         if ret is None or self.options.update:
             build = self.fetch_build(url)
+            if build is None:
+                return None
             # 3.1 persist build
             if ret is None:
                 self.save_build_to_db(build)
@@ -82,7 +113,7 @@ class Crawl(object):
         else:
             body = self.fetch_build_from_server(url)
         ret = self.parse_build(url, body)
-        if self.options.to_file:
+        if ret and self.options.to_file:
             self.save_build_to_file(ret, body)
         return ret
 
@@ -97,7 +128,9 @@ class Crawl(object):
 
     def fetch_build_from_server(self, url):
         response = http_get(self.server_url + url)
-        assert(response.status_code == 200)
+        if response.status_code != 200:
+            logging.error('Failure: %s%s return %s' % (self.server_url, url, response.status_code))
+            return "ERROR: %s" % response.status_code
         return response.text
 
     def fetch_build_from_file(self, url):
@@ -114,6 +147,11 @@ class Crawl(object):
         open(file_path, 'w+').write(body.encode('utf-8'))
 
     def parse_build(self, url, body):
+        if body.startswith('ERROR'):
+            name = url.split('/')[-3]
+            build_number = url.split('/')[-2]
+            return Build(url, body, name, build_number, None, None, 'Unknown', [],
+                         self.server_url, '', [])
         name = extract_token(body, '<title>', ' ')
         h1 = extract_token(body, '<h1>', '</h1>')
         status = extract_token(h1, 'alt="', '"')
@@ -147,6 +185,8 @@ class Crawl(object):
         start = stop = None
         duration = 0
         for build in self.builds.itervalues():
+            if not build.start_t or not build.stop_t:
+                continue
             if start is None or build.start_t < start:
                 start = build.start_t
             if stop is None or build.stop_t > stop:
