@@ -12,6 +12,11 @@ jenkviz git master
 
 :Target: 0.2.1
 
+Bug Fixes
+~~~~~~~~~~
+
+* Fix duration parsing for hour.
+
 
 jenkviz 0.2.0
 ------------------

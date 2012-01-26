@@ -82,7 +82,7 @@ def duration_to_second(duration):
     """Convert jenkins duration into second"""
     if not duration:
         return None
-    match = re.match('^(([0-9])+ h)? ?(([0-9]+) min)? ?(([0-9]+) sec)?$', duration)
+    match = re.match('^(([0-9])+ hr)? ?(([0-9]+) min)? ?(([0-9]+) sec)?$', duration)
     ret = 0
     if match and len(match.groups()) == 6:
         if match.group(2):

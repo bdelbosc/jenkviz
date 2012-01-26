@@ -22,8 +22,8 @@ class JenkVizTestCase(TestCase):
         self.assertEquals(duration_to_second('10 min 10 sec'), 610)
         self.assertEquals(duration_to_second('1 sec'), 1)
         self.assertEquals(duration_to_second('55 sec'), 55)
-        self.assertEquals(duration_to_second('1 h 1 sec'), 3601)
-        self.assertEquals(duration_to_second('1 h 1 min 1 sec'), 3661)
+        self.assertEquals(duration_to_second('1 hr 1 sec'), 3601)
+        self.assertEquals(duration_to_second('1 hr 1 min 1 sec'), 3661)
 
     def test_graphviz(self):
         tmp_dir = mkdtemp('_jenkviz')
