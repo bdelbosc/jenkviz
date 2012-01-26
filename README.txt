@@ -16,10 +16,12 @@ DESCRIPTION
 
   The SVG_ graph displays:
   - A summary box with:
+
     - the total elapsed time 
     - the cumulated duration for each build
     - a throughput (duration/elapsed)
     - number of builds
+
   - Black arrows to render upstream and downstream relation
   - Orange arrows to render downstream only relation
   - Build with a blue/yellow/red/gray box for Success/Unstable/Failed/Aborted
