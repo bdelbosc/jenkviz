@@ -17,6 +17,8 @@ Bug Fixes
 
 * Fix duration parsing for hour.
 
+* Fix duration parsing for second in float format.
+
 
 jenkviz 0.2.0
 ------------------

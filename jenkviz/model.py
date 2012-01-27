@@ -93,7 +93,7 @@ class Build(Base):
         self.trigger = trigger
         self.start_t = time_to_datetime(start)
         self.duration_s = duration_to_second(duration)
-        if self.start_t and self.duration_s:
+        if self.start_t and self.duration_s is not None:
             self.stop_t = self.start_t + timedelta(seconds=self.duration_s)
         else:
             self.stop_t = None
