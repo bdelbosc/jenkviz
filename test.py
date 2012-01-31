@@ -12,6 +12,7 @@ import os
 from tempfile import mkdtemp
 from unittest import TestCase
 from jenkviz.util import duration_to_second
+from jenkviz.util import split_jenkins_url
 from jenkviz.main import main
 
 
@@ -38,3 +39,11 @@ class JenkVizTestCase(TestCase):
         svg_file = os.path.join(tmp_dir, 'test-direct.svg')
         ret = main(['jenkviz', 'crawl', 'http://foo/jenkins/job/nuxeo-features-master/72/', '--from-file=test-data', '-o', svg_file, '--direct'])
         self.assertEquals(ret, 0)
+
+    def test_split_jenkins_url(self):
+        server, path, base_path, name, build = split_jenkins_url('http://qa.nuxeo.org/jenkins/job/nuxeo-features-master/103/')
+        self.assertEquals(server, 'http://qa.nuxeo.org')
+        self.assertEquals(path, '/jenkins/job/nuxeo-features-master/103/')
+        self.assertEquals(base_path, '/jenkins/job')
+        self.assertEquals(name, 'nuxeo-features-master')
+        self.assertEquals(build, '103')

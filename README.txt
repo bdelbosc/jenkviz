@@ -73,16 +73,8 @@ EXAMPLES
 LIMITATIONS
 -----------
 
-  Due to JENKINS-6211_ bug, this works only for maven job because
-  current Jenkins (at least 1.444) don't display build number for
-  downstream builds for freestyle jobs or non maven jobs.
-
-  Also sometime downstream build number is None and it stops the
-  crawling, in this case Jenkins don't give any way to go directly to
-  the downstream builds.
-
-  At the moment Jenkviz don't handle build with multiple upstream
-  builds, only taking care of the first one.
+  Jenkviz try to find downstream/upstream build using the web page and
+  the REST API to work around the JENKINS-6211_ bug. 
 
 
 INSTALLATION

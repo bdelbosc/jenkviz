@@ -102,9 +102,9 @@ class Build(Base):
 
     def __repr__(self):
         return '''URL: "%s"\n\tname: %s\n\tbuild #: %s\n\thost: %s\n\tstart: %s\n\tstop: %s
-\tduration: %s\n\tstatus: %s\n\tdownstream build: %d\n\tupstream: %s\n''' % (
+\tduration: %s\n\tstatus: %s\n\ttrigger: %s\n\tupstream: %s\n\tdownstream: %s\n''' % (
             self.url, self.name, self.build_number, self.host, self.start, self.stop_t, self.duration, self.status,
-            len(self.get_downstream()), self.upstream)
+            self.trigger, self.upstream, self.downstream)
 
     def getId(self):
         return str2id("%s %s" % (self.name, self.build_number))
@@ -129,6 +129,9 @@ class Build(Base):
         if self.downstream:
             return self.downstream.split(',')
         return []
+
+    def set_downstream(self, ds):
+        self.downstream = ','.join(ds)
 
     def get_upstream(self):
         if self.upstream:

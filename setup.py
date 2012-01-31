@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 __author__ = "Benoit Delbosc"
 __copyright__ = "Copyright (C) 2012 Nuxeo SA <http://nuxeo.com/>"
-__version__ = '0.2.0'
+__version__ = '0.3.0'
 """jenkviz package setup"""
 from setuptools import setup, find_packages
 

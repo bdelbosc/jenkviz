@@ -11,6 +11,7 @@ __copyright__ = "Copyright (C) 2012 Nuxeo SA <http://nuxeo.com>"
 import hashlib
 import re
 import logging
+from urlparse import urlparse
 import pkg_resources
 from datetime import datetime
 
@@ -109,3 +110,17 @@ def extract_token(text, tag_start, tag_end):
     if start < 0 or end < 0:
         return None
     return text[start + len(tag_start):end]
+
+
+def split_jenkins_url(url):
+    """Return [server, path, base_path, job_name, build_number]"""
+    u = urlparse(url)
+    seg = [i for i in u.path.split('/') if i]
+    build_number = seg[-1]
+    build_name = seg[-2]
+    base = '/' + '/'.join(seg[:-2])
+    return [url[:-len(u.path)],
+            u.path,
+            base,
+            build_name,
+            build_number]
