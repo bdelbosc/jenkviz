@@ -12,9 +12,12 @@ jenkviz git master
 
 :Target: 0.3.1
 
+Bug Fixes
+~~~~~~~~~~
 
+* Fix broken ``--reverse`` option.
 
-jenkviz 0.2.0
+jenkviz 0.3.0
 ------------------
 
 :Package: http://pypi.python.org/packages/source/j/jenkviz/jenkviz-0.3.0.tar.gz

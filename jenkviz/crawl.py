@@ -67,6 +67,7 @@ class Crawl(object):
         ret = split_jenkins_url(url)
         self.server_url = ret[0]
         self.path_leaf = ret[1]
+        self.base_path = ret[2]
         self.roots = []
         self._reverse_crawl(self.path_leaf)
         # TODO: disable cache and craw from roots
