@@ -10,7 +10,17 @@ jenkviz git master
 
 :git: https://github.com/bdelbosc/jenkviz
 
-:Target: 0.3.1
+:Target: 0.3.2
+
+
+jenkviz 0.3.1
+------------------
+
+:Package: http://pypi.python.org/packages/source/j/jenkviz/jenkviz-0.3.1.tar.gz
+
+:github: https://github.com/bdelbosc/jenkviz/tree/0.3.1
+
+:Released date: 2012-05-02
 
 Bug Fixes
 ~~~~~~~~~~
