@@ -2,10 +2,8 @@
 
 * TODO reverse explore
   parse reverse then crow downstream using roots
+  -> can be done in 2 time once roots are found
 * TODO render db stats
   list slowest jobs, most frequent, slowest N ...
   list hosts usage ...
 
-* TODO debug
- jenkviz crawl --explore -u http://qa.nuxeo.org/jenkins/job/nuxeo-master/47/
- should continue on http://qa.nuxeo.org/jenkins/job/nuxeo-common-master/16/
